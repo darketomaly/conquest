@@ -1,0 +1,12 @@
+{
+    "name": "Control",
+    "maps": [
+        {
+            "name": "actionMap",
+            "id": "726dcb6f-5813-44e2-9ca0-244db5f09726",
+            "actions": [],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}
