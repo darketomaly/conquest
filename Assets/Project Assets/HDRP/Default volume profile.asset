@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: 6832034083773303905}
   - {fileID: 556572257924583445}
   - {fileID: 2449213618582618026}
-  - {fileID: 5333438397522440483}
   - {fileID: 8657414157649985727}
+  - {fileID: 5333438397522440483}
 --- !u!114 &556572257924583445
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -182,13 +182,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7593b3a9277ac4696b20006c21dde2, type: 3}
   m_Name: VisualEnvironment
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   skyType:
     m_OverrideState: 1
     m_Value: 0
   skyAmbientMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   fogType:
     m_OverrideState: 0

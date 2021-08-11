@@ -27,14 +27,15 @@ namespace Photon.Chat.UtilityScripts
             return;
             #endif
 
-            EventSystem sceneEventSystem = FindObjectOfType<EventSystem>();
-            if (sceneEventSystem == null)
-            {
-                GameObject eventSystem = new GameObject("EventSystem");
-
-                eventSystem.AddComponent<EventSystem>();
-                eventSystem.AddComponent<StandaloneInputModule>();
-            }
+            //COMMENTED BECAUSE USING NEW INPUT SYSTEM
+            //EventSystem sceneEventSystem = FindObjectOfType<EventSystem>();
+            //if (sceneEventSystem == null)
+            //{
+            //    GameObject eventSystem = new GameObject("EventSystem");
+            //
+            //    eventSystem.AddComponent<EventSystem>();
+            //    eventSystem.AddComponent<StandaloneInputModule>();
+            //}
         }
     }
 }

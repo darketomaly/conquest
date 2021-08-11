@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Project Assets/Control.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Project Assets/Input management/Control.inputactions'
 
 using System;
 using System.Collections;
