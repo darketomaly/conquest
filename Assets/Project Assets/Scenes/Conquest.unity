@@ -428,6 +428,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 490396558}
+  layers:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &1580706097
 GameObject:
   m_ObjectHideFlags: 0

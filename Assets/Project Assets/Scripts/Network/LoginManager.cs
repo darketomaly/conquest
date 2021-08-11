@@ -4,6 +4,8 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
+using System;
+using System.Threading.Tasks;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
@@ -31,6 +33,15 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         button.interactable = true;
     }
 
-    public override void OnJoinedRoom() =>
+    public override void OnJoinedRoom() {
+
+        StartCoroutine(_OnJoinedRoom());
+    }
+
+    private IEnumerator _OnJoinedRoom() {
+
+        SceneFade.FadeIn();
+        yield return new WaitForSeconds(0.7f);
         PhotonNetwork.LoadLevel("Conquest");
+    }
 }

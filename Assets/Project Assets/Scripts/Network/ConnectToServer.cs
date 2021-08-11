@@ -14,6 +14,8 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
+        SceneFade.FadeOut();
+
         PhotonNetwork.ConnectUsingSettings();
 
         textMesh.text = "connecting to server";
@@ -30,7 +32,14 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
     public override void OnJoinedLobby() {
 
+        StartCoroutine(_OnJoinedLobby());
+    }
+
+    private IEnumerator _OnJoinedLobby() {
+
         textMesh.text = "loading login screen";
+        SceneFade.FadeIn();
+        yield return new WaitForSeconds(0.7f);
         loadsceneOp.allowSceneActivation = true;
     }
 }
