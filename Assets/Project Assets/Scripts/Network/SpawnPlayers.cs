@@ -2,29 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
 
-public class SpawnPlayers : MonoBehaviour {
+public class SpawnPlayers : MonoBehaviourPunCallbacks {
 
-    public string prefabName;
-    public Transform startPos;
+    [SerializeField] private Transform startPosition;
 
     private static readonly string playerPrefabPath = "Photon Spawns/Player";
 
     private void Start() {
 
-        if (PhotonNetwork.IsConnected) {
+        if (!PhotonNetwork.IsConnected) { //Only used when developing
 
-            GameObject spawnedPlayer =
-                PhotonNetwork.Instantiate(playerPrefabPath, startPos.position, Quaternion.identity);
-            OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
+            Debug.Log("<color=red>Offline mode enabled.</color>");
+            PhotonNetwork.OfflineMode = true;
 
-        } else { //Used to test the game wihout having to connect from Landing scene
+            RoomOptions roomOptions = new RoomOptions();
+            roomOptions.MaxPlayers = 1;
 
-            Debug.Log($"<color=red>Offline mode.</color>");
-            GameObject spawnedPlayer = Instantiate(Resources.Load<GameObject>(playerPrefabPath));
-            OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
-
+            PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
         }
+
+        GameObject spawnedPlayer =
+                PhotonNetwork.Instantiate(playerPrefabPath, startPosition.position, Quaternion.identity);
+        OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
     }
 
     //Only gets called on the local client, used to store references

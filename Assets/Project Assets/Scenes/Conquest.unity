@@ -847,5 +847,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d48b4b5fd8059a2409c003d730cf795f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabName: Player
-  startPos: {fileID: 82822021}
+  startPosition: {fileID: 82822021}

@@ -15,19 +15,18 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     private void Start() {
 
         SceneFade.FadeOut();
-
-        PhotonNetwork.ConnectUsingSettings();
-
-        textMesh.text = "connecting to server";
-
         Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
         (loadsceneOp = SceneManager.LoadSceneAsync("Login Screen")).allowSceneActivation = false;
+
+        PhotonNetwork.ConnectUsingSettings();
+        textMesh.text = "connecting to server";
     }
 
     public override void OnConnectedToMaster() {
 
         textMesh.text = "joining lobby";
-        PhotonNetwork.JoinLobby();
+        if(PhotonNetwork.IsConnected)
+            PhotonNetwork.JoinLobby();
     }
 
     public override void OnJoinedLobby() {
