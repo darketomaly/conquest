@@ -10,10 +10,6 @@ using System.Threading.Tasks;
 public class LoginManager : MonoBehaviourPunCallbacks {
 
     public Button button;
-    private void Start() {
-
-        Debug.Log("<color=green>Online mode enabled.</color>");
-    }
 
     public void EnterRoom() {
 

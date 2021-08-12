@@ -17,8 +17,34 @@ public class MainRaycast : MonoBehaviour {
 
             if (Mouse.current.leftButton.wasPressedThisFrame) {
 
-                GameManager.localPlayer.movement.MoveTo(hit.point);
+                if(hit.transform.root != GameManager.localPlayer.transform) {
+
+                    Interactable interactable = 
+                        TryGetInteractable(hit.transform);
+
+                    if (interactable != null) {
+
+                        GameManager.localPlayer?.movement.MoveTowards(interactable);
+
+                    } else {
+
+                        GameManager.localPlayer?.movement.MoveTo(hit.point);
+                    }
+
+                }
             }
         }
     }
+
+    private Interactable TryGetInteractable(Transform startingObject) {
+
+        Transform parent = startingObject;
+        while (parent != null) {
+
+            if (parent.CompareTag("Interactable")) return parent.GetComponent<Interactable>();
+            else parent = parent.transform.parent;
+        }
+
+        return null;
+    } 
 }

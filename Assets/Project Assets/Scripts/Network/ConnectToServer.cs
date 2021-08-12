@@ -14,6 +14,8 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
+        Debug.Log("<color=green>Online mode enabled.</color>");
+
         SceneFade.FadeOut();
         Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
         (loadsceneOp = SceneManager.LoadSceneAsync("Login Screen")).allowSceneActivation = false;
