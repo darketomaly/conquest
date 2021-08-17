@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
     }
 
-    public void MoveTo(Vector3 desiredPosition) {
+    public void MoveTo(Vector3 desiredPosition, bool colorDestinationParticle = false) {
 
         if (focus) {
 
@@ -29,8 +29,17 @@ public class PlayerMovement : MonoBehaviour {
 
         agent.SetDestination(desiredPosition);
 
-        //To do: Movement point decal/particle here
-        Instantiate(destinationParticle, desiredPosition, Quaternion.identity);
+
+        ParticleSystem.MainModule module = destinationParticle.main;
+        if (colorDestinationParticle) {
+
+            module.startColor = Color.red;
+        } else {
+
+            module.startColor = Color.white;
+        }
+
+        Instantiate(destinationParticle, agent.destination, transform.rotation * Quaternion.Euler(-90.0f, 0.0f, 0.0f)); //
     }
 
     public void MoveTowards(Interactable interactable) {
@@ -38,21 +47,28 @@ public class PlayerMovement : MonoBehaviour {
         StartCoroutine(_MoveTowards(interactable));
     }
 
+    private Vector3 interactableDesiredDestination(Interactable interactable) {
+
+        if (interactable.overrideDestination)
+            return interactable.overrideDestination.position;
+        else 
+            return interactable.m_collider.ClosestPointOnBounds(transform.position);
+    }
+
     private IEnumerator _MoveTowards(Interactable interactable) {
 
-        MoveTo(interactable.m_collider.ClosestPointOnBounds(transform.position));
+        MoveTo(interactableDesiredDestination(interactable), true);
 
         while (true) {
 
-            //look for closest point as you move in new directions
-            agent.SetDestination(interactable.m_collider.ClosestPointOnBounds(transform.position));
+            agent.SetDestination(interactableDesiredDestination(interactable));
 
             yield return null; //skip a frame until agent starts moving
 
             if (agent.remainingDistance < 0.35f) {
 
                 if(interactable.needsToBeReachedToInteract &&
-                    Vector3.Distance(transform.position, interactable.m_collider.ClosestPointOnBounds(transform.position)) > 1.25) {
+                    Vector3.Distance(transform.position, interactableDesiredDestination(interactable)) > 1.25) {
                     //note: distance check needs to have a little offset since agent hasn't stopped moving (0.35f remaining distance)
                     Debug.Log($"<color=red>{interactable.transform.name}</color> unreachable.");
 

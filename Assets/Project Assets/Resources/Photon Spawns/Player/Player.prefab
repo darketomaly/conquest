@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5851c78d56f234b4990d9d900d58f674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationParticle: {fileID: 5973682235004338888, guid: b2e4675c462863f44a5677db91ab5fe1, type: 3}
+  destinationParticle: {fileID: 1985746695647575241, guid: b2e4675c462863f44a5677db91ab5fe1, type: 3}
 --- !u!114 &7665223586508002124
 MonoBehaviour:
   m_ObjectHideFlags: 0

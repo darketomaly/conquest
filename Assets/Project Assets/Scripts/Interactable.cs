@@ -5,8 +5,12 @@ using UnityEngine;
 public class Interactable : MonoBehaviour {
 
     [Header("Interactable")]
+    [Tooltip("Used to search the closest point in the agent's perspective. Leave blank if overriding destination.")] 
     public Collider m_collider;
-    public bool needsToBeReachedToInteract;
+    [Tooltip("Does the agent needs to be close to the object to interact with it?")]
+    public bool needsToBeReachedToInteract = true;
+    [Tooltip("If set, agent moves towards the given point instead.")] 
+    public Transform overrideDestination;
 
     public virtual void OnFocus() {
 
