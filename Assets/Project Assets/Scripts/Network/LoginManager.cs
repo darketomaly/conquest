@@ -6,20 +6,38 @@ using Photon.Realtime;
 using UnityEngine.UI;
 using System;
 using System.Threading.Tasks;
+using TMPro;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
+    public TextMeshProUGUI playerCountText;
     public Button button;
+
+    private void Awake() {
+
+        StartCoroutine(DisplayPlayerCount());
+    }
 
     public void EnterRoom() {
 
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 4;
+        //roomOptions.MaxPlayers = 4;
         roomOptions.PublishUserId = true;
 
         button.interactable = false;
-
+        
         PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
+    }
+
+    IEnumerator DisplayPlayerCount() {
+
+        while (true) {
+
+            playerCountText.text =
+                $"Players inside: {PhotonNetwork.CountOfPlayersInRooms}.";
+
+            yield return new WaitForSeconds(5.1f);
+        }
     }
     
     public override void OnCreateRoomFailed(short returnCode, string message) {
@@ -36,6 +54,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public override void OnJoinedRoom() {
 
-        CustomSceneManager.LoadScene("Conquest", true);
+        PhotonNetwork.LoadLevel("Conquest");    //this has to be on the same frame
+                                                //waiting for the scene fade makes current joined players not appear
     }
 }
