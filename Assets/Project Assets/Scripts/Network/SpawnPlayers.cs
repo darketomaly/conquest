@@ -8,7 +8,7 @@ public class SpawnPlayers : MonoBehaviourPunCallbacks {
 
     [SerializeField] private Transform startPosition;
 
-    private static readonly string playerPrefabPath = "Photon Spawns/Player";
+    private static readonly string playerPrefabPath = "Photon Spawns/Player/Player";
 
     private void Start() {
 

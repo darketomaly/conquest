@@ -16,9 +16,10 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 4;
         roomOptions.PublishUserId = true;
-        
-        PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
+
         button.interactable = false;
+
+        PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
     }
     
     public override void OnCreateRoomFailed(short returnCode, string message) {
@@ -35,13 +36,6 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public override void OnJoinedRoom() {
 
-        StartCoroutine(_OnJoinedRoom());
-    }
-
-    private IEnumerator _OnJoinedRoom() {
-
-        SceneFade.FadeIn();
-        yield return new WaitForSeconds(0.7f);
-        PhotonNetwork.LoadLevel("Conquest");
+        CustomSceneManager.LoadScene("Conquest", true);
     }
 }

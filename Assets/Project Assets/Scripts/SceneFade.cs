@@ -14,6 +14,8 @@ public class SceneFade : MonoBehaviour {
 
     private static SceneFade m;
 
+    public static Action onFadeIn;
+
     public Image bg;
     public AudioMixer mixer;
 
@@ -38,9 +40,10 @@ public class SceneFade : MonoBehaviour {
 
     public static void FadeIn() {
 
+        if (m.fadeInTween != null) return;
+
         m.bg.DOKill();
-        m.fadeInTween = m.bg.DOFade(1.0f, 0.7f).OnComplete(() => m.fadeInTween = null);
-        //m.mixer.DOSetFloat("bgmVolume", -80.0f, 0.7f);
+        m.fadeInTween = m.bg.DOFade(1.0f, 0.35f).OnComplete(() => m.fadeInTween = null);
     }
 
     public static void FadeOut() {
@@ -48,9 +51,21 @@ public class SceneFade : MonoBehaviour {
         if (m.fadeOutTween != null) //on additive scene load this gets called more than once
             return; //
 
-        m.bg.DOKill();
-        m.fadeOutTween = m.bg.DOFade(0.0f, 1.0f).OnComplete(() => m.fadeOutTween = null);
-        //m.mixer.DOSetFloat("bgmVolume", Player.localPlayerData.audio_settings_bgmVolume, 0.35f);
+        if(m.fadeInTween != null) {
+
+            m.fadeInTween.OnComplete(delegate {
+
+                m.bg.DOKill();
+                m.fadeInTween = null;
+                m.fadeInTween.Kill();
+
+                m.fadeOutTween = m.bg.DOFade(0.0f, 1.0f).OnComplete(() => m.fadeOutTween = null);
+            });
+        } else {
+
+            m.bg.DOKill();
+            m.fadeOutTween = m.bg.DOFade(0.0f, 1.0f).OnComplete(() => m.fadeOutTween = null);
+        }
     }
 
     public static bool AbleToInteract() {
