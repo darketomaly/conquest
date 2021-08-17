@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
     private NavMeshAgent agent;
 
     private Interactable focus;
+    private Coroutine movingTowardsInteractable;
 
     private void Awake() {
 
@@ -27,8 +28,9 @@ public class PlayerMovement : MonoBehaviour {
             focus = null;
         }
 
-        agent.SetDestination(desiredPosition);
+        if (movingTowardsInteractable != null) StopCoroutine(movingTowardsInteractable);
 
+        agent.SetDestination(desiredPosition);
 
         ParticleSystem.MainModule module = destinationParticle.main;
         if (colorDestinationParticle) {
@@ -44,7 +46,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public void MoveTowards(Interactable interactable) {
 
-        StartCoroutine(_MoveTowards(interactable));
+        movingTowardsInteractable =
+            StartCoroutine(_MoveTowards(interactable));
     }
 
     private Vector3 interactableDesiredDestination(Interactable interactable) {

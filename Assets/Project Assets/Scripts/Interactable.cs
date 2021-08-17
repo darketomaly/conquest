@@ -19,7 +19,6 @@ public class Interactable : MonoBehaviour {
 
     public virtual void OnDefocus() { 
                                       
-
         Debug.Log($"Defocused from {transform.name}.");
     }
 }
