@@ -34,6 +34,7 @@ public class CameraMovement : MonoBehaviour {
         transposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         pov = virtualCamera.GetCinemachineComponent<CinemachinePOV>();
         virtualCamera.Follow = playerMovement.transform;
+
     }
 
     private void Update() {

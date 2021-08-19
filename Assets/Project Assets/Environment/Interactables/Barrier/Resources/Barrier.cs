@@ -25,6 +25,9 @@ public class Barrier : Interactable {
 
         barrierEntered = !barrierEntered;
 
+        //clear any subscribed event that didn't get invoked
+        GameManager.localPlayer.movement.whileMovementWasDisabled = null;
+
         GameManager.localPlayer.movement.movementDisabled = true;
         obstacle.enabled = false;
 

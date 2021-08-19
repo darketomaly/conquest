@@ -1764,9 +1764,9 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.514679
+  m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 10.05309
+  m_CameraDistance: 7.05309
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -1803,13 +1803,13 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 33.2
     m_SpeedMode: 0
-    m_MaxSpeed: 300
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
+    m_MaxSpeed: 250
+    m_AccelTime: 0.5
+    m_DecelTime: 0.2
     m_InputAxisName: 
     m_InputAxisValue: 0
     m_InvertInput: 1
-    m_MinValue: -70
+    m_MinValue: 6.53
     m_MaxValue: 70
     m_Wrap: 0
     m_Recentering:
@@ -1827,12 +1827,12 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 180
     m_SpeedMode: 0
-    m_MaxSpeed: 300
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
+    m_MaxSpeed: 250
+    m_AccelTime: 0.5
+    m_DecelTime: 0.2
     m_InputAxisName: 
     m_InputAxisValue: 0
-    m_InvertInput: 0
+    m_InvertInput: 1
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -2362,6 +2362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1615955232}
   - component: {fileID: 1615955231}
+  - component: {fileID: 1615955233}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -2429,6 +2430,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1615955233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615955230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7194dc27b9df64c8beca7482ee8e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerIndex: -1
+  XYAxis: {fileID: 8773226124011920464, guid: d465ca65bf917454d8eee2a06881d01c, type: 3}
+  ZAxis: {fileID: 0}
 --- !u!1 &1685963140
 GameObject:
   m_ObjectHideFlags: 0
