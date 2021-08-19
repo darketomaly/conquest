@@ -43,6 +43,6 @@ public class Barrier : Interactable {
 
         GameManager.localPlayer.movement.movementDisabled = false;
         obstacle.enabled = true;
+        GameManager.localPlayer.movement.whileMovementWasDisabled?.Invoke();
     }
-
 }

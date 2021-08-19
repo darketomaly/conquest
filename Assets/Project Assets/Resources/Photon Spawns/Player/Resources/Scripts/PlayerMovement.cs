@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Photon.Pun;
 using UnityEngine.AI;
+using System;
 
 public class PlayerMovement : MonoBehaviour {
+
+    public Action whileMovementWasDisabled;
 
     [SerializeField] private ParticleSystem destinationParticle;
     private PhotonView photonView;
@@ -32,6 +35,12 @@ public class PlayerMovement : MonoBehaviour {
             particlePosition = agent.destination;
 
         } else {
+
+            whileMovementWasDisabled = delegate {
+
+                //invoked once the agent can move
+                MoveTo(desiredPosition, colorDestinationParticle);
+            };
 
             agent.CalculatePath(desiredPosition, path);
             if (path.corners.Length > 0)
