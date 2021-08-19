@@ -23,7 +23,7 @@ public class SpawnPlayers : MonoBehaviourPunCallbacks {
             PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
         }
 
-        Debug.Log(PhotonNetwork.CountOfPlayers);
+        //Debug.Log(PhotonNetwork.CountOfPlayers);
 
         GameObject spawnedPlayer =
                 PhotonNetwork.Instantiate(playerPrefabPath, startPosition.position, Quaternion.identity);

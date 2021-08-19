@@ -17,14 +17,78 @@ public class @Control : IInputActionCollection, IDisposable
         {
             ""name"": ""actionMap"",
             ""id"": ""726dcb6f-5813-44e2-9ca0-244db5f09726"",
-            ""actions"": [],
-            ""bindings"": []
+            ""actions"": [
+                {
+                    ""name"": ""Zoom"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""28472803-62a4-4202-8292-dfdd575b8342"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""KeyPressZoom"",
+                    ""type"": ""Button"",
+                    ""id"": ""f7f1371d-ba29-418f-993f-dedcf97e865d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""cf6434d9-d88e-4618-86fc-f0dbe1d37502"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""PageUpDwn"",
+                    ""id"": ""e8c3f4db-a302-46bd-b349-32f53fa1bad0"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""KeyPressZoom"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""be627462-f91c-4f02-b044-6644dca15112"",
+                    ""path"": ""<Keyboard>/pageDown"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""KeyPressZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""75708de8-ff2f-4050-90e2-86638114689c"",
+                    ""path"": ""<Keyboard>/pageUp"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""KeyPressZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
 }");
         // actionMap
         m_actionMap = asset.FindActionMap("actionMap", throwIfNotFound: true);
+        m_actionMap_Zoom = m_actionMap.FindAction("Zoom", throwIfNotFound: true);
+        m_actionMap_KeyPressZoom = m_actionMap.FindAction("KeyPressZoom", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -74,10 +138,14 @@ public class @Control : IInputActionCollection, IDisposable
     // actionMap
     private readonly InputActionMap m_actionMap;
     private IActionMapActions m_ActionMapActionsCallbackInterface;
+    private readonly InputAction m_actionMap_Zoom;
+    private readonly InputAction m_actionMap_KeyPressZoom;
     public struct ActionMapActions
     {
         private @Control m_Wrapper;
         public ActionMapActions(@Control wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Zoom => m_Wrapper.m_actionMap_Zoom;
+        public InputAction @KeyPressZoom => m_Wrapper.m_actionMap_KeyPressZoom;
         public InputActionMap Get() { return m_Wrapper.m_actionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -87,15 +155,29 @@ public class @Control : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_ActionMapActionsCallbackInterface != null)
             {
+                @Zoom.started -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnZoom;
+                @Zoom.performed -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnZoom;
+                @Zoom.canceled -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnZoom;
+                @KeyPressZoom.started -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnKeyPressZoom;
+                @KeyPressZoom.performed -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnKeyPressZoom;
+                @KeyPressZoom.canceled -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnKeyPressZoom;
             }
             m_Wrapper.m_ActionMapActionsCallbackInterface = instance;
             if (instance != null)
             {
+                @Zoom.started += instance.OnZoom;
+                @Zoom.performed += instance.OnZoom;
+                @Zoom.canceled += instance.OnZoom;
+                @KeyPressZoom.started += instance.OnKeyPressZoom;
+                @KeyPressZoom.performed += instance.OnKeyPressZoom;
+                @KeyPressZoom.canceled += instance.OnKeyPressZoom;
             }
         }
     }
     public ActionMapActions @actionMap => new ActionMapActions(this);
     public interface IActionMapActions
     {
+        void OnZoom(InputAction.CallbackContext context);
+        void OnKeyPressZoom(InputAction.CallbackContext context);
     }
 }

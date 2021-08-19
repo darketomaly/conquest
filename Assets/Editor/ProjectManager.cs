@@ -14,7 +14,7 @@ public static class ProjectManager {
     [MenuItem("Conquest/ScriptableObjects/Create Unit")]
     public static void EnableOfflineMode() {
 
-        Debug.Log("Create unit scriptable object here.");
+        Debug.Log("Create unit scriptable object here."); //
     }
 
     #endregion
