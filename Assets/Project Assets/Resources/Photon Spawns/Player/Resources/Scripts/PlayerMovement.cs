@@ -13,11 +13,41 @@ public class PlayerMovement : MonoBehaviour {
 
     private Interactable focus;
     private Coroutine movingTowardsInteractable;
+    public bool movementDisabled;
 
     private void Awake() {
 
         photonView = GetComponent<PhotonView>();
         agent = GetComponent<NavMeshAgent>();
+    }
+
+    public void TryMoveTo(Vector3 desiredPosition, bool colorDestinationParticle = false) {
+
+        NavMeshPath path = new NavMeshPath();
+        Vector3 particlePosition;
+
+        if (!movementDisabled) {
+
+            MoveTo(desiredPosition, colorDestinationParticle);
+            particlePosition = agent.destination;
+
+        } else {
+
+            agent.CalculatePath(desiredPosition, path);
+            if (path.corners.Length > 0)
+                particlePosition = path.corners[path.corners.Length - 1]; //destination if agent could move
+            else particlePosition = agent.transform.position;
+            //Debug.DrawLine(agent.transform.position, path.corners[path.corners.Length - 1], Color.green, 1.0f);
+        }
+
+        ParticleSystem.MainModule module = destinationParticle.main;
+
+        if (colorDestinationParticle)
+            module.startColor = Color.red;
+        else
+            module.startColor = Color.white;
+
+        Instantiate(destinationParticle, particlePosition, transform.rotation * Quaternion.Euler(-90.0f, 0.0f, 0.0f));
     }
 
     public void MoveTo(Vector3 desiredPosition, bool colorDestinationParticle = false) {
@@ -31,17 +61,6 @@ public class PlayerMovement : MonoBehaviour {
         if (movingTowardsInteractable != null) StopCoroutine(movingTowardsInteractable);
 
         agent.SetDestination(desiredPosition);
-
-        ParticleSystem.MainModule module = destinationParticle.main;
-        if (colorDestinationParticle) {
-
-            module.startColor = Color.red;
-        } else {
-
-            module.startColor = Color.white;
-        }
-
-        Instantiate(destinationParticle, agent.destination, transform.rotation * Quaternion.Euler(-90.0f, 0.0f, 0.0f)); //
     }
 
     public void MoveTowards(Interactable interactable) {
@@ -60,7 +79,8 @@ public class PlayerMovement : MonoBehaviour {
 
     private IEnumerator _MoveTowards(Interactable interactable) {
 
-        MoveTo(interactableDesiredDestination(interactable), true);
+        TryMoveTo(interactableDesiredDestination(interactable), true);
+        if (movementDisabled) yield break;
 
         while (true) {
 

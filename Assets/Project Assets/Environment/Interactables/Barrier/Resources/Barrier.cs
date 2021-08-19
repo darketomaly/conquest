@@ -25,6 +25,7 @@ public class Barrier : Interactable {
 
         barrierEntered = !barrierEntered;
 
+        GameManager.localPlayer.movement.movementDisabled = true;
         obstacle.enabled = false;
 
         if (barrierEntered) {
@@ -40,6 +41,7 @@ public class Barrier : Interactable {
 
         yield return new WaitForSeconds(0.5f); //minimum time for the agent to pass through
 
+        GameManager.localPlayer.movement.movementDisabled = false;
         obstacle.enabled = true;
     }
 

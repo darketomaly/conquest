@@ -28,7 +28,7 @@ public class MainRaycast : MonoBehaviour {
 
                     } else {
 
-                        GameManager.localPlayer?.movement.MoveTo(hit.point);
+                        GameManager.localPlayer?.movement.TryMoveTo(hit.point);
                     }
 
                 }
