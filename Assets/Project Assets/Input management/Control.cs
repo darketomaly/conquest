@@ -36,8 +36,24 @@ public class @Control : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""CameraMovement"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""c714fa1c-ff1a-4ec2-808e-ae8498200b90"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CameraMovementWMouse"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""56c148c2-0f85-4a59-a067-e857bc58d8e5"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""MouseMiddleButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""1bfc19c9-7c40-4efb-b491-987fdab13f08"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -142,6 +158,83 @@ public class @Control : IInputActionCollection, IDisposable
                     ""action"": ""CameraMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""3aac544c-068e-4941-afa4-4805f00ead48"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraMovementWMouse"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""8c61d474-6064-43b7-93cc-ed80c4e6e8e8"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraMovementWMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""a4134b79-0135-405e-9df5-ea5a92d2df56"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraMovementWMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""fc768f1d-64de-4388-bd89-ab2027bf3001"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraMovementWMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""992dc431-5bc0-47c0-9893-ce61a378e8d3"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraMovementWMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c82d96de-95ba-437c-af27-8d2871a6586d"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": ""InvertVector2(invertY=false)"",
+                    ""groups"": """",
+                    ""action"": ""CameraMovementWMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7866817c-6772-4df9-99ff-8f38a8411926"",
+                    ""path"": ""<Mouse>/middleButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseMiddleButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -153,6 +246,8 @@ public class @Control : IInputActionCollection, IDisposable
         m_actionMap_Zoom = m_actionMap.FindAction("Zoom", throwIfNotFound: true);
         m_actionMap_KeyPressZoom = m_actionMap.FindAction("KeyPressZoom", throwIfNotFound: true);
         m_actionMap_CameraMovement = m_actionMap.FindAction("CameraMovement", throwIfNotFound: true);
+        m_actionMap_CameraMovementWMouse = m_actionMap.FindAction("CameraMovementWMouse", throwIfNotFound: true);
+        m_actionMap_MouseMiddleButton = m_actionMap.FindAction("MouseMiddleButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -205,6 +300,8 @@ public class @Control : IInputActionCollection, IDisposable
     private readonly InputAction m_actionMap_Zoom;
     private readonly InputAction m_actionMap_KeyPressZoom;
     private readonly InputAction m_actionMap_CameraMovement;
+    private readonly InputAction m_actionMap_CameraMovementWMouse;
+    private readonly InputAction m_actionMap_MouseMiddleButton;
     public struct ActionMapActions
     {
         private @Control m_Wrapper;
@@ -212,6 +309,8 @@ public class @Control : IInputActionCollection, IDisposable
         public InputAction @Zoom => m_Wrapper.m_actionMap_Zoom;
         public InputAction @KeyPressZoom => m_Wrapper.m_actionMap_KeyPressZoom;
         public InputAction @CameraMovement => m_Wrapper.m_actionMap_CameraMovement;
+        public InputAction @CameraMovementWMouse => m_Wrapper.m_actionMap_CameraMovementWMouse;
+        public InputAction @MouseMiddleButton => m_Wrapper.m_actionMap_MouseMiddleButton;
         public InputActionMap Get() { return m_Wrapper.m_actionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -230,6 +329,12 @@ public class @Control : IInputActionCollection, IDisposable
                 @CameraMovement.started -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnCameraMovement;
                 @CameraMovement.performed -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnCameraMovement;
                 @CameraMovement.canceled -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnCameraMovement;
+                @CameraMovementWMouse.started -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnCameraMovementWMouse;
+                @CameraMovementWMouse.performed -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnCameraMovementWMouse;
+                @CameraMovementWMouse.canceled -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnCameraMovementWMouse;
+                @MouseMiddleButton.started -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnMouseMiddleButton;
+                @MouseMiddleButton.performed -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnMouseMiddleButton;
+                @MouseMiddleButton.canceled -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnMouseMiddleButton;
             }
             m_Wrapper.m_ActionMapActionsCallbackInterface = instance;
             if (instance != null)
@@ -243,6 +348,12 @@ public class @Control : IInputActionCollection, IDisposable
                 @CameraMovement.started += instance.OnCameraMovement;
                 @CameraMovement.performed += instance.OnCameraMovement;
                 @CameraMovement.canceled += instance.OnCameraMovement;
+                @CameraMovementWMouse.started += instance.OnCameraMovementWMouse;
+                @CameraMovementWMouse.performed += instance.OnCameraMovementWMouse;
+                @CameraMovementWMouse.canceled += instance.OnCameraMovementWMouse;
+                @MouseMiddleButton.started += instance.OnMouseMiddleButton;
+                @MouseMiddleButton.performed += instance.OnMouseMiddleButton;
+                @MouseMiddleButton.canceled += instance.OnMouseMiddleButton;
             }
         }
     }
@@ -252,5 +363,7 @@ public class @Control : IInputActionCollection, IDisposable
         void OnZoom(InputAction.CallbackContext context);
         void OnKeyPressZoom(InputAction.CallbackContext context);
         void OnCameraMovement(InputAction.CallbackContext context);
+        void OnCameraMovementWMouse(InputAction.CallbackContext context);
+        void OnMouseMiddleButton(InputAction.CallbackContext context);
     }
 }

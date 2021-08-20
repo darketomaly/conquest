@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1f23938f547574e8cc98d1af3291fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementNoMouse: {fileID: 8773226124011920464, guid: d465ca65bf917454d8eee2a06881d01c, type: 3}
+  movementWithMouse: {fileID: 5162412868178032214, guid: d465ca65bf917454d8eee2a06881d01c, type: 3}
 --- !u!1 &5312390174104735125
 GameObject:
   m_ObjectHideFlags: 0

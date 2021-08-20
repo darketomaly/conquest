@@ -6,9 +6,14 @@ using Cinemachine;
 
 public class CameraMovement : MonoBehaviour {
 
+    public InputActionReference movementNoMouse;
+    public InputActionReference movementWithMouse;
+
     private CinemachineVirtualCamera virtualCamera;
     private CinemachineFramingTransposer transposer;
     private CinemachinePOV pov;
+    private CinemachineInputProvider inputProvider;
+
     private PlayerMovement playerMovement;
     private Control control;
 
@@ -20,6 +25,10 @@ public class CameraMovement : MonoBehaviour {
         control.actionMap.Zoom.performed += x => { Zoom(-x.ReadValue<float>()); };
         control.actionMap.KeyPressZoom.started += x => { requestedToZoom = -x.ReadValue<float>(); };
         control.actionMap.KeyPressZoom.canceled += delegate { requestedToZoom = 0; };
+
+        //mouse middle button, allow mouse camera movement
+        control.actionMap.MouseMiddleButton.started += delegate { inputProvider.XYAxis = movementWithMouse; };
+        control.actionMap.MouseMiddleButton.canceled += delegate { inputProvider.XYAxis = movementNoMouse; };
     }
 
     private void OnEnable() => control.Enable();
@@ -34,7 +43,8 @@ public class CameraMovement : MonoBehaviour {
         transposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         pov = virtualCamera.GetCinemachineComponent<CinemachinePOV>();
         virtualCamera.Follow = playerMovement.transform;
-
+        inputProvider = virtualCamera.GetComponent<CinemachineInputProvider>();
+        //inputProvider.XYAxis = movementNoMouse;
     }
 
     private void Update() {
