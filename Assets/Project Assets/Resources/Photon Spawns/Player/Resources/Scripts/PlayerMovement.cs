@@ -18,11 +18,21 @@ public class PlayerMovement : MonoBehaviour {
     private Coroutine movingTowardsInteractable;
     public bool movementDisabled;
 
+    [SerializeField] private Animator animator;
+    private float velocity;
+
     private void Awake() {
 
         photonView = GetComponent<PhotonView>();
         agent = GetComponent<NavMeshAgent>();
     }
+
+    private void Update() {
+
+        animator.SetFloat("velocity", agent.velocity.magnitude);
+    }
+
+    #region Movement
 
     public void TryMoveTo(Vector3 desiredPosition, Interactable interactable = null) {
 
@@ -115,10 +125,27 @@ public class PlayerMovement : MonoBehaviour {
                     interactable.OnFocus();
                 }
 
+                StartCoroutine(RotateTowards(interactable.m_collider.bounds.center));
                 yield break;
             }
 
             yield return new WaitForSeconds(0.05f);
         }
+
+    }
+
+    #endregion
+
+    private float turn;
+
+    //placeholder test
+    private IEnumerator RotateTowards(Vector3 lookAt) {
+
+        yield return null;
+
+        Vector3 dir = lookAt - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(dir);
+
+        Debug.Log(rotation.eulerAngles.magnitude);
     }
 }
