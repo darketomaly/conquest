@@ -7,12 +7,15 @@ using TMPro;
 
 using Photon.Pun;
 using Photon.Realtime;
+using DG.Tweening;
 
 public class ConnectToServer : MonoBehaviourPunCallbacks {
 
     public TextMeshProUGUI textMesh;
     public ProgressBar progressBar;
     public TextMeshProUGUI percentageText;
+    public CanvasGroup cg;
+    public Transform loginManager;
 
     private AsyncOperation loadsceneOp;
 
@@ -20,10 +23,9 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
         Debug.Log("<color=green>Online mode enabled.</color>");
 
-        SceneFade.FadeOut();
-        Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
-        (loadsceneOp = SceneManager.LoadSceneAsync("Login Screen")).allowSceneActivation = false;
+        cg.DOFade(1.0f, 0.5f);
 
+        Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
         PhotonNetwork.ConnectUsingSettings();
         textMesh.text = "connecting to server";
     }
@@ -58,7 +60,6 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
             case ClientState.JoiningLobby:
 
-                //Debug.Log("5: Joining lobby");
                 progressBar.value = 4;
                 break;
 
@@ -84,14 +85,15 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
     public override void OnJoinedLobby() {
 
-        StartCoroutine(_OnJoinedLobby());
+        cg.DOFade(0.0f, 0.25f).OnComplete(delegate {
+
+            loginManager.gameObject.SetActive(true);
+            gameObject.SetActive(false);
+        });
     }
 
-    private IEnumerator _OnJoinedLobby() {
+    private void OnDestroy() {
 
-        textMesh.text = "loading login screen";
-        SceneFade.FadeIn();
-        yield return new WaitForSeconds(0.7f);
-        loadsceneOp.allowSceneActivation = true;
+        cg.DOKill();
     }
 }

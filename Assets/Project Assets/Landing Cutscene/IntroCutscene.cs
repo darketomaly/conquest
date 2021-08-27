@@ -19,21 +19,42 @@ public class IntroCutscene : MonoBehaviour {
     [Header("Npc")]
     public NavMeshAgent agent;
     public Transform endPosition;
+    public Animator animator;
 
     IEnumerator Start() {
 
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(0.25f);
 
-        fadeBg.DOFade(0.0f, 0.75f);
+        fadeBg.DOFade(0.0f, 1.25f);
 
         cam.DOMove(endTransform.position, positionTweenDuration);
         cam.DORotateQuaternion(endTransform.rotation, rotationTweenduration);
 
+        StartCoroutine(MoveAgent());
+    }
+
+    private IEnumerator MoveAgent() {
+
         agent.SetDestination(endPosition.position);
+
+        yield return new WaitForSeconds(0.05f); //skip a frame until agent starts moving
+
+        while (true) {
+
+            if (agent.remainingDistance < 0.15f) {
+
+                animator.SetFloat("velocity", 0.0f);
+                yield break;
+            }
+
+            animator.SetFloat("velocity", agent.velocity.magnitude);
+            yield return null;
+        }
     }
 
     private void OnDestroy() {
 
         fadeBg.DOKill();
+        cam.DOKill();
     }
 }

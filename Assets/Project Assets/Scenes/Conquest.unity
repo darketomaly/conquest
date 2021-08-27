@@ -416,10 +416,10 @@ MonoBehaviour:
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 1
-  m_TileSize: 218
-  m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.06
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.11666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: adf77e35efd225e4fadf152fd0a3bacd, type: 2}
 --- !u!1 &228540324
@@ -2399,7 +2399,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6405406, y: 1}
+    m_SensorSize: {x: 2.3986638, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16

@@ -7,15 +7,22 @@ using UnityEngine.UI;
 using System;
 using System.Threading.Tasks;
 using TMPro;
+using DG.Tweening;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
     public TextMeshProUGUI playerCountText;
     public Button button;
+    public CanvasGroup cg;
 
     private void Awake() {
 
         StartCoroutine(DisplayPlayerCount());
+    }
+
+    private void Start() {
+
+        cg.DOFade(1.0f, 0.25f);
     }
 
     public void EnterRoom() {
@@ -29,7 +36,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
     }
 
-    IEnumerator DisplayPlayerCount() {
+    private IEnumerator DisplayPlayerCount() {
 
         while (true) {
 
@@ -56,5 +63,10 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
         PhotonNetwork.LoadLevel("Conquest");    //this has to be on the same frame
                                                 //waiting for the scene fade makes current joined players not appear
+    }
+
+    private void OnDestroy() {
+
+        cg.DOKill();
     }
 }
