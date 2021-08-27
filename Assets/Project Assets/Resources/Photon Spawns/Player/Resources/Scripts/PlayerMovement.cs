@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour {
                     interactable.OnFocus();
                 }
 
-                StartCoroutine(RotateTowards(interactable.m_collider.bounds.center));
+                StartCoroutine(RotateTowards(interactableDesiredDestination(interactable)));
                 yield break;
             }
 

@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Project Assets/Scenes/Landing.unity
     guid: 7b9210d603857764288eac74e4a9e418
-  - enabled: 1
+  - enabled: 0
     path: Assets/Project Assets/Scenes/Login Screen.unity
     guid: 5d5af4a531d54fe4681a04b4ea81ef7f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Project Assets/Scenes/Conquest.unity
     guid: 8de486378b8650546b719f6dd6966928
+  - enabled: 1
+    path: Assets/Project Assets/Landing Cutscene/Cutscene.unity
+    guid: ccc365c7cbacb0145a4802ec50e37192
   m_configObjects: {}
