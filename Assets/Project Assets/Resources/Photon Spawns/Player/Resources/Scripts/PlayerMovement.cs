@@ -146,6 +146,6 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 dir = lookAt - transform.position;
         Quaternion rotation = Quaternion.LookRotation(dir);
 
-        Debug.Log(rotation.eulerAngles.magnitude);
+        //Debug.Log(rotation.eulerAngles.magnitude);
     }
 }

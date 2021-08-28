@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Legacy (to delete)/Login Screen.unity
     guid: 5d5af4a531d54fe4681a04b4ea81ef7f
   - enabled: 1
-    path: Assets/Project Assets/Landing Cutscene/Cutscene.unity
+    path: Assets/Project Assets/Scenes/Landing Cutscene/Cutscene.unity
     guid: ccc365c7cbacb0145a4802ec50e37192
   - enabled: 1
     path: Assets/Project Assets/Scenes/Conquest.unity
