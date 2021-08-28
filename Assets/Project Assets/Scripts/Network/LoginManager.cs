@@ -41,7 +41,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         while (true) {
 
             playerCountText.text =
-                $"Players inside: {PhotonNetwork.CountOfPlayersInRooms}.";
+                $"Players inside: {PhotonNetwork.CountOfPlayersInRooms}";
 
             yield return new WaitForSeconds(5.1f);
         }

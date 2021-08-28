@@ -27,7 +27,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
         Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
         PhotonNetwork.ConnectUsingSettings();
-        textMesh.text = "connecting to server";
+        textMesh.text = "Connecting to server";
     }
 
     private void Update() {
@@ -78,7 +78,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
     public override void OnConnectedToMaster() {
 
-        textMesh.text = "joining lobby";
+        textMesh.text = "Joining lobby";
         if(PhotonNetwork.IsConnected)
             PhotonNetwork.JoinLobby();
     }

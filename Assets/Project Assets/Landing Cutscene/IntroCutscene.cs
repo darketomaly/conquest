@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.InputSystem;
 
 public class IntroCutscene : MonoBehaviour {
 
@@ -12,25 +13,27 @@ public class IntroCutscene : MonoBehaviour {
 
     [Header("Camera")]
     public Transform cam;
+    public CinemachineCameraOffset offsetComponent;
     public Transform endTransform;
     public float positionTweenDuration;
     public float rotationTweenduration;
+    private Vector3 offset;
 
     [Header("Npc")]
     public NavMeshAgent agent;
     public Transform endPosition;
     public Animator animator;
 
-    IEnumerator Start() {
+    private IEnumerator Start() {
 
-        yield return new WaitForSeconds(0.25f);
+        StartCoroutine(MoveAgent());
 
-        fadeBg.DOFade(0.0f, 1.25f);
+        yield return new WaitForSeconds(0.225f);
+
+        fadeBg.DOFade(0.0f, 1.75f);
 
         cam.DOMove(endTransform.position, positionTweenDuration);
         cam.DORotateQuaternion(endTransform.rotation, rotationTweenduration);
-
-        StartCoroutine(MoveAgent());
     }
 
     private IEnumerator MoveAgent() {
@@ -50,6 +53,15 @@ public class IntroCutscene : MonoBehaviour {
             animator.SetFloat("velocity", agent.velocity.magnitude);
             yield return null;
         }
+    }
+
+    private void Update() {
+
+        offset = Vector3.Lerp(offset, Mouse.current.delta.ReadValue(), 0.125f * Time.deltaTime);
+        offset = Vector3.ClampMagnitude(offset, 0.25f);
+
+        offsetComponent.m_Offset.x = Mathf.Lerp(offsetComponent.m_Offset.x, offset.x, 1.0f * Time.deltaTime);
+        offsetComponent.m_Offset.y = Mathf.Lerp(offsetComponent.m_Offset.y, offset.y, 1.0f * Time.deltaTime);
     }
 
     private void OnDestroy() {

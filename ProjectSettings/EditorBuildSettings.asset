@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Project Assets/Scenes/Landing.unity
+    path: Assets/Legacy (to delete)/Landing.unity
     guid: 7b9210d603857764288eac74e4a9e418
   - enabled: 0
-    path: Assets/Project Assets/Scenes/Login Screen.unity
+    path: Assets/Legacy (to delete)/Login Screen.unity
     guid: 5d5af4a531d54fe4681a04b4ea81ef7f
   - enabled: 1
     path: Assets/Project Assets/Landing Cutscene/Cutscene.unity
