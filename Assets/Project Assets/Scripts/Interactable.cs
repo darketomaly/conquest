@@ -11,14 +11,15 @@ public class Interactable : MonoBehaviour {
     public bool needsToBeReachedToInteract = true;
     [Tooltip("If set, agent moves towards the given point instead.")] 
     public Transform overrideDestination;
+    public bool rotateTowardsOnFocus = true;
 
     public virtual void OnFocus() {
 
-        Debug.Log($"Focused on {transform.name}.");
+        //Debug.Log($"Focused on {transform.name}.");
     }
 
     public virtual void OnDefocus() { 
                                       
-        Debug.Log($"Defocused from {transform.name}.");
+        //Debug.Log($"Defocused from {transform.name}.");
     }
 }

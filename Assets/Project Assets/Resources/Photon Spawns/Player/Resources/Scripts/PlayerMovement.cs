@@ -14,12 +14,12 @@ public class PlayerMovement : MonoBehaviour {
     private PhotonView photonView;
     private NavMeshAgent agent;
 
+    public bool movementDisabled;
     private Interactable focus;
     private Coroutine movingTowardsInteractable;
-    public bool movementDisabled;
+    private Coroutine rotatingTowardsInteractable;
 
     [SerializeField] private Animator animator;
-    private float velocity;
 
     private void Awake() {
 
@@ -83,7 +83,10 @@ public class PlayerMovement : MonoBehaviour {
 
         if (movingTowardsInteractable != null) StopCoroutine(movingTowardsInteractable);
 
-        agent.SetDestination(desiredPosition);
+        if (Vector3.Distance(transform.position, desiredPosition) > 0.38f) {
+
+            agent.SetDestination(desiredPosition);
+        }
     }
 
     public void MoveTowards(Interactable interactable, bool executeTryMoveTo = true) {
@@ -106,46 +109,56 @@ public class PlayerMovement : MonoBehaviour {
             TryMoveTo(interactableDesiredDestination(interactable), interactable);
         if (movementDisabled) yield break;
 
-        while (true) {
+        if(Vector3.Distance(transform.position, interactableDesiredDestination(interactable)) > 0.38f) {
 
-            agent.SetDestination(interactableDesiredDestination(interactable));
+            while (true) {
 
-            yield return null; //skip a frame until agent starts moving
+                agent.SetDestination(interactableDesiredDestination(interactable));
 
-            if (agent.remainingDistance < 0.35f) {
+                yield return null; //skip a frame until agent starts moving
 
-                if(interactable.needsToBeReachedToInteract &&
-                    Vector3.Distance(transform.position, interactableDesiredDestination(interactable)) > 1.25) {
-                    //note: distance check needs to have a little offset since agent hasn't stopped moving (0.35f remaining distance)
-                    Debug.Log($"<color=red>{interactable.transform.name}</color> unreachable.");
+                if (agent.remainingDistance < 0.35f) {
 
-                } else {
-
-                    focus = interactable;
-                    interactable.OnFocus();
+                    break;
                 }
 
-                StartCoroutine(RotateTowards(interactableDesiredDestination(interactable)));
-                yield break;
+                yield return new WaitForSeconds(0.05f);
             }
-
-            yield return new WaitForSeconds(0.05f);
         }
 
+        if (interactable.rotateTowardsOnFocus) {
+
+            if (rotatingTowardsInteractable != null)
+                StopCoroutine(rotatingTowardsInteractable);
+
+            rotatingTowardsInteractable =
+                StartCoroutine(RotateTowards(interactableDesiredDestination(interactable)));
+        }
+
+        if (interactable.needsToBeReachedToInteract &&
+                    Vector3.Distance(transform.position, interactableDesiredDestination(interactable)) > 1.25) {
+            //note: distance check needs to have a little offset since agent hasn't stopped moving (0.35f remaining distance)
+            Debug.Log($"<color=red>{interactable.transform.name}</color> unreachable.");
+
+        } else {
+
+            focus = interactable;
+            interactable.OnFocus();
+        }
     }
 
     #endregion
 
-    private float turn;
-
-    //placeholder test
     private IEnumerator RotateTowards(Vector3 lookAt) {
 
-        yield return null;
+        Quaternion rotation = Quaternion.LookRotation(lookAt - transform.position);
 
-        Vector3 dir = lookAt - transform.position;
-        Quaternion rotation = Quaternion.LookRotation(dir);
+        while (Quaternion.Angle(transform.rotation, rotation) > 0.05f) {
 
-        //Debug.Log(rotation.eulerAngles.magnitude);
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, 7.0f * Time.deltaTime);
+            yield return null;
+        }
+
+        rotatingTowardsInteractable = null;
     }
 }
