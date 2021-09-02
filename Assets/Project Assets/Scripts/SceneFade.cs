@@ -46,7 +46,7 @@ public class SceneFade : MonoBehaviour {
         m.fadeInTween = m.bg.DOFade(1.0f, 0.35f).OnComplete(() => m.fadeInTween = null);
     }
 
-    public static void FadeOut() {
+    public static void FadeOut(float fadeDuration = 1.0f) {
 
         if (m.fadeOutTween != null) //on additive scene load this gets called more than once
             return; //

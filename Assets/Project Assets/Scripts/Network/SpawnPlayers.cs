@@ -12,6 +12,8 @@ public class SpawnPlayers : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
+        Debug.Log($"Spawning");
+
         if (!PhotonNetwork.IsConnected) { //Only used when developing
 
             Debug.Log("<color=red>Offline mode enabled.</color>");

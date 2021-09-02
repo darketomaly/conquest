@@ -30,7 +30,8 @@ public class IntroCutscene : MonoBehaviour {
 
         yield return new WaitForSeconds(0.20f);
 
-        fadeBg.DOFade(0.0f, 2.0f);
+        //fadeBg.DOFade(0.0f, 2.0f);
+        SceneFade.FadeOut(2.5f);
 
         cam.DOMove(endTransform.position, positionTweenDuration);
         cam.DORotateQuaternion(endTransform.rotation, rotationTweenduration);

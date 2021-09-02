@@ -1,0 +1,321 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.15f2 (6cf78cb77498) revision 7141260'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16322 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/darketomaly/Documents/GitHub/conquest-remastered
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53117
+Successfully changed project path to: C:/Users/darketomaly/Documents/GitHub/conquest-remastered
+C:/Users/darketomaly/Documents/GitHub/conquest-remastered
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 80.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.15f2 (6cf78cb77498)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/darketomaly/Documents/GitHub/conquest-remastered/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.6627
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001779 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 77.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Domain Reload Profiling:
+	ReloadAssembly (946ms)
+		BeginReloadAssembly (46ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (383ms)
+			LoadAssemblies (44ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (125ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (175ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (78ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (62ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007577 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 84.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.405 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1406ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (1233ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (638ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (318ms)
+				ProcessInitializeOnLoadMethodAttributes (130ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4779 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 297.6 MB.
+System memory in use after: 294.7 MB.
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 5200.
+Total: 4.227100 ms (FindLiveObjects: 0.301200 ms CreateObjectMapping: 0.183400 ms MarkObjects: 2.096100 ms  DeleteObjects: 1.645600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Project Assets/Prefabs/Water Tile
+  artifactKey: Guid(341981e6fb5efa646b882abecbe32e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Water Tile using Guid(341981e6fb5efa646b882abecbe32e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec74c2898de9a7e5b5e0b0474273c05d') in 0.008240 seconds 
+  Import took 0.013603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.813150 seconds.
+  path: Assets/Project Assets/Prefabs/Water Tile/WaterShader.shadergraph
+  artifactKey: Guid(db60fc8b8c47a6247b1c5e0cc3b7a5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Water Tile/WaterShader.shadergraph using Guid(db60fc8b8c47a6247b1c5e0cc3b7a5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aac0b5362214218b365f14f3ba0e0b7') in 0.033346 seconds 
+  Import took 0.039335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.563682 seconds.
+  path: Assets/Project Assets/Prefabs/Water Tile/WaterShader.shadergraph
+  artifactKey: Guid(db60fc8b8c47a6247b1c5e0cc3b7a5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Water Tile/WaterShader.shadergraph using Guid(db60fc8b8c47a6247b1c5e0cc3b7a5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac0aad5059b434865b306973514114d') in 0.004906 seconds 
+  Import took 0.011121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.682472 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables
+  artifactKey: Guid(adc40cfb0a504ec42bcf53e89affcad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables using Guid(adc40cfb0a504ec42bcf53e89affcad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a7c5f74c7839abaa776248939e55b5') in 0.006016 seconds 
+  Import took 0.012386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.523362 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats
+  artifactKey: Guid(5ad88bad3e95910428f3f09917578893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats using Guid(5ad88bad3e95910428f3f09917578893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fd5c3a809fbcea97434c25da466329') in 0.006190 seconds 
+  Import took 0.012879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.296731 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.fbx
+  artifactKey: Guid(1146981301c6c534f9a1acb0baf57f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.fbx using Guid(1146981301c6c534f9a1acb0baf57f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+ -> (artifact id: 'e0768852a51c2526dd1f8cacb814afcf') in 1.375207 seconds 
+  Import took 1.382086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/source
+  artifactKey: Guid(6e1453d273c46a64fb19a8256f16a96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/source using Guid(6e1453d273c46a64fb19a8256f16a96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b386ad90269811d4de52936fb9394401') in 0.004532 seconds 
+  Import took 0.009703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.927190 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatMetallic.png
+  artifactKey: Guid(fc3d940329e77c149828496af816d9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatMetallic.png using Guid(fc3d940329e77c149828496af816d9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0442f0bae36f7e4971fe0d0203a93d') in 0.025498 seconds 
+  Import took 0.031265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003433 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatMetallic.png
+  artifactKey: Guid(fc3d940329e77c149828496af816d9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatMetallic.png using Guid(fc3d940329e77c149828496af816d9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0442f0bae36f7e4971fe0d0203a93d') in 0.007292 seconds 
+  Import took 0.013292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.379272 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png
+  artifactKey: Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png using Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd117876109b7c046690acac3d0449572') in 0.011481 seconds 
+  Import took 0.017261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png
+  artifactKey: Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png using Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd117876109b7c046690acac3d0449572') in 0.010627 seconds 
+  Import took 0.016482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.037016 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png
+  artifactKey: Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png using Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4b221e1c4492cce48fb079d8361f72') in 0.020029 seconds 
+  Import took 0.026050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.287081 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.fbx
+  artifactKey: Guid(1146981301c6c534f9a1acb0baf57f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.fbx using Guid(1146981301c6c534f9a1acb0baf57f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4f8742beb91dec95884cf47cff1175') in 0.046227 seconds 
+  Import took 0.052636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 915.270546 seconds.
+  path: Assets/Project Assets/Prefabs/Water Tile/water normal.jpeg
+  artifactKey: Guid(cd8b0937c4ae0f640b7369f22553dacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Water Tile/water normal.jpeg using Guid(cd8b0937c4ae0f640b7369f22553dacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1574f61bb1ead8971ccc3e7cd8834f') in 0.021878 seconds 
+  Import took 0.029039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.468027 seconds.
+  path: Assets/Project Assets/Prefabs/Water Tile/water normal.jpeg
+  artifactKey: Guid(cd8b0937c4ae0f640b7369f22553dacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Water Tile/water normal.jpeg using Guid(cd8b0937c4ae0f640b7369f22553dacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4006ebcc97428fb352220fcdca6152b') in 0.011909 seconds 
+  Import took 0.018403 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 457.3 MB.
+System memory in use after: 454.7 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 5732.
+Total: 50.980900 ms (FindLiveObjects: 0.949300 ms CreateObjectMapping: 0.241100 ms MarkObjects: 47.966200 ms  DeleteObjects: 1.822800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 49 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 457.5 MB.
+System memory in use after: 454.8 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 5732.
+Total: 7.625600 ms (FindLiveObjects: 0.392700 ms CreateObjectMapping: 0.216400 ms MarkObjects: 5.276000 ms  DeleteObjects: 1.739500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 49 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 457.5 MB.
+System memory in use after: 454.8 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 5732.
+Total: 7.519400 ms (FindLiveObjects: 0.407400 ms CreateObjectMapping: 0.227800 ms MarkObjects: 5.134700 ms  DeleteObjects: 1.748700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

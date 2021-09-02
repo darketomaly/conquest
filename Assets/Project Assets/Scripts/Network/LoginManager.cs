@@ -8,12 +8,15 @@ using System;
 using System.Threading.Tasks;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
     public TextMeshProUGUI playerCountText;
     public Button button;
     public CanvasGroup cg;
+
+    private AsyncOperation worldLoadOp;
 
     private void Awake() {
 
@@ -23,14 +26,18 @@ public class LoginManager : MonoBehaviourPunCallbacks {
     private void Start() {
 
         cg.DOFade(1.0f, 0.25f);
+       //worldLoadOp = SceneManager.LoadSceneAsync("Conquest", LoadSceneMode.Single);
+       //worldLoadOp.allowSceneActivation = false;
     }
 
     public void EnterRoom() {
 
+        Debug.Log($"Attempting to join or create room.");
+        SceneFade.FadeIn();
+
         RoomOptions roomOptions = new RoomOptions();
         //roomOptions.MaxPlayers = 4;
         roomOptions.PublishUserId = true;
-
         button.interactable = false;
         
         PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
@@ -46,7 +53,12 @@ public class LoginManager : MonoBehaviourPunCallbacks {
             yield return new WaitForSeconds(5.1f);
         }
     }
-    
+
+    public override void OnCreatedRoom() {
+
+        Debug.Log($"Created room");
+    }
+
     public override void OnCreateRoomFailed(short returnCode, string message) {
 
         Debug.Log($"Create room failed: {message}");
@@ -61,8 +73,8 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public override void OnJoinedRoom() {
 
-        PhotonNetwork.LoadLevel("Conquest");    //this has to be on the same frame
-                                                //waiting for the scene fade makes current joined players not appear
+        Debug.Log($"Joined room");
+        PhotonNetwork.LoadLevel("Conquest"); 
     }
 
     private void OnDestroy() {
