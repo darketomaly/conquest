@@ -27,8 +27,18 @@ public class CameraMovement : MonoBehaviour {
         control.actionMap.KeyPressZoom.canceled += delegate { requestedToZoom = 0; };
 
         //mouse middle button, allow mouse camera movement
-        control.actionMap.MouseMiddleButton.started += delegate { inputProvider.XYAxis = movementWithMouse; };
-        control.actionMap.MouseMiddleButton.canceled += delegate { inputProvider.XYAxis = movementNoMouse; };
+        control.actionMap.MouseMiddleButton.started += delegate { 
+            
+            inputProvider.XYAxis = movementWithMouse;
+            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_VerticalAxis.m_MaxSpeed = 125;
+            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_MaxSpeed = 125;
+        };
+
+        control.actionMap.MouseMiddleButton.canceled += delegate {
+            inputProvider.XYAxis = movementNoMouse; 
+            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_VerticalAxis.m_MaxSpeed = 250;
+            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_MaxSpeed = 250;
+        };
     }
 
     private void OnEnable() => control.Enable();
@@ -44,18 +54,12 @@ public class CameraMovement : MonoBehaviour {
         pov = virtualCamera.GetCinemachineComponent<CinemachinePOV>();
         virtualCamera.Follow = playerMovement.transform;
         inputProvider = virtualCamera.GetComponent<CinemachineInputProvider>();
-        //inputProvider.XYAxis = movementNoMouse;
     }
 
     private void Update() {
 
         if (requestedToZoom != 0) //zoom from key press
             Zoom(requestedToZoom * Time.deltaTime * 15.0f);
-
-        if (Keyboard.current.spaceKey.isPressed) {
-
-            pov.m_HorizontalAxis.Value += 25.0f * Time.deltaTime;
-        }
     }
 
     private void Zoom(float amount) {

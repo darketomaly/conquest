@@ -24,14 +24,14 @@ public class MenuAnimationManager : MonoBehaviour {
     public void MakeMenuAppear(bool value) {
 
         for (int i = 0; i < items.Count; i++)
-            items[i].m_cg.DOFade(1.0f, 0.5f).SetDelay(i * 0.225f);
+            items[i].m_cg.DOFade(1.0f, 0.5f).SetDelay(i * 0.175f);
     }
 
     private void HighlightMenuItem(Transform hoveredGraphicElement) {
 
         for (int i = 0; i < items.Count; i++) {
             
-            if(items[i].transform == hoveredGraphicElement) { //
+            if(items[i].transform == hoveredGraphicElement) {
 
                 if(highlightedIndex != i)
                     Dehightlight();

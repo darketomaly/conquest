@@ -24,6 +24,12 @@ public class IntroCutscene : MonoBehaviour {
     public Transform endPosition;
     public Animator animator;
 
+    private void Awake()
+    {
+
+        DOTween.Init(); //
+    }
+
     private IEnumerator Start() {
 
         StartCoroutine(MoveAgent());
