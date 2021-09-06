@@ -55,7 +55,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public override void OnCreatedRoom() {
 
-        Debug.Log($"Created room");
+        //Debug.Log($"Created room");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message) {

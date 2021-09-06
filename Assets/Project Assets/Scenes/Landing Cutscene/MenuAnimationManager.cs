@@ -13,6 +13,11 @@ public class MenuAnimationManager : MonoBehaviour {
     public Color normal;
     public Color highlighted;
 
+    private Tween highlightTweenImg;
+    private Tween highlightTweenText;
+    private Tween dehighlightTweenImg;
+    private Tween dehighlightTweenText;
+
     private int highlightedIndex = -1;
 
     private void Start() {
@@ -41,8 +46,8 @@ public class MenuAnimationManager : MonoBehaviour {
                 if (!items[i].m_highlighted) {
 
                     items[i].m_highlighted = true;
-                    items[i].m_image.DOColor(highlighted, 0.15f);
-                    items[i].m_tmpro.DOColor(normal, 0.15f);
+                    highlightTweenImg = items[i].m_image.DOColor(highlighted, 0.15f);
+                    highlightTweenText = items[i].m_tmpro.DOColor(normal, 0.15f);
                 }
 
                 break;
@@ -55,8 +60,8 @@ public class MenuAnimationManager : MonoBehaviour {
         if(highlightedIndex >= 0) {
 
             items[highlightedIndex].m_highlighted = false;
-            items[highlightedIndex].m_image.DOColor(normal, 0.15f);
-            items[highlightedIndex].m_tmpro.DOColor(highlighted, 0.15f);
+            dehighlightTweenImg = items[highlightedIndex].m_image.DOColor(normal, 0.15f);
+            dehighlightTweenText = items[highlightedIndex].m_tmpro.DOColor(highlighted, 0.15f);
             highlightedIndex = -1;
         }
     }

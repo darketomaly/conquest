@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 593.70215, g: 610.2881, b: 610.1465, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf6b833a90c6e4469c674ebc76935c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeBg: {fileID: 0}
+  volume: {fileID: 11400000, guid: cdfe4b4745b39de49a01b592a7a46952, type: 2}
   cam: {fileID: 724489171}
   offsetComponent: {fileID: 724489172}
   endTransform: {fileID: 1340017924}
@@ -1412,7 +1412,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.239796, y: 1}
+    m_SensorSize: {x: 2.132653, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -1435,8 +1435,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724489169}
-  m_LocalRotation: {x: 0, y: 0.28322107, z: 0, w: 0.9590547}
-  m_LocalPosition: {x: -2.5511076, y: 1.5098488, z: 2.8683636}
+  m_LocalRotation: {x: -0.50794876, y: -0.0046560783, z: 0.0027430018, w: -0.8613704}
+  m_LocalPosition: {x: 0.53, y: 3.88, z: -6.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 824270052}
@@ -3172,8 +3172,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343894431}
-  m_LocalRotation: {x: 0, y: 0.28322107, z: 0, w: 0.9590547}
-  m_LocalPosition: {x: -2.5511076, y: 1.5098488, z: 2.8683636}
+  m_LocalRotation: {x: -0.50794876, y: -0.0046560783, z: 0.0027430018, w: -0.8613704}
+  m_LocalPosition: {x: 0.53, y: 3.88, z: -6.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3549,6 +3549,18 @@ MonoBehaviour:
       - m_Target: {fileID: 243942859}
         m_TargetAssemblyTypeName: LoginManager, Assembly-CSharp
         m_MethodName: EnterRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 176060903}
+        m_TargetAssemblyTypeName: IntroCutscene, Assembly-CSharp
+        m_MethodName: AnimateFx
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
