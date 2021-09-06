@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b0eafcef6f049e438b888b9809e4340
+guid: 87424a114afc2b945a49b2685f430b41
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Morris Roman Alternate
+  - Cinzel
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

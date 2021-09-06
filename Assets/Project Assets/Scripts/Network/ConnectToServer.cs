@@ -17,8 +17,6 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     public CanvasGroup cg;
     public Transform loginManager;
 
-    private AsyncOperation loadsceneOp;
-
     private void Start() {
 
         Debug.Log("<color=green>Online mode enabled.</color>");

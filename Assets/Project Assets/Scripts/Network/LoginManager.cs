@@ -12,11 +12,11 @@ using UnityEngine.SceneManagement;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
+    public MenuAnimationManager menuAnimationManager;
+
     public TextMeshProUGUI playerCountText;
     public Button button;
     public CanvasGroup cg;
-
-    private AsyncOperation worldLoadOp;
 
     private void Awake() {
 
@@ -25,9 +25,8 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
-        cg.DOFade(1.0f, 0.25f);
-       //worldLoadOp = SceneManager.LoadSceneAsync("Conquest", LoadSceneMode.Single);
-       //worldLoadOp.allowSceneActivation = false;
+        //cg.DOFade(1.0f, 0.25f);
+        menuAnimationManager.MakeMenuAppear(true);
     }
 
     public void EnterRoom() {
