@@ -25,7 +25,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
-        //cg.DOFade(1.0f, 0.25f);
+        cg.DOFade(1.0f, 0.25f);
         menuAnimationManager.MakeMenuAppear(true);
     }
 

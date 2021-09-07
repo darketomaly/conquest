@@ -33,6 +33,8 @@ public class GraphicRaycasterManager : MonoBehaviour {
 
     private void Update() {
 
+        pointerEventData = new PointerEventData(EventSystem.current);
+
         pointerEventData.position = Mouse.current.position.ReadValue();
 
         List<RaycastResult> results = new List<RaycastResult>();
@@ -47,5 +49,7 @@ public class GraphicRaycasterManager : MonoBehaviour {
     private void OnDestroy() {
 
         onMouseOver = null;
+        onNothingFound = null;
     }
+
 }
