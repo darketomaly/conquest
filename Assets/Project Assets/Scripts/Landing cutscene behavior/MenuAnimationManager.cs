@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class MenuAnimationManager : MonoBehaviour {
 
@@ -23,8 +20,11 @@ public class MenuAnimationManager : MonoBehaviour {
 
     public void MakeMenuAppear(bool value) {
 
-        for (int i = 0; i < items.Count; i++)
+        for (int i = 0; i < items.Count; i++) {
+
+            items[i].transform.gameObject.SetActive(true);
             items[i].m_cg.DOFade(1.0f, 0.5f).SetDelay(i * 0.175f);
+        }
     }
 
     private void HighlightMenuItem(Transform hoveredGraphicElement) {
@@ -40,6 +40,8 @@ public class MenuAnimationManager : MonoBehaviour {
 
                 if (!items[i].m_highlighted) {
 
+                    Audio2D.PlayClip(Clips.UI.UIHover);
+                    
                     items[i].m_highlighted = true;
                     items[i].m_image.DOColor(highlighted, 0.15f);
                     items[i].m_tmpro.DOColor(normal, 0.15f);

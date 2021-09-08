@@ -5,11 +5,15 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
 
 public class IntroCutscene : MonoBehaviour {
 
-    [Header("UI")]
-    public Image fadeBg;
+    [Header("Fx")]
+    public VolumeProfile volume;
+    private ChromaticAberration chromaticAberration;
+    private LiftGammaGain liftGammaGain;
 
     [Header("Camera")]
     public Transform cam;
@@ -24,8 +28,7 @@ public class IntroCutscene : MonoBehaviour {
     public Transform endPosition;
     public Animator animator;
 
-    private void Awake()
-    {
+    private void Awake() {
 
         DOTween.Init(); //
     }
@@ -41,6 +44,17 @@ public class IntroCutscene : MonoBehaviour {
 
         cam.DOMove(endTransform.position, positionTweenDuration);
         cam.DORotateQuaternion(endTransform.rotation, rotationTweenduration);
+
+        //-----------
+
+        volume.TryGet(out chromaticAberration);
+        volume.TryGet(out liftGammaGain);
+    }
+
+    public void AnimateFx() {
+
+        DOTween.To(()=> chromaticAberration.intensity.value, x=> chromaticAberration.intensity.value = x, 1.0f, 0.35f);
+        DOTween.To(()=> liftGammaGain.lift.value, x=> liftGammaGain.lift.value = x, new Vector4(1, 1, 1, -0.125f), 0.55f);
     }
 
     private IEnumerator MoveAgent() {
@@ -73,7 +87,8 @@ public class IntroCutscene : MonoBehaviour {
 
     private void OnDestroy() {
 
-        fadeBg.DOKill();
         cam.DOKill();
+        chromaticAberration.intensity.value = 0.0f;
+        liftGammaGain.lift.value = new Vector4(1, 1, 1, 0.0f);
     }
 }

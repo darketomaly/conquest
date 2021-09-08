@@ -26,6 +26,7 @@ public class MainRaycast : MonoBehaviour {
 
                         GameManager.localPlayer?.movement.MoveTowards(interactable);
 
+
                     } else {
 
                         GameManager.localPlayer?.movement.TryMoveTo(hit.point);

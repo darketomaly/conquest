@@ -26,12 +26,14 @@ public class GraphicRaycasterManager : MonoBehaviour {
 
         if (!raycaster){
 
-            Debug.Log($"<color=red>Graphic raycaster not found in scene. Disabling {name}</color>");
+            Debug.Log($"<color=red>Graphic raycaster not found in scene. Disabling {name}</color>"); //
             enabled = false;
         }
     }
 
     private void Update() {
+
+        pointerEventData = new PointerEventData(EventSystem.current);
 
         pointerEventData.position = Mouse.current.position.ReadValue();
 
@@ -44,9 +46,10 @@ public class GraphicRaycasterManager : MonoBehaviour {
             onNothingFound?.Invoke();
     }
 
-    private void OnDestroy()
-    {
+    private void OnDestroy() {
 
         onMouseOver = null;
+        onNothingFound = null;
     }
+
 }

@@ -25,7 +25,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
-        //cg.DOFade(1.0f, 0.25f);
+        cg.DOFade(1.0f, 0.25f);
         menuAnimationManager.MakeMenuAppear(true);
     }
 
@@ -55,7 +55,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public override void OnCreatedRoom() {
 
-        Debug.Log($"Created room");
+        //Debug.Log($"Created room");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message) {
