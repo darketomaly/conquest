@@ -32,8 +32,6 @@ public class SpawnPlayers : MonoBehaviourPunCallbacks {
         OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
     }
 
-    
-
     //Only gets called on the local client, used to store references
     private void OnSpawnBehavior(Player spawnedPlayer) {
         
