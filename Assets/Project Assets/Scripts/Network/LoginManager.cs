@@ -12,8 +12,6 @@ using UnityEngine.SceneManagement;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
-    public MenuAnimationManager menuAnimationManager;
-
     public TextMeshProUGUI playerCountText;
     public Button button;
     public CanvasGroup cg;
@@ -26,7 +24,6 @@ public class LoginManager : MonoBehaviourPunCallbacks {
     private void Start() {
 
         cg.DOFade(1.0f, 0.25f);
-        menuAnimationManager.MakeMenuAppear(true);
     }
 
     public void EnterRoom() {
@@ -39,7 +36,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         roomOptions.PublishUserId = true;
         button.interactable = false;
         
-        PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom("world1", roomOptions, TypedLobby.Default);
     }
 
     private IEnumerator DisplayPlayerCount() {
@@ -47,7 +44,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         while (true) {
 
             playerCountText.text =
-                $"Players inside: {PhotonNetwork.CountOfPlayersInRooms}";
+                $"World 1 ({PhotonNetwork.CountOfPlayersInRooms}/25)";
 
             yield return new WaitForSeconds(5.1f);
         }
