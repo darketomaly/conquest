@@ -1,0 +1,67 @@
+fileFormatVersion: 2
+guid: 1f3501a97cc9e764499074dc50d760c3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: b49a55784ad32da4fb7675fc84b12d3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: d347130b9f44a774a87acbfb54a955ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 4f4a4e6ce805af649adae4119e229dd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 31648b12c7fc2274e8ace4a17ed42ad9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rope
+    second: {fileID: 2100000, guid: dc302cbbf1ad4494fb23baf3adb6c42b, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: board-post
+    second: {fileID: 2800000, guid: 12a0b00350d72a342a471f0ce0082cd1, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: flag
+    second: {fileID: 2800000, guid: a29cc4ed37a46364491ea541d44eb9cf, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: gray-wood.normal
+    second: {fileID: 2800000, guid: 45dd881285d48914ca1224e2d3fe946d, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: gray-wood__UNIGLTF__DUPLICATED__2
+    second: {fileID: 2800000, guid: 0bcf92e59b1f92a4b86b994d6e20ccfb, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: rope
+    second: {fileID: 2800000, guid: 8c83a67f4b3f61d48a8decbe213a7cf4, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: yellow-wood
+    second: {fileID: 2800000, guid: b3872b0ea7fe9b6469c805f11a14dd09, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0

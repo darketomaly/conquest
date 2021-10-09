@@ -15,11 +15,11 @@ C:/Users/Meerkat/git/conquest-remastered
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50949
+60480
 Successfully changed project path to: C:/Users/Meerkat/git/conquest-remastered
 C:/Users/Meerkat/git/conquest-remastered
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 103.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 405.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.15f2 (6cf78cb77498)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/Resources/UnitySubsystems
@@ -30,95 +30,94 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
     Vendor:   
     VRAM:     4018 MB
-    Driver:   27.21.14.6089
+    Driver:   30.0.14.7212
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002003 seconds.
+Registered in 0.002793 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 102.98 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 164.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unable to find bridge dll in registry for Microsoft Visual Studio Tools for Unity for C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
 Mono: successfully reloaded assembly
-- Completed reload, in  2.316 seconds
+- Completed reload, in  3.523 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2316ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (3523ms)
+		BeginReloadAssembly (78ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (490ms)
-			LoadAssemblies (49ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (148ms)
+		EndReloadAssembly (597ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (171ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (228ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (313ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (103ms)
-				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (80ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				RefreshPlugins (165ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009520 seconds.
+Registered in 0.016957 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 110.07 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 208.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.824 seconds
+- Completed reload, in  2.324 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1825ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (2325ms)
+		BeginReloadAssembly (151ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1610ms)
-			LoadAssemblies (103ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (2103ms)
+			LoadAssemblies (236ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (402ms)
+			SetupTypeCache (454ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (881ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (1151ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (110ms)
-				BeforeProcessingInitializeOnLoad (113ms)
-				ProcessInitializeOnLoadAttributes (398ms)
-				ProcessInitializeOnLoadMethodAttributes (249ms)
+				RefreshPlugins (208ms)
+				BeforeProcessingInitializeOnLoad (127ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (358ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 17.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4778 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 217.4 MB.
-System memory in use after: 217.6 MB.
+Unloading 5329 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 323.3 MB.
+System memory in use after: 323.7 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5223.
-Total: 4.064400 ms (FindLiveObjects: 0.722700 ms CreateObjectMapping: 0.129400 ms MarkObjects: 3.094800 ms  DeleteObjects: 0.116100 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5791.
+Total: 7.861700 ms (FindLiveObjects: 2.603700 ms CreateObjectMapping: 0.310000 ms MarkObjects: 4.375700 ms  DeleteObjects: 0.492000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,440 +131,1631 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Project Assets/Environment/Interactables/Barrier/Resources/dvisk6-c605fcfb-72b0-4581-b8fd-20ed31250425.jpg
-  artifactKey: Guid(b61ad5bbd4d460943a6d4ff30e26f060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Interactables/Barrier/Resources/dvisk6-c605fcfb-72b0-4581-b8fd-20ed31250425.jpg using Guid(b61ad5bbd4d460943a6d4ff30e26f060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51936c450617040b752382ea6236e54e') in 0.116906 seconds 
-  Import took 0.123705 seconds .
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.gltf
+  artifactKey: Guid(c6a4dd0198ca38e48b3a1a7708578b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.gltf using Guid(c6a4dd0198ca38e48b3a1a7708578b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.28 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.35 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+ -> (artifact id: 'db92cd70c2dac543bd5214fa51206bfe') in 14.936331 seconds 
+  Import took 14.999990 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.443524 seconds.
-  path: Assets/Project Assets/Scenes/Conquest/Global Volume Profile.asset
-  artifactKey: Guid(8f922fc0ac221444994fb3eddffc5359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Conquest/Global Volume Profile.asset using Guid(8f922fc0ac221444994fb3eddffc5359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cae4525a7398288c338ee4869153785') in 0.012393 seconds 
-  Import took 0.018981 seconds .
+  Time since last request: 84.838960 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.gltf
+  artifactKey: Guid(c6a4dd0198ca38e48b3a1a7708578b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.gltf using Guid(c6a4dd0198ca38e48b3a1a7708578b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08270736ec5e2a7465d66a75a3609d13') in 0.023378 seconds 
+  Import took 0.096617 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Project Assets/Scenes/Conquest/NavMesh-Environment 1.asset
-  artifactKey: Guid(baaf5320bc833954588887fb6ee931db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Conquest/NavMesh-Environment 1.asset using Guid(baaf5320bc833954588887fb6ee931db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96061f43c35729c123a01adedf9b7333') in 0.006331 seconds 
-  Import took 0.012564 seconds .
+  Time since last request: 10161.460667 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb
+  artifactKey: Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb using Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407fcbe4dab2a3c84d5273cd29d52041') in 8.436663 seconds 
+  Import took 8.581301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.967034 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb
+  artifactKey: Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb using Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccc4744affd9ebd7f22e2658c850eaa') in 6.229727 seconds 
+  Import took 6.261517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Textures/Material.normal.png
+  artifactKey: Guid(6e8fe18cf8de26a44996342973fa06df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Textures/Material.normal.png using Guid(6e8fe18cf8de26a44996342973fa06df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9933aae17ba060f2096a35c87be27f') in 0.088077 seconds 
+  Import took 0.101094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Textures/Material__UNIGLTF__DUPLICATED__2.png
+  artifactKey: Guid(8bbcb0104b09c764f9effb1011d897af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Textures/Material__UNIGLTF__DUPLICATED__2.png using Guid(8bbcb0104b09c764f9effb1011d897af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b970dbde3f668fa7c57e0c07a9969f') in 0.016033 seconds 
+  Import took 0.027493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.361391 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/conquest-symbol-material.mat
+  artifactKey: Guid(49f5031edb195be40a3f0cf1265fec7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/conquest-symbol-material.mat using Guid(49f5031edb195be40a3f0cf1265fec7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585ed44cd7c20d15ff557169d6a26518') in 0.049707 seconds 
+  Import took 0.060486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.mat
+  artifactKey: Guid(1b9953c204eed0d4987366ae67fa62d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.mat using Guid(1b9953c204eed0d4987366ae67fa62d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008aa4eb7328cba40c0d8ccd65dbaaa7') in 0.032382 seconds 
+  Import took 0.044114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.001.mat
+  artifactKey: Guid(da10d10682da3c840a7850e6e4cb593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.001.mat using Guid(da10d10682da3c840a7850e6e4cb593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bf23fad8c32dd457243b8110eeefe5') in 0.032900 seconds 
+  Import took 0.044582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.002.mat
+  artifactKey: Guid(13d7e86fa484b914bb7a60fee929fc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.002.mat using Guid(13d7e86fa484b914bb7a60fee929fc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6692172e58c6bef6f713c2d35acd16db') in 0.042694 seconds 
+  Import took 0.054032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/dark wood.mat
+  artifactKey: Guid(b7cfc94e6a9cff348a0dd12aae6c549b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/dark wood.mat using Guid(b7cfc94e6a9cff348a0dd12aae6c549b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a35516f75dba21db1f06f946f0451b0') in 0.041958 seconds 
+  Import took 0.053889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.003.mat
+  artifactKey: Guid(23c8663919e885548888e3fbaa691b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/Material.003.mat using Guid(23c8663919e885548888e3fbaa691b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0095eba4b82005d8927782b5065a3ca') in 0.031439 seconds 
+  Import took 0.042869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1162.770010 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb
+  artifactKey: Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb using Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8076744ca533ffcf6be6755bb4cdfc51') in 1.659995 seconds 
+  Import took 1.675909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.447408 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb
+  artifactKey: Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.glb using Guid(3794306132da4f748986d18881862a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513d1481b23dae47def7a71a70e1c23c') in 0.137212 seconds 
+  Import took 0.152135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.575866 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/blank-material.mat
+  artifactKey: Guid(6a7db62376ac9594db2f7ab639437540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/blank-material.mat using Guid(6a7db62376ac9594db2f7ab639437540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e103375aeb2990c2b455a98243877f4c') in 0.033626 seconds 
+  Import took 0.045710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1580.604795 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Mud and Dirt Material/Materials/Simple Mud 3/Mud_2_mask.png
+  artifactKey: Guid(c651d2bb3c5a12142aded7ff3c143f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Mud and Dirt Material/Materials/Simple Mud 3/Mud_2_mask.png using Guid(c651d2bb3c5a12142aded7ff3c143f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3665610db3e63b90abcd3d6125c79d') in 0.129669 seconds 
+  Import took 0.255812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3382.759267 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck
+  artifactKey: Guid(c0cc738ae52e6a54c924a67d76cc740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck using Guid(c0cc738ae52e6a54c924a67d76cc740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ec3da903ed55f94aaebbf5241235ce') in 0.039771 seconds 
+  Import took 0.168070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.882126 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source
+  artifactKey: Guid(7d5c042a25b92b84faffd8bf1f81ae71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source using Guid(7d5c042a25b92b84faffd8bf1f81ae71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4373b83f5dfe4d8bf9eec97a846d956') in 0.054016 seconds 
+  Import took 0.064903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.759924 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb
+  artifactKey: Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb using Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb6260324bdda1f9f2075c1ae517078') in 9.238644 seconds 
+  Import took 9.303626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.576486 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb
+  artifactKey: Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb using Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6364b49abf92acf0f56ce4d038d4e55e') in 1.018673 seconds 
+  Import took 1.092671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.315172 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb
+  artifactKey: Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb using Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae8f2492803b5be58cee13a764632a2') in 1.033677 seconds 
+  Import took 1.058077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.875392 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures
+  artifactKey: Guid(2b76ef8726c247e4f8e198174754c2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures using Guid(2b76ef8726c247e4f8e198174754c2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536d9f04d2d8d0913c0a212d68db32d5') in 0.037213 seconds 
+  Import took 0.056138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.623179 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Textures
+  artifactKey: Guid(fef151a356115f2489fe0ea09d340f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Textures using Guid(fef151a356115f2489fe0ea09d340f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53902d68efa71edd685e57cfc002008e') in 0.006786 seconds 
+  Import took 0.017889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000649 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Textures
+  artifactKey: Guid(fef151a356115f2489fe0ea09d340f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Textures using Guid(fef151a356115f2489fe0ea09d340f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53902d68efa71edd685e57cfc002008e') in 0.002366 seconds 
+  Import took 0.013001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.368261 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.001.mat
+  artifactKey: Guid(19f3f8659610bcf40b18200da4179cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.001.mat using Guid(19f3f8659610bcf40b18200da4179cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb4625f1d71ff7a84512cebf56db719') in 0.090905 seconds 
+  Import took 0.102360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.004.mat
+  artifactKey: Guid(dbe58d507a7ba6d43a6a30e882da69e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.004.mat using Guid(dbe58d507a7ba6d43a6a30e882da69e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b59693fd06e7d8d36c3fda98a6efd4') in 0.057856 seconds 
+  Import took 0.069853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.002.mat
+  artifactKey: Guid(e52cdeeb879f9ac4a89d5509bbe99cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.002.mat using Guid(e52cdeeb879f9ac4a89d5509bbe99cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebff0a9920aa2ab5e680464704c7413a') in 0.025230 seconds 
+  Import took 0.049833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.003.mat
+  artifactKey: Guid(17cdb29096abbcf4dbd7f39036befe60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.003.mat using Guid(17cdb29096abbcf4dbd7f39036befe60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32891f35c6fb6d5846d74c8502a011ab') in 0.226758 seconds 
+  Import took 0.251049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/walnut-wood.png
+  artifactKey: Guid(ee134da5b2d39d74c87fd0778ec202d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/walnut-wood.png using Guid(ee134da5b2d39d74c87fd0778ec202d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c791a94ccb6e5327907f35f1396ab9fa') in 0.045156 seconds 
+  Import took 0.068113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/mango-wood.png
+  artifactKey: Guid(91986a4f5de33c74cb6669a7a4562aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/mango-wood.png using Guid(91986a4f5de33c74cb6669a7a4562aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a152ca9d0e08428111db1b1fb1cdfeee') in 0.021792 seconds 
+  Import took 0.033012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 240.186391 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb
+  artifactKey: Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb using Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a296eeeb11f880d4d77aae9ae9b50941') in 1.672357 seconds 
+  Import took 1.696662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.641139 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb
+  artifactKey: Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.glb using Guid(1080918d3fa74314c841ea79c4c4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d1b182ed499f197159b5f92df74eaa') in 0.521349 seconds 
+  Import took 0.588685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.877139 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials
+  artifactKey: Guid(9eb2001b2aa448d489165baaa95c47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials using Guid(9eb2001b2aa448d489165baaa95c47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc76b3cd971687968909236953e4b0d') in 0.033589 seconds 
+  Import took 0.044608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.170128 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.001.mat
+  artifactKey: Guid(f8a9fec539b97be46910611bb7a8ccd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.001.mat using Guid(f8a9fec539b97be46910611bb7a8ccd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60d58697bf7f8a1af34c3626b109259') in 0.044773 seconds 
+  Import took 0.055725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/rope.mat
+  artifactKey: Guid(3b7a527cfdfb0024f84183328ea0c4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/rope.mat using Guid(3b7a527cfdfb0024f84183328ea0c4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94847df43a1a691dce5203b9ac3e5f5b') in 0.127409 seconds 
+  Import took 0.138615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.mat
+  artifactKey: Guid(0c9d927bed90ee944b8ece201f1133ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.mat using Guid(0c9d927bed90ee944b8ece201f1133ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac7d2beb270388d898315be824fdd6d') in 0.084012 seconds 
+  Import took 0.095801 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000223 seconds.
-  path: Assets/Project Assets/Scenes/Conquest/NavMesh-Environment.asset
-  artifactKey: Guid(adf77e35efd225e4fadf152fd0a3bacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Conquest/NavMesh-Environment.asset using Guid(adf77e35efd225e4fadf152fd0a3bacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30068d88d8ee34e114b3dae1dc809292') in 0.006276 seconds 
-  Import took 0.013194 seconds .
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.004.mat
+  artifactKey: Guid(07c3ae62daca27b458b897aab5106b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.004.mat using Guid(07c3ae62daca27b458b897aab5106b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3ab5e68312ccc956abaa70da4248c4') in 2.729469 seconds 
+  Import took 2.762541 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.722739 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Octagon_stool
-  artifactKey: Guid(208492a4c01336643b72ce996602b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Octagon_stool using Guid(208492a4c01336643b72ce996602b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1034af8adbae277ee63cac4a6032ebc') in 0.006233 seconds 
-  Import took 0.013046 seconds .
+  Time since last request: 0.000263 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.002.mat
+  artifactKey: Guid(d2af3af6bafd0e54ca4e0bea581082ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Materials/Material.002.mat using Guid(d2af3af6bafd0e54ca4e0bea581082ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff19d5061b7b813ad9d3d0e27fdcb1d') in 0.037302 seconds 
+  Import took 0.050212 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004177 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Octagon_stool
-  artifactKey: Guid(208492a4c01336643b72ce996602b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Octagon_stool using Guid(208492a4c01336643b72ce996602b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1034af8adbae277ee63cac4a6032ebc') in 0.002348 seconds 
-  Import took 0.009067 seconds .
+  Time since last request: 7.833107 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures
+  artifactKey: Guid(0efa1a31b4e8d9e43be7bc8e4d32cf9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures using Guid(0efa1a31b4e8d9e43be7bc8e4d32cf9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7475f7015d5de73cb8fcbd682ddf1c12') in 0.003058 seconds 
+  Import took 0.014767 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 36.241843 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations
-  artifactKey: Guid(208492a4c01336643b72ce996602b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations using Guid(208492a4c01336643b72ce996602b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06cee59bd4f72bd0543caa71fb76bfb') in 0.007019 seconds 
-  Import took 0.014136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.055032 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Stool
-  artifactKey: Guid(d9f1fcb86915e5f419b3f814235e194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Stool using Guid(d9f1fcb86915e5f419b3f814235e194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39fb5f467a98c2f8ac84fc1dab3b7104') in 0.006286 seconds 
-  Import took 0.013571 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.418249 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Banner1
-  artifactKey: Guid(3f8c99a6b97f057468b52d7b4295ac5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Banner1 using Guid(3f8c99a6b97f057468b52d7b4295ac5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e99a57f416be7ebfb1bbc320577477ab') in 0.007465 seconds 
-  Import took 0.014422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.048511 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Carpet
-  artifactKey: Guid(356e7df7d3afac14693fb7167e15b107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Carpet using Guid(356e7df7d3afac14693fb7167e15b107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a1aa6dd51557a21a86c3088763e0cd') in 0.013332 seconds 
-  Import took 0.020119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000660 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Carpet
-  artifactKey: Guid(356e7df7d3afac14693fb7167e15b107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_themed_decorations/Carpet using Guid(356e7df7d3afac14693fb7167e15b107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a1aa6dd51557a21a86c3088763e0cd') in 0.002318 seconds 
-  Import took 0.009395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.487123 seconds.
-  path: Assets/Project Assets/Scenes/Lobby/Materials/carpet texture.mat
-  artifactKey: Guid(5f42661a5a49d054eb5ff733462b0487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Lobby/Materials/carpet texture.mat using Guid(5f42661a5a49d054eb5ff733462b0487) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
- -> (artifact id: '7f1057011de11811867bd0d88004fd04') in 6.158112 seconds 
-  Import took 6.166381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.279832 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/source
-  artifactKey: Guid(6e1453d273c46a64fb19a8256f16a96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/source using Guid(6e1453d273c46a64fb19a8256f16a96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b386ad90269811d4de52936fb9394401') in 0.008791 seconds 
-  Import took 0.016258 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.058407 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.fbx
-  artifactKey: Guid(1146981301c6c534f9a1acb0baf57f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.fbx using Guid(1146981301c6c534f9a1acb0baf57f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e467dfec1e10718b6e74f2ee447302bd') in 0.792633 seconds 
-  Import took 0.800705 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.mat
-  artifactKey: Guid(d2db558ef8f7a4c4a9a8cd852aff5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.mat using Guid(d2db558ef8f7a4c4a9a8cd852aff5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192c154b3006fdf9927c1ff3d079cd39') in 0.047535 seconds 
-  Import took 0.055648 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005406 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.mat
-  artifactKey: Guid(d2db558ef8f7a4c4a9a8cd852aff5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/source/boat.mat using Guid(d2db558ef8f7a4c4a9a8cd852aff5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192c154b3006fdf9927c1ff3d079cd39') in 0.037480 seconds 
-  Import took 0.045394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.704623 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatAO.png
-  artifactKey: Guid(a6c56d9b0e908c34f99029c916669032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatAO.png using Guid(a6c56d9b0e908c34f99029c916669032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8d4dbf5ddd4ce5ac7e284439fd3595') in 0.016335 seconds 
-  Import took 0.023656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatColor.png
-  artifactKey: Guid(f7c11c89228126d4fa30b7e524be0687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatColor.png using Guid(f7c11c89228126d4fa30b7e524be0687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea072dedf378de33a67f58aae538cf83') in 0.013553 seconds 
-  Import took 0.020164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png
-  artifactKey: Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatNormal.png using Guid(c47bfad3033c89b49ab6e699ee840b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4b221e1c4492cce48fb079d8361f72') in 0.018509 seconds 
-  Import took 0.025713 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatMetallic.png
-  artifactKey: Guid(fc3d940329e77c149828496af816d9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatMetallic.png using Guid(fc3d940329e77c149828496af816d9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0442f0bae36f7e4971fe0d0203a93d') in 0.014867 seconds 
-  Import took 0.022066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatRoughness.png
-  artifactKey: Guid(2d46b979f5e8c2843a20b5dc00d155dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Boats/boat/textures/boatRoughness.png using Guid(2d46b979f5e8c2843a20b5dc00d155dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe6691b613e30d2d4c80fca0c8e7888') in 0.015324 seconds 
-  Import took 0.022637 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.412018 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/01/diffuse.tga
-  artifactKey: Guid(a737f8678a1ed974eb0b504381668312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/01/diffuse.tga using Guid(a737f8678a1ed974eb0b504381668312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fdf6a626896ca8d8b5ad9ba6b005e88') in 0.067347 seconds 
-  Import took 0.074350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/01/normal.tga
-  artifactKey: Guid(7a10a34a16c0cad48af03ca915158953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/01/normal.tga using Guid(7a10a34a16c0cad48af03ca915158953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff6e617812b2e07b4cc54612bf0b6fd') in 0.017917 seconds 
-  Import took 0.024519 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/01/rock_01_material.mat
-  artifactKey: Guid(3ea588f98ff5bc24eb57f8aec63d5cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/01/rock_01_material.mat using Guid(3ea588f98ff5bc24eb57f8aec63d5cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8ef8c5f49f190e2f57b5e89a780894') in 0.049487 seconds 
-  Import took 0.057781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/01/specular.tga
-  artifactKey: Guid(ea53d503811780e44879ddf3ef96557f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/01/specular.tga using Guid(ea53d503811780e44879ddf3ef96557f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d8e6ed4598662e398b518348c007b3') in 0.015241 seconds 
-  Import took 0.022620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/01/rock_01.fbx
-  artifactKey: Guid(8e58ca432e7dc1f4998f4b480d2a7bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/01/rock_01.fbx using Guid(8e58ca432e7dc1f4998f4b480d2a7bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1959f6b0d9c7e94925d3f485ac769915') in 0.035410 seconds 
-  Import took 0.042904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.082201 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/Source
-  artifactKey: Guid(213ebe5e9e1a9e140ad6ff4e9b3e9a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/Source using Guid(213ebe5e9e1a9e140ad6ff4e9b3e9a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6c755d167a755db86c5c406087d2ba') in 0.006618 seconds 
-  Import took 0.013887 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.917020 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/Textures
-  artifactKey: Guid(3665d50d60b025f4885fbd772895ab7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/Textures using Guid(3665d50d60b025f4885fbd772895ab7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6fe46dde632a3d796b5ec874445eb03') in 0.006632 seconds 
-  Import took 0.013939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.214528 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/textures
-  artifactKey: Guid(3665d50d60b025f4885fbd772895ab7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/textures using Guid(3665d50d60b025f4885fbd772895ab7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8fc5fcbf1e813ca19a15b8ecc16f781') in 0.006298 seconds 
-  Import took 0.013481 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.681087 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/source
-  artifactKey: Guid(213ebe5e9e1a9e140ad6ff4e9b3e9a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Stool/source using Guid(213ebe5e9e1a9e140ad6ff4e9b3e9a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3c0a1d4973f1a5871559f595c252eb') in 0.002272 seconds 
-  Import took 0.009577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.103344 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/preview.jpg
-  artifactKey: Guid(97cfbe9573ec8444b9d0f412e0b389a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/preview.jpg using Guid(97cfbe9573ec8444b9d0f412e0b389a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379809dfe277bf1a05bf4e85fccce1a0') in 0.012723 seconds 
-  Import took 0.019773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.839478 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Carpet/source
-  artifactKey: Guid(700e9e55dff2aca478c7a16bf1371437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Carpet/source using Guid(700e9e55dff2aca478c7a16bf1371437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b7e1b1daf7c936d45707f9386542bf') in 0.002898 seconds 
-  Import took 0.010424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.484631 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Carpet/textures
-  artifactKey: Guid(ce97459a98ae236429dcc52aa444a2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Carpet/textures using Guid(ce97459a98ae236429dcc52aa444a2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad6113204b9f0ffb5107087992c4ba6') in 0.002542 seconds 
-  Import took 0.009624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 115.439050 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/03/diffuse.tga
-  artifactKey: Guid(ea20d272c86f0d44f8fe0d07c161b701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/03/diffuse.tga using Guid(ea20d272c86f0d44f8fe0d07c161b701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c50d2c9ce3696dd253064084ce79b2') in 0.023216 seconds 
-  Import took 0.030409 seconds .
+  Time since last request: 0.094105 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/mango-wood.png
+  artifactKey: Guid(7f3444968028654418bc1782f3468197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/mango-wood.png using Guid(7f3444968028654418bc1782f3468197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c007ae6e66ef88e35ad30328b760f964') in 0.016213 seconds 
+  Import took 0.027357 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000225 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/03/normal.tga
-  artifactKey: Guid(0fa1372e9beb00c4ea3f71ef4570f916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/03/normal.tga using Guid(0fa1372e9beb00c4ea3f71ef4570f916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d190f3eab4e1d58888b36cc4480b1d9') in 0.018671 seconds 
-  Import took 0.025331 seconds .
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/rope.png
+  artifactKey: Guid(e0c8f6457165bfa4f8347eaf5f124455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/rope.png using Guid(e0c8f6457165bfa4f8347eaf5f124455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae1bf668a2690d30eae15877b1b738c') in 0.051108 seconds 
+  Import took 0.062167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/walnut-wood.png
+  artifactKey: Guid(ebcd21299f58b8d419ac46d06b791de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Observation Deck/Source/observation deck.Textures/walnut-wood.png using Guid(ebcd21299f58b8d419ac46d06b791de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20a2e38a70f586c4da7c88ab8980ce7') in 0.062754 seconds 
+  Import took 0.073753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 227.462212 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/mud2.terrainlayer
+  artifactKey: Guid(4e0d9b688d090b5408000d24a03c774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/mud2.terrainlayer using Guid(4e0d9b688d090b5408000d24a03c774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d6c55ea00812d7084520b6ec9121b7') in 1.764631 seconds 
+  Import took 1.787621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3133.919095 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones
+  artifactKey: Guid(efebb3ce745469a4f95eabc8e13b9f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones using Guid(efebb3ce745469a4f95eabc8e13b9f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e590de8bea2afc15bc24c56d30823880') in 0.021296 seconds 
+  Import took 0.132442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.670701 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source
+  artifactKey: Guid(0f50d7542f280f44891c4e1e21c3518a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source using Guid(0f50d7542f280f44891c4e1e21c3518a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6631b95c1dc4e36cdda25a28b54896') in 0.002754 seconds 
+  Import took 0.014566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005700 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source
+  artifactKey: Guid(0f50d7542f280f44891c4e1e21c3518a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source using Guid(0f50d7542f280f44891c4e1e21c3518a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6631b95c1dc4e36cdda25a28b54896') in 0.002606 seconds 
+  Import took 0.013272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.942871 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Textures
+  artifactKey: Guid(9e37da6dc37f69c4f9f3644ff0e536af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Textures using Guid(9e37da6dc37f69c4f9f3644ff0e536af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c420452801dcda9a2862b1d7dd43c38') in 0.002550 seconds 
+  Import took 0.014043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002813 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Textures
+  artifactKey: Guid(9e37da6dc37f69c4f9f3644ff0e536af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Textures using Guid(9e37da6dc37f69c4f9f3644ff0e536af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c420452801dcda9a2862b1d7dd43c38') in 0.002456 seconds 
+  Import took 0.013385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.667442 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.glb
+  artifactKey: Guid(96632df8c846e5c43a6a9e741f9d581b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.glb using Guid(96632df8c846e5c43a6a9e741f9d581b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25bcfe0260364da4f67ca0c682ce756') in 0.874960 seconds 
+  Import took 0.895853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.687410 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.glb
+  artifactKey: Guid(96632df8c846e5c43a6a9e741f9d581b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.glb using Guid(96632df8c846e5c43a6a9e741f9d581b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675cd0fa3e34c988d0d05fc9c1b714b3') in 0.587554 seconds 
+  Import took 0.607020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.113629 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Materials
+  artifactKey: Guid(d34eef1a67c8faa48b365121bbb9fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Materials using Guid(d34eef1a67c8faa48b365121bbb9fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2227cbb18f7668e1bd64fde8e48a4393') in 0.009244 seconds 
+  Import took 0.020667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071537 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Materials/Material.mat
+  artifactKey: Guid(475d99392af19c64fb63aa1fbfdcc888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Materials/Material.mat using Guid(475d99392af19c64fb63aa1fbfdcc888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0482570427b76437e9dceff215c3654b') in 0.028495 seconds 
+  Import took 0.040058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.823298 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Textures
+  artifactKey: Guid(32c200db8181aee4da53df2470ef6630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Textures using Guid(32c200db8181aee4da53df2470ef6630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e343401e789e0e5cb098a92975b6721c') in 0.006487 seconds 
+  Import took 0.042813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Textures/dark-stone.png
+  artifactKey: Guid(7fd9eff5072ab2d4cab2d1d6d618b520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Path Stones/Source/path stones.Textures/dark-stone.png using Guid(7fd9eff5072ab2d4cab2d1d6d618b520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccae28abbe1b6722dbf86a0eba774c44') in 0.024082 seconds 
+  Import took 0.036003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 154357.212843 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards
+  artifactKey: Guid(c9ffba0b7ec362a4b8f9e542626865c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards using Guid(c9ffba0b7ec362a4b8f9e542626865c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bde326b51f99955a6b999a4b36c96a4') in 0.263634 seconds 
+  Import took 3.177006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.672335 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1
+  artifactKey: Guid(47179f2ef6dfb314bb7631214f0a431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1 using Guid(47179f2ef6dfb314bb7631214f0a431f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afee232f74bb7a180c0ecd4386de65bd') in 0.187777 seconds 
+  Import took 0.211427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.359828 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard2
+  artifactKey: Guid(b3080b9a9c809fa44893b32d4bbc5373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard2 using Guid(b3080b9a9c809fa44893b32d4bbc5373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8865ea07a403dd1916c8306444956d9') in 0.835819 seconds 
+  Import took 0.963673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.564613 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/chalkboard-1.glb
+  artifactKey: Guid(a453e3939ae387045bd60651346dae9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/chalkboard-1.glb using Guid(a453e3939ae387045bd60651346dae9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41874eb5106e10012f06069e3b4e9269') in 42.606824 seconds 
+  Import took 42.784763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/chalkboard-1.glb
+  artifactKey: Guid(a453e3939ae387045bd60651346dae9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/chalkboard-1.glb using Guid(a453e3939ae387045bd60651346dae9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41874eb5106e10012f06069e3b4e9269') in 5.389128 seconds 
+  Import took 5.447994 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000196 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/03/preview.jpg
-  artifactKey: Guid(ef0275e6fa1ecab4eab050c91fefcc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/03/preview.jpg using Guid(ef0275e6fa1ecab4eab050c91fefcc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c967c70314bf586e3c973421aa5c5360') in 0.011381 seconds 
-  Import took 0.018794 seconds .
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source
+  artifactKey: Guid(1065bf67353ca7c4794d180259516c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source using Guid(1065bf67353ca7c4794d180259516c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3d1b2df6c4328d8544d459827bec31') in 0.125511 seconds 
+  Import took 0.172180 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/03/rock_03.fbx
-  artifactKey: Guid(89b50c440f4d4894782e6207e6f86a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/03/rock_03.fbx using Guid(89b50c440f4d4894782e6207e6f86a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdd9a51044bc164e2f267b0f7302835b') in 0.035174 seconds 
-  Import took 0.043592 seconds .
+  Time since last request: 0.011077 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures
+  artifactKey: Guid(dccddad507a2a0f44ad4b3a0566920c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures using Guid(dccddad507a2a0f44ad4b3a0566920c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251c9e72e1272960003d24dde8b8fbb7') in 0.082168 seconds 
+  Import took 0.093371 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/03/specular.tga
-  artifactKey: Guid(4c253a6a395834344892df4bbd674980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/03/specular.tga using Guid(4c253a6a395834344892df4bbd674980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e9bb7203cab83d4b95275b82778816') in 0.018335 seconds 
-  Import took 0.025947 seconds .
+  Time since last request: 13.725518 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.glb
+  artifactKey: Guid(a453e3939ae387045bd60651346dae9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.glb using Guid(a453e3939ae387045bd60651346dae9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c96c04cacc89a91f823c154921eafc3') in 2.661738 seconds 
+  Import took 2.690233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.688496 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.001.mat
+  artifactKey: Guid(6f133c47bcb0b7e4fb7cbde06e0a1aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.001.mat using Guid(6f133c47bcb0b7e4fb7cbde06e0a1aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a7f5508e2f3eef72143fec02383316') in 0.492672 seconds 
+  Import took 0.504440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.002.mat
+  artifactKey: Guid(b5875012a1a774447870a63111517083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.002.mat using Guid(b5875012a1a774447870a63111517083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89620d1eee37c2acde3b26f8e04bbb56') in 0.220780 seconds 
+  Import took 0.232675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Textures/mango-wood.png
+  artifactKey: Guid(dad091231086c9c47843e4134cdb8a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Textures/mango-wood.png using Guid(dad091231086c9c47843e4134cdb8a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206a28d9cb38bc1de8cc2100c659e8cc') in 0.203310 seconds 
+  Import took 0.214944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Textures/chalkboard1_d.png
+  artifactKey: Guid(f8f33be3573584149a1cab865ffebb1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Textures/chalkboard1_d.png using Guid(f8f33be3573584149a1cab865ffebb1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c031c7cf4de31f9c8d4592425d9dd2c3') in 0.135571 seconds 
+  Import took 0.166598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Textures/walnut-wood.png
+  artifactKey: Guid(af77fdf7e6f19e843993c3316d15f9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Textures/walnut-wood.png using Guid(af77fdf7e6f19e843993c3316d15f9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3754f1a6e364d9cd2b703c432623cd74') in 0.035085 seconds 
+  Import took 0.046598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.mat
+  artifactKey: Guid(11d4916666bee264c87f06b9b0e5dca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.mat using Guid(11d4916666bee264c87f06b9b0e5dca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff1c754435974f294fde15eb0c7ba09') in 0.349069 seconds 
+  Import took 0.361300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009631 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.mat
+  artifactKey: Guid(11d4916666bee264c87f06b9b0e5dca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Source/chalkboard-1.Materials/Material.mat using Guid(11d4916666bee264c87f06b9b0e5dca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff1c754435974f294fde15eb0c7ba09') in 0.159247 seconds 
+  Import took 0.172005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.784306 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials
+  artifactKey: Guid(0a9f7f8d8254b3d419ae3c4b23ac25cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials using Guid(0a9f7f8d8254b3d419ae3c4b23ac25cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5efd5533931d2fe686ae23cfd554d9f') in 0.462165 seconds 
+  Import took 0.539972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2200.544187 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room
+  artifactKey: Guid(9cee4f6c4f31bb04da92d4768c4b52cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room using Guid(9cee4f6c4f31bb04da92d4768c4b52cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7898bdee7dab65a09c11b229876f6d31') in 0.202385 seconds 
+  Import took 1.975733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.539355 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder
+  artifactKey: Guid(05849e1d9011817498187cc618e8d1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder using Guid(05849e1d9011817498187cc618e8d1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec9b9465f1ac017c4913c688c5d6ed0') in 0.172761 seconds 
+  Import took 0.424912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.134140 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder/Source
+  artifactKey: Guid(dd5309e9cb12d9b4fb934d60f1eddf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder/Source using Guid(dd5309e9cb12d9b4fb934d60f1eddf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8896b93018b3260270745c3e9131e0') in 0.027974 seconds 
+  Import took 0.039471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.353310 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder/Textures
+  artifactKey: Guid(12a8e63d9a0fc254084e9908c1ef67c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder/Textures using Guid(12a8e63d9a0fc254084e9908c1ef67c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba8b25d09fa24c731e7752346d47fcc') in 0.057207 seconds 
+  Import took 0.067859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.813306 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder/Source/matching-room.glb
+  artifactKey: Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/New Folder/Source/matching-room.glb using Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cb8a11d8f3798cc0306d91e8df2057') in 7.869763 seconds 
+  Import took 7.882678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.509718 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.glb
+  artifactKey: Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.glb using Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a22b908e3a6f9d60413fa8c0b57c0a') in 1.150841 seconds 
+  Import took 1.163674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.Textures
+  artifactKey: Guid(8e4940304952c1944a9b3ac60bb37c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.Textures using Guid(8e4940304952c1944a9b3ac60bb37c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5189d615668895751f84461e44bd3b81') in 0.027845 seconds 
+  Import took 0.039155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.486489 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Textures/matching-room.Materials/stone-wall.mat
+  artifactKey: Guid(36b1e191cfa404f498f85ec282fd1818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Textures/matching-room.Materials/stone-wall.mat using Guid(36b1e191cfa404f498f85ec282fd1818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'addce93d64d07f4e67e632e7d9d0744b') in 0.519022 seconds 
+  Import took 0.530589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.284772 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Textures/matching-room.Materials/stone-wall.mat
+  artifactKey: Guid(36b1e191cfa404f498f85ec282fd1818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Textures/matching-room.Materials/stone-wall.mat using Guid(36b1e191cfa404f498f85ec282fd1818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'addce93d64d07f4e67e632e7d9d0744b') in 0.173929 seconds 
+  Import took 0.196151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.200172 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Textures/matching-room.Textures/stone-wall.png
+  artifactKey: Guid(b4528d8f3fd51fc4aabe5a0deac285cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Textures/matching-room.Textures/stone-wall.png using Guid(b4528d8f3fd51fc4aabe5a0deac285cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834e4a7cd82babd20591a22bcb9a3cfc') in 0.093156 seconds 
+  Import took 0.145854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 137.829704 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.glb
+  artifactKey: Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.glb using Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f37201f14a6127b0f16c50dbafdfc80') in 0.864606 seconds 
+  Import took 0.878085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.539910 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.glb
+  artifactKey: Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Matching Room/Source/matching-room.glb using Guid(0e744a0e39ee51e41bf0e3ae020bc0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0844bee65717eae34ac6ad32988c3587') in 0.866933 seconds 
+  Import took 0.899229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2487.363485 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Table-simple/source/simple-table.glb
+  artifactKey: Guid(af91b703e35892b429adf3078c1adc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Table-simple/source/simple-table.glb using Guid(af91b703e35892b429adf3078c1adc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c1ef8cb5a95b0605156df5190dca17') in 10.847565 seconds 
+  Import took 13.357790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.322660 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Table-simple/textures/Material.mat
+  artifactKey: Guid(f0186c0cfce248948ba278cb2d124eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Table-simple/textures/Material.mat using Guid(f0186c0cfce248948ba278cb2d124eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1748d6a2f493cc2182e29426c348a348') in 7.156244 seconds 
+  Import took 7.168964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.542721 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Table-simple/source/simple-table.glb
+  artifactKey: Guid(af91b703e35892b429adf3078c1adc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Table-simple/source/simple-table.glb using Guid(af91b703e35892b429adf3078c1adc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c22782858c1467172045e1ba8107d3') in 10.995077 seconds 
+  Import took 11.008496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8591.599374 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables
+  artifactKey: Guid(adc40cfb0a504ec42bcf53e89affcad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables using Guid(adc40cfb0a504ec42bcf53e89affcad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0428a071b6ac88526ebe63caf9a781ed') in 0.195492 seconds 
+  Import took 1.807276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.486405 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky
+  artifactKey: Guid(568a9003ad4b3ef4c8c81c92b2a50eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky using Guid(568a9003ad4b3ef4c8c81c92b2a50eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f54c10ad99d97234842c789b4b418a') in 0.035262 seconds 
+  Import took 0.046447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.777018 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky/lakeside_4k.hdr
+  artifactKey: Guid(4b0998d24cc21044b94a9ab6725814a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky/lakeside_4k.hdr using Guid(4b0998d24cc21044b94a9ab6725814a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce65d63ccd229c03d0b29d76753d28e9') in 3.076246 seconds 
+  Import took 3.087544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 255.299842 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky/kloofendal_38d_partly_cloudy_4k.exr
+  artifactKey: Guid(89a40abd1b9287340a512f8a5324aca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky/kloofendal_38d_partly_cloudy_4k.exr using Guid(89a40abd1b9287340a512f8a5324aca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58850156aafc18ef7da46561f3ad64d0') in 0.610708 seconds 
+  Import took 0.640447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 401.733434 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky/lakeside_4k.hdr
+  artifactKey: Guid(4b0998d24cc21044b94a9ab6725814a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky/lakeside_4k.hdr using Guid(4b0998d24cc21044b94a9ab6725814a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40acf7e7d00c4e1586dcc180350b0c09') in 22.987649 seconds 
+  Import took 23.615504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 621.040826 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg
+  artifactKey: Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg using Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351fe52164f40c81c60934da0d6aa06e') in 1.197366 seconds 
+  Import took 1.296069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.428323 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg
+  artifactKey: Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg using Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c2e8497912a5b10d903717d5f1f306') in 0.532031 seconds 
+  Import took 0.555891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.431976 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg
+  artifactKey: Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg using Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c2f88e1d6b0d593c2d8219d8f51800') in 1.599668 seconds 
+  Import took 1.614507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.662039 seconds.
+  path: Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg
+  artifactKey: Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Environment/Non Interactables/Sky/pexels-josh-sorenson-187916.jpg using Guid(49cd2cb55b6be6f4a84b5c7610953cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd240f49760677b6ebd601167bc7e26b3') in 0.499735 seconds 
+  Import took 0.512715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3344.849211 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/NavMesh-NavMesh Surface.asset
+  artifactKey: Guid(0406c3b5d346a8a42b9e5abcf3c1ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/NavMesh-NavMesh Surface.asset using Guid(0406c3b5d346a8a42b9e5abcf3c1ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efab4bc31619e94677bd6a57162f861') in 1.015715 seconds 
+  Import took 5.827067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile 2.asset
+  artifactKey: Guid(117018dfa01b35342b7422453dec2bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile 2.asset using Guid(117018dfa01b35342b7422453dec2bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0338a5d4f42cc72410e30141b7f0bd2') in 1.210797 seconds 
+  Import took 1.256723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Volume Profile.asset
+  artifactKey: Guid(964f6922fc2eb7944ba46321acd54364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Volume Profile.asset using Guid(964f6922fc2eb7944ba46321acd54364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1994efcacd6eeedddcd321a1d955716') in 0.036639 seconds 
+  Import took 0.072054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile 1.asset
+  artifactKey: Guid(6774e533509631f438338909fd4a5b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile 1.asset using Guid(6774e533509631f438338909fd4a5b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273dc6c1dc332f2066ceaa252f7dcf45') in 0.186199 seconds 
+  Import took 0.197130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset
+  artifactKey: Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset using Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1185b816c093dcad8089de6d7aea29') in 0.233040 seconds 
+  Import took 0.259943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 375.914662 seconds.
+  path: Assets/UniGLTF/Samples/ScreenSpace/a.mat
+  artifactKey: Guid(17618f7c446af114e8ac672f1e992954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniGLTF/Samples/ScreenSpace/a.mat using Guid(17618f7c446af114e8ac672f1e992954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5035253537732235549dfd82ea21b93c') in 11.019841 seconds 
+  Import took 11.051301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/blank-material.mat
+  artifactKey: Guid(6a7db62376ac9594db2f7ab639437540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Recruitment House/recruitment-house.Materials/blank-material.mat using Guid(6a7db62376ac9594db2f7ab639437540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c230625cceef6f03540212392f482ba4') in 9.166701 seconds 
+  Import took 9.206882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/UniGLTF/Runtime/Scenes/LookDev/cubemap/ballroom_1k.mat
+  artifactKey: Guid(5f6d4071e6e6b414c8ebdced2f05b4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniGLTF/Runtime/Scenes/LookDev/cubemap/ballroom_1k.mat using Guid(5f6d4071e6e6b414c8ebdced2f05b4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3e3725585e77a2b87411d411c8523b') in 1.484531 seconds 
+  Import took 1.496479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/UniGLTF/Samples/ScreenSpace/b.mat
+  artifactKey: Guid(7c53fd18a7678ca488df002b2d136438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniGLTF/Samples/ScreenSpace/b.mat using Guid(7c53fd18a7678ca488df002b2d136438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c12b6a5d11c185b364bb69e878efd65') in 0.302015 seconds 
+  Import took 0.313208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/UniGLTF/Editor/UniGLTF/Gizmo/Models/Bone.mat
+  artifactKey: Guid(de3c6c4e1e6cb6f419be68ef4932dbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniGLTF/Editor/UniGLTF/Gizmo/Models/Bone.mat using Guid(de3c6c4e1e6cb6f419be68ef4932dbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4475d48b8a15e6d34249a302d1be8d1') in 0.381022 seconds 
+  Import took 0.403832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70339.412575 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb
+  artifactKey: Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb using Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5018e4cb429dcc64a7eb43457d1f27e') in 87.043239 seconds 
+  Import took 91.108930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 133.533411 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb
+  artifactKey: Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb using Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9fc13c77336edb79cae1d8e501d1fa') in 1.616966 seconds 
+  Import took 1.871304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.526198 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb
+  artifactKey: Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb using Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1e45fe971693d4ba9e99f1781bfb47') in 3.969781 seconds 
+  Import took 4.056375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.236495 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb
+  artifactKey: Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb using Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c35856ebb551afddafa67676bad5e3') in 1.094798 seconds 
+  Import took 1.110340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.470266 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials
+  artifactKey: Guid(3a2752864f845d9408273e73ded53f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials using Guid(3a2752864f845d9408273e73ded53f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806dfd7129550fb15f4c1fa554d14c23') in 0.066465 seconds 
+  Import took 0.083948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.727795 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures
+  artifactKey: Guid(be321ba8f6e387242bd68d0554d18ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures using Guid(be321ba8f6e387242bd68d0554d18ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d90e8546a92a6dca3885944f738e773') in 0.011925 seconds 
+  Import took 0.024143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.935647 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/Material.001.mat
+  artifactKey: Guid(9dc5b53ca2236414bad8346de1cb3876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/Material.001.mat using Guid(9dc5b53ca2236414bad8346de1cb3876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff1fbcd8c2d598c9ec515c12132bf75') in 0.191357 seconds 
+  Import took 0.205303 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000212 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Rocks/03/rock_03.obj
-  artifactKey: Guid(f4639afc7faa96b4dbd4c2132e618280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Rocks/03/rock_03.obj using Guid(f4639afc7faa96b4dbd4c2132e618280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43490a2e75070696334e21ee7cb20f9f') in 0.059439 seconds 
-  Import took 0.067102 seconds .
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/Material.002.mat
+  artifactKey: Guid(7ca3f65284bedfc478c3444f2e998c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/Material.002.mat using Guid(7ca3f65284bedfc478c3444f2e998c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3460309ccd1ec5da45bdf3f96bc7d7b') in 0.093701 seconds 
+  Import took 0.107439 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.699047 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Banner1/source
-  artifactKey: Guid(c9892094f4c47574c94367188471d559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Banner1/source using Guid(c9892094f4c47574c94367188471d559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '459833a5d5e5cabc7f30e303a3faf85b') in 0.002492 seconds 
-  Import took 0.009764 seconds .
+  Time since last request: 0.000232 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/rope.mat
+  artifactKey: Guid(6871590c32b566141ba533da23c3a927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/rope.mat using Guid(6871590c32b566141ba533da23c3a927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1079f6f86c26cae4c34390fadc0b99b3') in 0.103681 seconds 
+  Import took 0.116335 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.104435 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Banner1/textures
-  artifactKey: Guid(c7bea71ae5c42f74c80906563c547fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Conquest_decorations/Banner1/textures using Guid(c7bea71ae5c42f74c80906563c547fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f991ddc45c02f195e71030e4f1fa3cdb') in 0.002329 seconds 
-  Import took 0.009408 seconds .
+  Time since last request: 0.000224 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/Material.003.mat
+  artifactKey: Guid(f9c24f37fc45cdc43b0db6a2761ab3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Materials/Material.003.mat using Guid(f9c24f37fc45cdc43b0db6a2761ab3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ba31be2836cc11f539be1dde8ef153') in 0.068197 seconds 
+  Import took 0.082063 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.752143 seconds.
-  path: Assets/Project Assets/Scenes/Lobby/banner-drape2.fbx
-  artifactKey: Guid(f24d2a818874a63418cc873db3604b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Lobby/banner-drape2.fbx using Guid(f24d2a818874a63418cc873db3604b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a81b7b2fafe8fe72c0fd788aa3423a3') in 0.084779 seconds 
-  Import took 0.092509 seconds .
+  Time since last request: 1.189753 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/board-post.png
+  artifactKey: Guid(164b1e3094ab5b947b29306ba4f9e11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/board-post.png using Guid(164b1e3094ab5b947b29306ba4f9e11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b27415f64fcbbc437c21cfaaf78c0d9') in 0.050126 seconds 
+  Import took 0.071630 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 140.173003 seconds.
-  path: Assets/Project Assets/Scenes/Landing Cutscene/Cutscene/NavMesh-NavMesh (Ground).asset
-  artifactKey: Guid(02e60e79494d11744af205652f7af493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Landing Cutscene/Cutscene/NavMesh-NavMesh (Ground).asset using Guid(02e60e79494d11744af205652f7af493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e139aa5c4a1946627be861de914a2e8') in 0.006873 seconds 
-  Import took 0.013949 seconds .
+  Time since last request: 0.000240 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/rope.png
+  artifactKey: Guid(acbb72edb3f13914b88dd7ec3b8296e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/rope.png using Guid(acbb72edb3f13914b88dd7ec3b8296e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4220e2eec8e1f70a23a0f31b8901c56d') in 0.054982 seconds 
+  Import took 0.067156 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.018139 seconds.
-  path: Assets/Project Assets/Scenes/Landing Cutscene/Cutscene/Sky and Fog Settings Profile.asset
-  artifactKey: Guid(cdfe4b4745b39de49a01b592a7a46952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Landing Cutscene/Cutscene/Sky and Fog Settings Profile.asset using Guid(cdfe4b4745b39de49a01b592a7a46952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cf5ea334520902bcdb39c288be2fdb') in 0.126524 seconds 
-  Import took 0.137262 seconds .
+  Time since last request: 0.000265 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/flag.png
+  artifactKey: Guid(90e2293246310fe469d4eec687e39493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/flag.png using Guid(90e2293246310fe469d4eec687e39493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08579481c911547f47f3edfb6f63fdd8') in 0.040124 seconds 
+  Import took 0.085914 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.701774 seconds.
-  path: Assets/Project Assets/Environment/Prototype/playground material.mat
-  artifactKey: Guid(4702d5733a8d7ce47834b1dfb0888e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Prototype/playground material.mat using Guid(4702d5733a8d7ce47834b1dfb0888e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56a7ef2406f71d660d0dd68cc8c8d4a') in 0.036460 seconds 
-  Import took 0.043839 seconds .
+  Time since last request: 0.000258 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/yellow-wood.png
+  artifactKey: Guid(f37c6c1e3a8cfba4dbb4e6ac94569e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/textures/board.Textures/yellow-wood.png using Guid(f37c6c1e3a8cfba4dbb4e6ac94569e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cbc121a6ebf9d6aa037de6f57f022c') in 0.132646 seconds 
+  Import took 0.145847 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Project Assets/Environment/Prototype/prototype player material.mat
-  artifactKey: Guid(89598e73239cfe74ebe0d59f0f3cf565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Prototype/prototype player material.mat using Guid(89598e73239cfe74ebe0d59f0f3cf565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9209b9efeb1c031922f31714b83d046c') in 0.028803 seconds 
-  Import took 0.035854 seconds .
+  Time since last request: 424.470790 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb
+  artifactKey: Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb using Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b568d5e9795267bc0336c6232ad76a9') in 9.130808 seconds 
+  Import took 9.361046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.304590 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb
+  artifactKey: Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb using Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26f4979bc9d439a4f7dd075bcc7464f') in 3.060432 seconds 
+  Import took 3.075996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.542911 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials
+  artifactKey: Guid(7cb06d3e5f2bfff4d893c5f9eadc5cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials using Guid(7cb06d3e5f2bfff4d893c5f9eadc5cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5881121fba9cfd4c9913cc7c0ef99c6') in 0.002871 seconds 
+  Import took 0.023980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072137 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.001.mat
+  artifactKey: Guid(d347130b9f44a774a87acbfb54a955ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.001.mat using Guid(d347130b9f44a774a87acbfb54a955ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34eb6d8527806a773e71721639a33f9') in 0.061905 seconds 
+  Import took 0.074565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.003.mat
+  artifactKey: Guid(31648b12c7fc2274e8ace4a17ed42ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.003.mat using Guid(31648b12c7fc2274e8ace4a17ed42ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45156462c94cf52d072be6f6801792a1') in 0.064879 seconds 
+  Import took 0.098331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/rope.mat
+  artifactKey: Guid(dc302cbbf1ad4494fb23baf3adb6c42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/rope.mat using Guid(dc302cbbf1ad4494fb23baf3adb6c42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acbe3049f7f7caa5bff7d01cd823e3bb') in 0.046959 seconds 
+  Import took 0.059426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.mat
+  artifactKey: Guid(b49a55784ad32da4fb7675fc84b12d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.mat using Guid(b49a55784ad32da4fb7675fc84b12d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042a6ce704fc1be1e968c455fd5820fc') in 0.121344 seconds 
+  Import took 0.185347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.002.mat
+  artifactKey: Guid(4f4a4e6ce805af649adae4119e229dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.002.mat using Guid(4f4a4e6ce805af649adae4119e229dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e5d7c04fce01d7a5897251b8deb48c1') in 0.037419 seconds 
+  Import took 0.049801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.326370 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.mat
+  artifactKey: Guid(b49a55784ad32da4fb7675fc84b12d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Materials/Material.mat using Guid(b49a55784ad32da4fb7675fc84b12d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042a6ce704fc1be1e968c455fd5820fc') in 0.029056 seconds 
+  Import took 0.040875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.418480 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-post.png
+  artifactKey: Guid(12a0b00350d72a342a471f0ce0082cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-post.png using Guid(12a0b00350d72a342a471f0ce0082cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054d7d739f0444b9a6b1f37773ea8f59') in 0.089269 seconds 
+  Import took 0.100872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/gray-wood.normal.png
+  artifactKey: Guid(45dd881285d48914ca1224e2d3fe946d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/gray-wood.normal.png using Guid(45dd881285d48914ca1224e2d3fe946d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8decf152b283982c07b3337764c2270f') in 0.604014 seconds 
+  Import took 0.617397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/flag.png
+  artifactKey: Guid(a29cc4ed37a46364491ea541d44eb9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/flag.png using Guid(a29cc4ed37a46364491ea541d44eb9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df82ac44fa8e9bc41417353ac1cf452') in 0.022178 seconds 
+  Import took 0.034220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/gray-wood__UNIGLTF__DUPLICATED__2.png
+  artifactKey: Guid(0bcf92e59b1f92a4b86b994d6e20ccfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/gray-wood__UNIGLTF__DUPLICATED__2.png using Guid(0bcf92e59b1f92a4b86b994d6e20ccfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48b8630c16f644d5feebabd2b199b54') in 0.145852 seconds 
+  Import took 0.163275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/rope.png
+  artifactKey: Guid(8c83a67f4b3f61d48a8decbe213a7cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/rope.png using Guid(8c83a67f4b3f61d48a8decbe213a7cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc1093fa76cfffe71f5ef28ecb1580d') in 0.093747 seconds 
+  Import took 0.107042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/yellow-wood.png
+  artifactKey: Guid(b3872b0ea7fe9b6469c805f11a14dd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/yellow-wood.png using Guid(b3872b0ea7fe9b6469c805f11a14dd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae7aa939ab3b19ffd68bf78a4a54dd8') in 0.011457 seconds 
+  Import took 0.023226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011148 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/yellow-wood.png
+  artifactKey: Guid(b3872b0ea7fe9b6469c805f11a14dd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/yellow-wood.png using Guid(b3872b0ea7fe9b6469c805f11a14dd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae7aa939ab3b19ffd68bf78a4a54dd8') in 0.014057 seconds 
+  Import took 0.026797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 383.532879 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb
+  artifactKey: Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.glb using Guid(1f3501a97cc9e764499074dc50d760c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a51861cf99333db59a835067355e4e') in 4.277628 seconds 
+  Import took 4.806913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43838.210245 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_d.png
+  artifactKey: Guid(fd98a7bb7c4cca44cb0bb80af0222b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_d.png using Guid(fd98a7bb7c4cca44cb0bb80af0222b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3704b2dc56363e66b389993cf6e1425a') in 1.254426 seconds 
+  Import took 3.794311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_n.png
+  artifactKey: Guid(29a0273efa65ca941b0d1b9968da8a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_n.png using Guid(29a0273efa65ca941b0d1b9968da8a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da61f803e52600835148cd6fc2ad55d') in 0.263606 seconds 
+  Import took 0.325381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_d.png
+  artifactKey: Guid(fd98a7bb7c4cca44cb0bb80af0222b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_d.png using Guid(fd98a7bb7c4cca44cb0bb80af0222b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3704b2dc56363e66b389993cf6e1425a') in 0.491894 seconds 
+  Import took 0.509012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_n.png
+  artifactKey: Guid(29a0273efa65ca941b0d1b9968da8a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Board/source/board.Textures/board-checkers_n.png using Guid(29a0273efa65ca941b0d1b9968da8a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da61f803e52600835148cd6fc2ad55d') in 0.235800 seconds 
+  Import took 0.247145 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.423714 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 12.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 40.418 seconds
+Domain Reload Profiling:
+	ReloadAssembly (41819ms)
+		BeginReloadAssembly (32790ms)
+			ExecutionOrderSort (89ms)
+			DisableScriptedObjects (12545ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (24ms)
+			CreateAndSetChildDomain (9912ms)
+		EndReloadAssembly (7356ms)
+			LoadAssemblies (1092ms)
+			RebuildTransferFunctionScriptingTraits (9ms)
+			SetupTypeCache (1998ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (473ms)
+			SetupLoadedEditorAssemblies (2356ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (183ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (13ms)
+				BeforeProcessingInitializeOnLoad (521ms)
+				ProcessInitializeOnLoadAttributes (1505ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (16ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4994 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 325.0 MB.
+System memory in use after: 325.4 MB.
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 5958.
+Total: 66.932000 ms (FindLiveObjects: 0.603600 ms CreateObjectMapping: 0.176700 ms MarkObjects: 65.997300 ms  DeleteObjects: 0.152000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1128.779055 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(917f44ac2b5898341a3807324eca21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(917f44ac2b5898341a3807324eca21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c332a80e06e5f507ca0b61ddaafaec3') in 4.310630 seconds 
+  Import took 4.416588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.995180 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/mud2.terrainlayer
+  artifactKey: Guid(4e0d9b688d090b5408000d24a03c774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/mud2.terrainlayer using Guid(4e0d9b688d090b5408000d24a03c774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0489ed69ea6c8dce224e9f5548c9b1ec') in 1.812477 seconds 
+  Import took 1.821780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.211553 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/mud2.terrainlayer
+  artifactKey: Guid(4e0d9b688d090b5408000d24a03c774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/mud2.terrainlayer using Guid(4e0d9b688d090b5408000d24a03c774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0489ed69ea6c8dce224e9f5548c9b1ec') in 0.685280 seconds 
+  Import took 0.694072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 411.725975 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(917f44ac2b5898341a3807324eca21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(917f44ac2b5898341a3807324eca21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51dd17d4c0e6d4b4415a23c7af68124') in 0.062037 seconds 
+  Import took 0.073880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 612.967547 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/NavMesh-NavMesh Surface.asset
+  artifactKey: Guid(0406c3b5d346a8a42b9e5abcf3c1ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/NavMesh-NavMesh Surface.asset using Guid(0406c3b5d346a8a42b9e5abcf3c1ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77dca4168f8382599c838393df41e4bd') in 0.204939 seconds 
+  Import took 0.235606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000675 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset
+  artifactKey: Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset using Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c573aa98567b67aafde795dd2f9a31f') in 0.783578 seconds 
+  Import took 0.791995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/NavMesh-NavMesh Surface.asset
+  artifactKey: Guid(0406c3b5d346a8a42b9e5abcf3c1ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/NavMesh-NavMesh Surface.asset using Guid(0406c3b5d346a8a42b9e5abcf3c1ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77dca4168f8382599c838393df41e4bd') in 0.027130 seconds 
+  Import took 0.035409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset
+  artifactKey: Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset using Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c573aa98567b67aafde795dd2f9a31f') in 0.029721 seconds 
+  Import took 0.037546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 436.249550 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset
+  artifactKey: Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset using Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '338825ea33e1754e036a8f383c4a056e') in 0.044430 seconds 
+  Import took 0.061725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.588889 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset
+  artifactKey: Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset using Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2443241cd9597f9dfe6ce5de278fa3') in 0.032940 seconds 
+  Import took 0.041730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 191.912831 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/kloppenheim_01_4k.exr
+  artifactKey: Guid(9e8ec55a622c22349a68adb69e4d8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/kloppenheim_01_4k.exr using Guid(9e8ec55a622c22349a68adb69e4d8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2acf085299405c38a8d2adab3489d5') in 0.796856 seconds 
+  Import took 0.806638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.027627 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/kloppenheim_01_4k.exr
+  artifactKey: Guid(9e8ec55a622c22349a68adb69e4d8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/kloppenheim_01_4k.exr using Guid(9e8ec55a622c22349a68adb69e4d8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5954f1fe11513424184542a4ee7b6daa') in 3.834015 seconds 
+  Import took 3.845156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.290667 seconds.
+  path: Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset
+  artifactKey: Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Scenes/Island/Island/Sky and Fog Settings Profile.asset using Guid(340dcb88058162d4ba9746ac015f55be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161dfa1571b55537eaf8bc1faa84f104') in 0.272176 seconds 
+  Import took 0.282417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4891.469504 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/Material.002 1.mat
+  artifactKey: Guid(23fb54c0767267f49beb62092b4183f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/Material.002 1.mat using Guid(23fb54c0767267f49beb62092b4183f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2d14ce75e49e8b5bea6770a5f22ef4') in 40.234813 seconds 
+  Import took 42.182837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.361716 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/source/rules-hut2.glb
+  artifactKey: Guid(ddf97dae0f8c50a408b8fe732722a903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/source/rules-hut2.glb using Guid(ddf97dae0f8c50a408b8fe732722a903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b233a9d3b582e3344af615d0a193d24a') in 6.871447 seconds 
+  Import took 6.891167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.444572 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/source/rules-hut2.glb
+  artifactKey: Guid(ddf97dae0f8c50a408b8fe732722a903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/source/rules-hut2.glb using Guid(ddf97dae0f8c50a408b8fe732722a903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702f05a238daf6c4c806010d3ff0e8ef') in 2.371916 seconds 
+  Import took 2.393642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000500 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/source/rules-hut2.Textures
+  artifactKey: Guid(c645d2911612dd54896a1484d511556e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/source/rules-hut2.Textures using Guid(c645d2911612dd54896a1484d511556e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c01f1959a3d46ee8d5b319b40eb9da44') in 0.067069 seconds 
+  Import took 0.076326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.709257 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/straw-rendered-d.png
+  artifactKey: Guid(54979d5810cb9e04fa34f5226a23e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/straw-rendered-d.png using Guid(54979d5810cb9e04fa34f5226a23e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4217c5523fab0737176c2e77275938aa') in 0.169706 seconds 
+  Import took 0.178459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/straw-rendered-n.normal.png
+  artifactKey: Guid(9249a93725d1144419824689efc77aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/straw-rendered-n.normal.png using Guid(9249a93725d1144419824689efc77aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e1ac75c9d80a78aac9768100c8f7b5') in 0.322893 seconds 
+  Import took 0.331105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/weathered-wood__UNIGLTF__DUPLICATED__2.png
+  artifactKey: Guid(b305190d99a30c948ac91193b8e6fe34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/weathered-wood__UNIGLTF__DUPLICATED__2.png using Guid(b305190d99a30c948ac91193b8e6fe34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22e7cccd4ed4e4707e927e2aeea25c2') in 0.099752 seconds 
+  Import took 0.107918 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000289 seconds.
-  path: Assets/Project Assets/Environment/Prototype/playgroundProp_material.mat
-  artifactKey: Guid(f48c974b51e2e29448ebe942606538de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Prototype/playgroundProp_material.mat using Guid(f48c974b51e2e29448ebe942606538de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2c757b02e1b542b9c764e0f649f222') in 0.030277 seconds 
-  Import took 0.038748 seconds .
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/weathered-wood.png
+  artifactKey: Guid(8f1773586846e01429eb2a8c4a568e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/weathered-wood.png using Guid(8f1773586846e01429eb2a8c4a568e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f4b1ab4c83053aea414630079bb1ff') in 0.025763 seconds 
+  Import took 0.034073 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Project Assets/Environment/Prototype/playground_baseColor.jpg
-  artifactKey: Guid(8da742277d940d94997fbe6b6573ba6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Prototype/playground_baseColor.jpg using Guid(8da742277d940d94997fbe6b6573ba6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2526944e82dfdd2b456c3d4424953b37') in 0.011621 seconds 
-  Import took 0.019054 seconds .
+  Time since last request: 0.000320 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/weathered-wood__UNIGLTF__DUPLICATED__3.png
+  artifactKey: Guid(ac3edd6f62313644aa0ff42ae7ee7b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Textures/weathered-wood__UNIGLTF__DUPLICATED__3.png using Guid(ac3edd6f62313644aa0ff42ae7ee7b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edf4ee7df27aa71b5424a22093a84cf') in 0.038524 seconds 
+  Import took 0.047464 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.180858 seconds.
-  path: Assets/Project Assets/Prefabs/Water Tile/Resources/Shader Graphs_WaterShader.mat
-  artifactKey: Guid(0f0a5a1be8f39d54b8f06dbf0f65ae98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Prefabs/Water Tile/Resources/Shader Graphs_WaterShader.mat using Guid(0f0a5a1be8f39d54b8f06dbf0f65ae98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31fd12fa1ccd0ef17b7101785bd9ea5') in 7.746505 seconds 
-  Import took 7.754112 seconds .
+  Time since last request: 0.795241 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/Material.002.mat
+  artifactKey: Guid(9ead5b8a7a0757b4db722fa005f196ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/Material.002.mat using Guid(9ead5b8a7a0757b4db722fa005f196ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f4a50e7ced0e26e69453fb62015632') in 0.314033 seconds 
+  Import took 0.322982 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Project Assets/Prefabs/Water Tile/Resources/water normal.jpeg
-  artifactKey: Guid(cd8b0937c4ae0f640b7369f22553dacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Prefabs/Water Tile/Resources/water normal.jpeg using Guid(cd8b0937c4ae0f640b7369f22553dacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4006ebcc97428fb352220fcdca6152b') in 0.016617 seconds 
-  Import took 0.023884 seconds .
+  Time since last request: 0.000286 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.003.mat
+  artifactKey: Guid(39cb6a470940d3d42bdcf4b48785774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.003.mat using Guid(39cb6a470940d3d42bdcf4b48785774b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c1baba315b21bbf69a23d0b1c38c1e') in 0.305412 seconds 
+  Import took 0.314228 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.829382 seconds.
-  path: Assets/Project Assets/Prefabs/Progress Bar/Progress Bar.prefab
-  artifactKey: Guid(d8bc5fcb1760ddd41b2da903bebec221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Prefabs/Progress Bar/Progress Bar.prefab using Guid(d8bc5fcb1760ddd41b2da903bebec221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414267c0411ef2fbc1a7d2c455d9aedc') in 0.022745 seconds 
-  Import took 0.030042 seconds .
+  Time since last request: 0.000305 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.001.mat
+  artifactKey: Guid(42549cf3656cd704aaf55bd1bb4eb87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.001.mat using Guid(42549cf3656cd704aaf55bd1bb4eb87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bb6bc702064db874b4dc0ac9a8a6c0') in 0.334052 seconds 
+  Import took 0.343134 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 299.245754 seconds.
-  path: Assets/Project Assets/Scenes/Landing Cutscene/Cutscene.unity
-  artifactKey: Guid(ccc365c7cbacb0145a4802ec50e37192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Scenes/Landing Cutscene/Cutscene.unity using Guid(ccc365c7cbacb0145a4802ec50e37192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c776896ca9816b728b862d2698d07a30') in 0.006893 seconds 
-  Import took 0.015662 seconds .
+  Time since last request: 0.000237 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.002.mat
+  artifactKey: Guid(d822e69e22c1b0642aa0fbde23dfa112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.002.mat using Guid(d822e69e22c1b0642aa0fbde23dfa112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ba911481dabea26d8de388fcafc4e7') in 0.330882 seconds 
+  Import took 0.339294 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 95.182828 seconds.
-  path: Assets/Project Assets/Environment/Non Interactables/Terrain
-  artifactKey: Guid(dc4a4948c82a7e4448f187aedc2cd932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Project Assets/Environment/Non Interactables/Terrain using Guid(dc4a4948c82a7e4448f187aedc2cd932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab559c597704ff4449ad166f6312e20c') in 0.006933 seconds 
-  Import took 0.014873 seconds .
+  Time since last request: 0.392955 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.001.mat
+  artifactKey: Guid(42549cf3656cd704aaf55bd1bb4eb87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Rules Hut/textures/rules-hut2.Materials/weathered-wood.001.mat using Guid(42549cf3656cd704aaf55bd1bb4eb87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bb6bc702064db874b4dc0ac9a8a6c0') in 0.205341 seconds 
+  Import took 0.213896 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 3303.067233 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle
+  artifactKey: Guid(167b1661af664524c96a754ae78e1d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle using Guid(167b1661af664524c96a754ae78e1d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bafc984d390966d6c64d96c6ecd1c9a') in 0.089268 seconds 
+  Import took 0.181970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.482190 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb
+  artifactKey: Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb using Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a991e03d9d5681dae7b26faf46dfcd11') in 5.334111 seconds 
+  Import took 5.356610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049906 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb
+  artifactKey: Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb using Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a991e03d9d5681dae7b26faf46dfcd11') in 0.977812 seconds 
+  Import took 0.998039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.203729 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb
+  artifactKey: Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb using Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b49ac776648fe7ca476e2cfb167a7c') in 2.545422 seconds 
+  Import took 2.555491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.923648 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb
+  artifactKey: Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.glb using Guid(8be699546d0cfe046bd1b1e6bf9acbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b49ac776648fe7ca476e2cfb167a7c') in 1.207529 seconds 
+  Import took 1.216216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.501254 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/source
+  artifactKey: Guid(fb935a0e6e8224a48a6884f444662e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/source using Guid(fb935a0e6e8224a48a6884f444662e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce46109582f91c823679bc71af80bed') in 0.006381 seconds 
+  Import took 0.014891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.781948 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures
+  artifactKey: Guid(63ba6d41fe91fa04984591d1a8af4840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures using Guid(63ba6d41fe91fa04984591d1a8af4840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96804949fdb22382f4b890d14fb3b74') in 0.021797 seconds 
+  Import took 0.030313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.246365 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.Textures
+  artifactKey: Guid(67126193916d5b04e9338654171dc6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/candle.Textures using Guid(67126193916d5b04e9338654171dc6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d1c271744ccbebe1b2480019a1205f9') in 0.011927 seconds 
+  Import took 0.020490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.027474 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/Material.mat
+  artifactKey: Guid(4e66f74af3e1f6e4fab00b1221511a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/Material.mat using Guid(4e66f74af3e1f6e4fab00b1221511a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bac6583cb395816a97a0c5377b020b8') in 0.184347 seconds 
+  Import took 0.192682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/wick.mat
+  artifactKey: Guid(232775ee15fdcf541ac64c4dce22bdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/wick.mat using Guid(232775ee15fdcf541ac64c4dce22bdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc1fe7bdcd807f3f33342d24ac6b94a') in 0.192521 seconds 
+  Import took 0.200991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/weathered-wood.mat
+  artifactKey: Guid(07cb14e419769e04697b9fe59c13b130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/weathered-wood.mat using Guid(07cb14e419769e04697b9fe59c13b130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a41bc24ec4eb4f9aaf359f0b326fb09') in 0.088763 seconds 
+  Import took 0.097341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/Material.mat
+  artifactKey: Guid(4e66f74af3e1f6e4fab00b1221511a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/Material.mat using Guid(4e66f74af3e1f6e4fab00b1221511a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bac6583cb395816a97a0c5377b020b8') in 0.114306 seconds 
+  Import took 0.122754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.095839 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/weathered-wood.mat
+  artifactKey: Guid(07cb14e419769e04697b9fe59c13b130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials/weathered-wood.mat using Guid(07cb14e419769e04697b9fe59c13b130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a41bc24ec4eb4f9aaf359f0b326fb09') in 0.197474 seconds 
+  Import took 0.205965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.028034 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Textures/candle.png
+  artifactKey: Guid(ed89733216c4bc646ad82a45a1a925f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Textures/candle.png using Guid(ed89733216c4bc646ad82a45a1a925f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37df0e6abf868513535953153a8b9f1e') in 0.086990 seconds 
+  Import took 0.096010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Textures/weathered-wood.png
+  artifactKey: Guid(f4262f82d41c87349a55cb8052aafb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Textures/weathered-wood.png using Guid(f4262f82d41c87349a55cb8052aafb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69cbecc8b7d8db57e5f6b7172da4c2b0') in 0.029457 seconds 
+  Import took 0.037758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.263941 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials
+  artifactKey: Guid(5420ebb35523be345a12a219e14810e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Candle/textures/candle.Materials using Guid(5420ebb35523be345a12a219e14810e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233e0d3d2d742d390eca2c13c8345c21') in 0.007236 seconds 
+  Import took 0.023598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 919.185261 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island map
+  artifactKey: Guid(a9c0607388301054eb45856aa1f9033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island map using Guid(a9c0607388301054eb45856aa1f9033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8348c1bc08f37251f1c572191ab81f0') in 0.110714 seconds 
+  Import took 0.170709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013680 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island map
+  artifactKey: Guid(a9c0607388301054eb45856aa1f9033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island map using Guid(a9c0607388301054eb45856aa1f9033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8348c1bc08f37251f1c572191ab81f0') in 0.002602 seconds 
+  Import took 0.011392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.349778 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map
+  artifactKey: Guid(a9c0607388301054eb45856aa1f9033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map using Guid(a9c0607388301054eb45856aa1f9033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51be4542bf51a53557c2221dc004867e') in 0.035804 seconds 
+  Import took 0.044365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.784928 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source
+  artifactKey: Guid(cb6f26cb6f053684b94f7f200379d4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source using Guid(cb6f26cb6f053684b94f7f200379d4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7847fc2fcdf903a13938bfe45735999') in 0.019504 seconds 
+  Import took 0.036297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.453577 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/textures
+  artifactKey: Guid(2e1831012ecf45d45b9f6332c2a2cda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/textures using Guid(2e1831012ecf45d45b9f6332c2a2cda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da7407cef337c393f22baec1f8d751cb') in 0.002561 seconds 
+  Import took 0.012691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.390506 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.glb
+  artifactKey: Guid(418a88e830e7996479a6ae104cc7f2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.glb using Guid(418a88e830e7996479a6ae104cc7f2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bec3a193798d91a75520b41e178ff3') in 2.424815 seconds 
+  Import took 2.442685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061437 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.glb
+  artifactKey: Guid(418a88e830e7996479a6ae104cc7f2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.glb using Guid(418a88e830e7996479a6ae104cc7f2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bec3a193798d91a75520b41e178ff3') in 1.068676 seconds 
+  Import took 1.087355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.113642 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.glb
+  artifactKey: Guid(418a88e830e7996479a6ae104cc7f2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.glb using Guid(418a88e830e7996479a6ae104cc7f2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb4b6eb39fa08cdd6470462285f8791') in 0.865127 seconds 
+  Import took 0.874343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.482400 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials/Material.001.mat
+  artifactKey: Guid(6f133c47bcb0b7e4fb7cbde06e0a1aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials/Material.001.mat using Guid(6f133c47bcb0b7e4fb7cbde06e0a1aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79204b000ca08e183c49c5c26ba1629') in 3.260990 seconds 
+  Import took 3.337450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials/Material.002.mat
+  artifactKey: Guid(b5875012a1a774447870a63111517083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials/Material.002.mat using Guid(b5875012a1a774447870a63111517083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f3ab234583e79c66fad2e3fc0a624f') in 0.443757 seconds 
+  Import took 0.452355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials/Material.mat
+  artifactKey: Guid(11d4916666bee264c87f06b9b0e5dca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Chalkboards/Chalkboard1/Textures/chalkboard-1.Materials/Material.mat using Guid(11d4916666bee264c87f06b9b0e5dca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee54a9dc83534acb93399c66a6010c8c') in 0.568859 seconds 
+  Import took 0.577352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.133007 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.Materials/map.mat
+  artifactKey: Guid(033294719e4480946b1cd8472d7658f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.Materials/map.mat using Guid(033294719e4480946b1cd8472d7658f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a0fd947728b368d130d222ea92b3ff') in 0.356308 seconds 
+  Import took 0.365250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.226682 seconds.
+  path: Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.Textures/island-map.png
+  artifactKey: Guid(74c4ecca45c20024eaf0844f447db850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Assets/Prefabs/Conquest_decorations/Island Map/source/island-map.Textures/island-map.png using Guid(74c4ecca45c20024eaf0844f447db850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cc38fce830d071f97177337c3a8143') in 0.104338 seconds 
+  Import took 0.131618 seconds .
+
