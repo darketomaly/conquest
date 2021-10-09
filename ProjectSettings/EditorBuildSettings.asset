@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
+<<<<<<< HEAD
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
+=======
+    path: Assets/Project Assets/Scenes/WarmUp.unity
+    guid: aecad39313c78534e85419e5cbe51403
+  - enabled: 1
+>>>>>>> main
     path: Assets/Project Assets/Scenes/Landing Cutscene/Cutscene.unity
     guid: ccc365c7cbacb0145a4802ec50e37192
   - enabled: 0

@@ -13,6 +13,7 @@ public class SpawnPlayers : MonoBehaviourPunCallbacks {
     private void Start() {
 
         Debug.Log($"Spawning");
+
         if (!PhotonNetwork.IsConnected) { //Only used when developing
 
             Debug.Log("<color=red>Offline mode enabled.</color>");
@@ -22,19 +23,14 @@ public class SpawnPlayers : MonoBehaviourPunCallbacks {
             roomOptions.MaxPlayers = 1;
 
             PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
-
-            
         }
 
-        GameObject spawnedPlayer = PhotonNetwork.Instantiate(playerPrefabPath, startPosition.position, Quaternion.identity);
-        OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
         //Debug.Log(PhotonNetwork.CountOfPlayers);
-    }
 
-    /*private void onJoinedRoom(){
-        GameObject spawnedPlayer = PhotonNetwork.Instantiate(playerPrefabPath, startPosition.position, Quaternion.identity);
+        GameObject spawnedPlayer =
+                PhotonNetwork.Instantiate(playerPrefabPath, startPosition.position, Quaternion.identity);
         OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
-    }*/
+    }
 
     //Only gets called on the local client, used to store references
     private void OnSpawnBehavior(Player spawnedPlayer) {
