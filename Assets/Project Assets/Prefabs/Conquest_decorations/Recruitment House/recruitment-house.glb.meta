@@ -1,0 +1,92 @@
+fileFormatVersion: 2
+guid: 3794306132da4f748986d18881862a7b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 1b9953c204eed0d4987366ae67fa62d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: da10d10682da3c840a7850e6e4cb593e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 23c8663919e885548888e3fbaa691b8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blank-material
+    second: {fileID: 2100000, guid: 6a7db62376ac9594db2f7ab639437540, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: conquest-symbol-material
+    second: {fileID: 2100000, guid: 49f5031edb195be40a3f0cf1265fec7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark wood
+    second: {fileID: 2100000, guid: b7cfc94e6a9cff348a0dd12aae6c549b, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: Material Metallic.standard
+    second: {fileID: 2800000, guid: 42b64bba94a39c642a4a87ed963e2194, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: Material Normal.normal
+    second: {fileID: 2800000, guid: fbcd612eae7cd0c46bf3c33adab6de20, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: Material.normal
+    second: {fileID: 2800000, guid: 6e8fe18cf8de26a44996342973fa06df, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: Material__UNIGLTF__DUPLICATED__2
+    second: {fileID: 2800000, guid: 8bbcb0104b09c764f9effb1011d897af, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: conquest-symbol-material Base Color
+    second: {fileID: 2800000, guid: 220e6b4a716088d4385b6eedb2f35732, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: conquest-symbol-material Metallic.standard
+    second: {fileID: 2800000, guid: 3209326c077addc4a924823be645aca8, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: dark-brown-wood
+    second: {fileID: 2800000, guid: f0ff56ad0308f2d488e7b701cf5594fd, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: recruitment-house-roof_d
+    second: {fileID: 2800000, guid: 5a00cb112d0018a4ba14cbe9fae43d3c, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood.normal
+    second: {fileID: 2800000, guid: cef1840565f120748aece94655f21f8f, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood__UNIGLTF__DUPLICATED__2
+    second: {fileID: 2800000, guid: 5d7ceb05368ca4a4ea4e22c9d18c04ab, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0
