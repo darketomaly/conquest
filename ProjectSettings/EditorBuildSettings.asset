@@ -7,6 +7,8 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
@@ -14,6 +16,7 @@ EditorBuildSettings:
     guid: 00000000000000000000000000000000
   - enabled: 0
 =======
+>>>>>>> sb-test
     path: Assets/Project Assets/Scenes/WarmUp.unity
     guid: aecad39313c78534e85419e5cbe51403
   - enabled: 1
