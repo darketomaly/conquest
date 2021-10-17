@@ -1,0 +1,57 @@
+fileFormatVersion: 2
+guid: ddf97dae0f8c50a408b8fe732722a903
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 9ead5b8a7a0757b4db722fa005f196ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood.001
+    second: {fileID: 2100000, guid: 42549cf3656cd704aaf55bd1bb4eb87f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood.002
+    second: {fileID: 2100000, guid: d822e69e22c1b0642aa0fbde23dfa112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood.003
+    second: {fileID: 2100000, guid: 39cb6a470940d3d42bdcf4b48785774b, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: straw-rendered-d
+    second: {fileID: 2800000, guid: 54979d5810cb9e04fa34f5226a23e18a, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: straw-rendered-n.normal
+    second: {fileID: 2800000, guid: 9249a93725d1144419824689efc77aae, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood
+    second: {fileID: 2800000, guid: 8f1773586846e01429eb2a8c4a568e6e, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood__UNIGLTF__DUPLICATED__2
+    second: {fileID: 2800000, guid: b305190d99a30c948ac91193b8e6fe34, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood__UNIGLTF__DUPLICATED__3
+    second: {fileID: 2800000, guid: ac3edd6f62313644aa0ff42ae7ee7b04, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0

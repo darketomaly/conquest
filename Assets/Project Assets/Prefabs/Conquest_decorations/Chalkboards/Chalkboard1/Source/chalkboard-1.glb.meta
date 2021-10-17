@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: a453e3939ae387045bd60651346dae9c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 11d4916666bee264c87f06b9b0e5dca9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 6f133c47bcb0b7e4fb7cbde06e0a1aad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: b5875012a1a774447870a63111517083, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: chalkboard1_d
+    second: {fileID: 2800000, guid: f8f33be3573584149a1cab865ffebb1f, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: mango-wood
+    second: {fileID: 2800000, guid: dad091231086c9c47843e4134cdb8a34, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: walnut-wood
+    second: {fileID: 2800000, guid: af77fdf7e6f19e843993c3316d15f9bf, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0
