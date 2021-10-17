@@ -23,3 +23,21 @@ public class Interactable : MonoBehaviour {
         //Debug.Log($"Defocused from {transform.name}.");
     }
 }
+
+
+public class NPC : Interactable
+{
+    public NPC()
+    {
+        Console.WriteLine("NPC constructor.");
+    }
+
+    public static void Main()
+    {
+        NPC npc = new NPC();
+
+        npc.print();
+    }
+
+
+}
