@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0e744a0e39ee51e41bf0e3ae020bc0e3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone-wall
+    second: {fileID: 2100000, guid: 36b1e191cfa404f498f85ec282fd1818, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: stone-wall
+    second: {fileID: 2800000, guid: b4528d8f3fd51fc4aabe5a0deac285cc, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0

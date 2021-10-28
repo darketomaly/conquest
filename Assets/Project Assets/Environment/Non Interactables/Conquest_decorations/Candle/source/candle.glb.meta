@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 8be699546d0cfe046bd1b1e6bf9acbdd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 4e66f74af3e1f6e4fab00b1221511a4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood
+    second: {fileID: 2100000, guid: 07cb14e419769e04697b9fe59c13b130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wick
+    second: {fileID: 2100000, guid: 232775ee15fdcf541ac64c4dce22bdf6, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: candle
+    second: {fileID: 2800000, guid: ed89733216c4bc646ad82a45a1a925f7, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: weathered-wood
+    second: {fileID: 2800000, guid: f4262f82d41c87349a55cb8052aafb42, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0

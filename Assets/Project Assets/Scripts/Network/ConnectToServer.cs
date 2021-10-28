@@ -23,8 +23,9 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
         cg.DOFade(1.0f, 0.5f);
 
-        //Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
+        Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
         PhotonNetwork.ConnectUsingSettings();
+
         textMesh.text = "Connecting to server";
     }
 

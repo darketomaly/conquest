@@ -70,7 +70,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
     public override void OnJoinedRoom() {
 
         Debug.Log($"Joined room");
-        PhotonNetwork.LoadLevel("Conquest"); 
+        PhotonNetwork.LoadLevel("Playground"); 
     }
 
     private void OnDestroy() {
