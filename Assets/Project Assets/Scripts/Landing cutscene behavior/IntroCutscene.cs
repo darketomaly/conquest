@@ -11,18 +11,27 @@ using UnityEngine.Rendering.HighDefinition;
 public class IntroCutscene : MonoBehaviour {
 
     [Header("Fx")]
-    public VolumeProfile volume;
+    [SerializeField] private VolumeProfile volume;
     private ChromaticAberration chromaticAberration;
     private LiftGammaGain liftGammaGain;
 
     [Header("Camera")]
-    public CinemachineCameraOffset offsetComponent;
+    [SerializeField] private Transform vCam;
+    [SerializeField] private Transform cameraStartTransform;
+    [SerializeField] private Transform cameraEndTransform;
+    [SerializeField] private CinemachineCameraOffset offsetComponent;
     private Vector3 offset;
 
     private void Awake() =>
         DOTween.Init();
 
     private IEnumerator Start() {
+
+        vCam.position = cameraStartTransform.position;
+        vCam.rotation = cameraStartTransform.rotation;
+
+        vCam.DOMove(cameraEndTransform.position, 5.0f);
+        vCam.DORotateQuaternion(cameraEndTransform.rotation, 7.0f);
 
         yield return new WaitForSeconds(0.1f);
 
@@ -56,8 +65,8 @@ public class IntroCutscene : MonoBehaviour {
         offset = Vector3.Lerp(offset, Mouse.current.delta.ReadValue(), 0.125f * Time.deltaTime);
         offset = Vector3.ClampMagnitude(offset, 0.25f);
 
-        offsetComponent.m_Offset.x = Mathf.Lerp(offsetComponent.m_Offset.x, offset.x, 0.5f * Time.deltaTime);
-        offsetComponent.m_Offset.y = Mathf.Lerp(offsetComponent.m_Offset.y, offset.y, 0.5f * Time.deltaTime);
+        offsetComponent.m_Offset.x = Mathf.Lerp(offsetComponent.m_Offset.x, offset.x, 0.15f * Time.deltaTime);
+        offsetComponent.m_Offset.y = Mathf.Lerp(offsetComponent.m_Offset.y, offset.y, 0.15f * Time.deltaTime);
     }
 
     private void OnDestroy() {

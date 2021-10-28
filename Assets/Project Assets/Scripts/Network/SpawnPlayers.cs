@@ -12,6 +12,7 @@ public class SpawnPlayers : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
+        Application.targetFrameRate = -1;
         Debug.Log($"Spawning");
 
         if (!PhotonNetwork.IsConnected) { //Only used when developing
