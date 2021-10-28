@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Project Assets/Scenes/WarmUp.unity
     guid: aecad39313c78534e85419e5cbe51403
   - enabled: 1
-    path: Assets/Project Assets/Scenes/Landing Cutscene/Cutscene.unity
+    path: Assets/Project Assets/Scenes/Landing Cutscene/Landing.unity
     guid: ccc365c7cbacb0145a4802ec50e37192
   - enabled: 1
     path: Assets/Project Assets/Scenes/Conquest.unity
