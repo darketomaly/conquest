@@ -11,22 +11,26 @@ using DG.Tweening;
 
 public class ConnectToServer : MonoBehaviourPunCallbacks {
 
-    public TextMeshProUGUI textMesh;
-    public ProgressBar progressBar;
+    public TextMeshProUGUI statusText;
     public TextMeshProUGUI percentageText;
     public CanvasGroup cg;
     public Transform loginManager;
 
+    private int step;
+    private float lerpedStep;
+
+    private void Awake() {
+
+        DOTween.Init();
+    }
+
     private void Start() {
 
-        Debug.Log("<color=green>Online mode enabled.</color>");
+        Debug.Log("<color=green>Online mode enabled</color>");
 
         cg.DOFade(1.0f, 0.5f);
-
-        Application.backgroundLoadingPriority = ThreadPriority.BelowNormal; //prevents lag when loading scene
         PhotonNetwork.ConnectUsingSettings();
-
-        textMesh.text = "Connecting to server";
+        statusText.text = "Connecting to server";
     }
 
     private void Update() {
@@ -35,58 +39,62 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
             case ClientState.ConnectingToNameServer:
 
-                //Debug.Log("1: Connecting to name server");
-                progressBar.value = 1;
+                step = 1;
                 break;
 
             case ClientState.ConnectedToNameServer:
 
-                //Debug.Log("2: Connected to name server"); //
-                progressBar.value = 2;
+                step = 2;
                 break;
 
             case ClientState.Authenticating:
 
-                //Debug.Log("3: Authenticating");
-                //progressBar.value = 3;
+                step = 3;
                 break;
 
             case ClientState.ConnectingToMasterServer:
 
-                //Debug.Log("4: Connecting to master server");
-                progressBar.value = 3;
+                step = 4;
+                break;
+
+            case ClientState.ConnectedToMasterServer:
+
+                step = 5;
                 break;
 
             case ClientState.JoiningLobby:
 
-                progressBar.value = 4;
+                step = 6;
                 break;
 
             case ClientState.JoinedLobby:
 
-                //Debug.Log("6: Joined lobby");
-                progressBar.value = 5;
+                step = 7;
                 break;
 
             default:
                 break;
         }
 
-        percentageText.text = progressBar.percentage + "%";
+        lerpedStep = Mathf.MoveTowards(lerpedStep, step, 15.0f * Time.deltaTime);
+        percentageText.text = $"{(int)(((float)lerpedStep / 7) * 100)}%";
     }
 
     public override void OnConnectedToMaster() {
 
-        textMesh.text = "Joining lobby";
+        statusText.text = "Joining lobby";
         if(PhotonNetwork.IsConnected)
             PhotonNetwork.JoinLobby();
     }
 
     public override void OnJoinedLobby() {
 
-        cg.DOFade(0.0f, 0.25f).OnComplete(delegate {
+        statusText.text = "Joined lobby";
 
-            loginManager.gameObject.SetActive(true);
+        loginManager.gameObject.SetActive(true);
+
+        cg.DOFade(0.0f, 0.75f).OnComplete(delegate {
+
             gameObject.SetActive(false);
         });
     }

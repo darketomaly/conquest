@@ -16,10 +16,10 @@ public class LoginManager : MonoBehaviourPunCallbacks {
     public Button button;
     public CanvasGroup cg;
 
-    private void Awake() {
-
-        StartCoroutine(DisplayPlayerCount());
-    }
+    //private void Awake() {
+    //
+    //    StartCoroutine(DisplayPlayerCount());
+    //}
 
     private void Start() {
 
@@ -28,7 +28,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public void EnterRoom() {
 
-        Debug.Log($"Attempting to join or create room.");
+        Debug.Log($"Attempting to join or create room");
         SceneFade.FadeIn();
 
         RoomOptions roomOptions = new RoomOptions();
@@ -39,16 +39,16 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         PhotonNetwork.JoinOrCreateRoom("world1", roomOptions, TypedLobby.Default);
     }
 
-    private IEnumerator DisplayPlayerCount() {
-
-        while (true) {
-
-            playerCountText.text =
-                $"World 1 ({PhotonNetwork.CountOfPlayersInRooms}/25)";
-
-            yield return new WaitForSeconds(5.1f);
-        }
-    }
+    //private IEnumerator DisplayPlayerCount() {
+    //
+    //    while (true) {
+    //
+    //        playerCountText.text =
+    //            $"World 1 ({PhotonNetwork.CountOfPlayersInRooms}/25)";
+    //
+    //        yield return new WaitForSeconds(5.1f);
+    //    }
+    //}
 
     public override void OnCreatedRoom() {
 
@@ -69,7 +69,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public override void OnJoinedRoom() {
 
-        Debug.Log($"Joined room");
+        Debug.Log($"Joined room {PhotonNetwork.CurrentRoom.Name}");
         PhotonNetwork.LoadLevel("Playground"); 
     }
 

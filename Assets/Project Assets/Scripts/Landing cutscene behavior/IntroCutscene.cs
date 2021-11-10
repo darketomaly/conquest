@@ -71,6 +71,8 @@ public class IntroCutscene : MonoBehaviour {
 
     private void OnDestroy() {
 
+        vCam.DOKill();
+
         chromaticAberration.intensity.value = 0.0f;
         liftGammaGain.lift.value = new Vector4(1, 1, 1, 0.0f);
     }

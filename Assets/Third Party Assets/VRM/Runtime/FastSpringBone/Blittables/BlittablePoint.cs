@@ -131,10 +131,12 @@ namespace VRM.FastSpringBones.Blittables
         }
 
         private static Quaternion FromToRotation(Vector3 from, Vector3 to)
+#pragma warning disable CS0618 // Type or member is obsolete
             => Quaternion.AxisAngle(
                 angle: Mathf.Acos(Mathf.Clamp(Vector3.Dot(from.normalized, to.normalized), -1f, 1f)),
                 axis: Vector3.Cross(from, to).normalized
             );
+#pragma warning restore CS0618 // Type or member is obsolete
 
         private Quaternion ApplyRotation(Vector3 nextTail)
         {

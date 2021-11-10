@@ -5,6 +5,8 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
+#if UNITY_EDITOR
+
 /// <summary>
 /// Unity editor utility for offsetting and scaling terrains
 /// while preserving the world positions of the existing content.
@@ -257,3 +259,5 @@ public class TerrainBoundingBox : MonoBehaviour
         Gizmos.DrawWireCube(Vector3.zero, Vector3.one);
     }
 }
+
+#endif
