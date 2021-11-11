@@ -11,7 +11,6 @@ public class CameraMovement : MonoBehaviour {
 
     private CinemachineVirtualCamera virtualCamera;
     private CinemachineFramingTransposer transposer;
-    private CinemachinePOV pov;
     private CinemachineInputProvider inputProvider;
 
     private PlayerMovement playerMovement;
@@ -45,20 +44,24 @@ public class CameraMovement : MonoBehaviour {
 
     private void OnDisable() => control.Disable();
 
-    private void Start() {
+    private IEnumerator Start() {
 
         playerMovement = GameManager.localPlayer.movement;
-        virtualCamera = 
-            Camera.main.GetComponent<CinemachineBrain>().ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineVirtualCamera>();
+
+        CinemachineBrain brain = Camera.main.GetComponent<CinemachineBrain>();
+
+        while(brain.ActiveVirtualCamera == null) //tiny delay
+            yield return null;
+
+        virtualCamera = brain.ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineVirtualCamera>();
         transposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        pov = virtualCamera.GetCinemachineComponent<CinemachinePOV>();
         virtualCamera.Follow = playerMovement.transform;
         inputProvider = virtualCamera.GetComponent<CinemachineInputProvider>();
     }
 
     private void Update() {
 
-        if (requestedToZoom != 0) //zoom from key press
+        if(requestedToZoom != 0) //zoom from key press
             Zoom(requestedToZoom * Time.deltaTime * 15.0f);
     }
 

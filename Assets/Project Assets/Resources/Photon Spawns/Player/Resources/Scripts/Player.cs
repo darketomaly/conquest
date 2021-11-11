@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : PhotonView {
+public class Player : MonoBehaviourPun {
 
     public PlayerMovement movement;
 

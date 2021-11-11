@@ -46,10 +46,10 @@ public class SceneFade : MonoBehaviour {
         m.fadeInTween = m.bg.DOFade(1.0f, 0.35f).OnComplete(() => m.fadeInTween = null);
     }
 
-    public static void FadeOut(float fadeDuration = 1.0f) {
+    public static void FadeOut(float fadeDuration = 2.0f) {
 
         if (m.fadeOutTween != null) //on additive scene load this gets called more than once
-            return; //
+            return;
 
         if(m.fadeInTween != null) {
 
@@ -59,12 +59,12 @@ public class SceneFade : MonoBehaviour {
                 m.fadeInTween = null;
                 m.fadeInTween.Kill();
 
-                m.fadeOutTween = m.bg.DOFade(0.0f, 1.0f).OnComplete(() => m.fadeOutTween = null);
+                m.fadeOutTween = m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null);
             });
         } else {
 
             m.bg.DOKill();
-            m.fadeOutTween = m.bg.DOFade(0.0f, 1.0f).OnComplete(() => m.fadeOutTween = null);
+            m.fadeOutTween = m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null);
         }
     }
 
