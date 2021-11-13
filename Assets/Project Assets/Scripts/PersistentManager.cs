@@ -11,6 +11,7 @@ namespace Conquest.PersistantManager {
         [Header("Elements")]
         [SerializeField] internal SceneFade sceneFade;
         [SerializeField] internal DevSettings devSettings;
+        [SerializeField] internal AudioManager audioManager;
 
         public static Action onSceneLoaded;
 

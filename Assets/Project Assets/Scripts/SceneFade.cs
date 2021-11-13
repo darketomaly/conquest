@@ -13,7 +13,10 @@ public class SceneFade : MonoBehaviour {
     private Tween fadeInTween = null;
 
     private void Awake() {
-        
+
+        if(PersistentManager.m.sceneFade != this)
+            return;
+
         m = PersistentManager.m.sceneFade;
         FadeOut();
     } 

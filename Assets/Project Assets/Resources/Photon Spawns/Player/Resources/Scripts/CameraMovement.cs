@@ -72,6 +72,10 @@ public class CameraMovement : MonoBehaviour {
                 PhotonNetwork.LeaveRoom();
                 PhotonNetwork.LoadLevel(0);
             }
+
+        } else if(Keyboard.current.xKey.wasPressedThisFrame) {
+
+            AudioManager.Play2D(SoundEffect.FootstepRock);
         }
     }
 
