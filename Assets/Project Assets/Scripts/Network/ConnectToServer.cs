@@ -15,6 +15,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     public TextMeshProUGUI percentageText;
     public CanvasGroup cg;
     public Transform loginManager;
+    public TextMeshProUGUI versionText;
 
     private int step;
     private float lerpedStep;
@@ -22,13 +23,25 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     private void Awake() {
 
         DOTween.Init();
+
+        versionText.text = DevSettings.GameVersion;
     }
 
     private void Start() {
 
+        if(PhotonNetwork.IsConnected) {
+
+            if(PhotonNetwork.OfflineMode)
+                PhotonNetwork.OfflineMode = false;
+            else
+                return;
+        }
+
         Debug.Log("<color=green>Online mode enabled</color>");
 
         cg.DOFade(1.0f, 0.5f);
+
+        PhotonNetwork.GameVersion = DevSettings.GameVersion;
         PhotonNetwork.ConnectUsingSettings();
         statusText.text = "Connecting to server";
     }

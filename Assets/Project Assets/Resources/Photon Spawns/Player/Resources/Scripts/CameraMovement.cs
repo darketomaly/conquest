@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
+using Photon.Pun;
 
 public class CameraMovement : MonoBehaviour {
 
@@ -63,6 +64,15 @@ public class CameraMovement : MonoBehaviour {
 
         if(requestedToZoom != 0) //zoom from key press
             Zoom(requestedToZoom * Time.deltaTime * 15.0f);
+
+        if(Keyboard.current.spaceKey.wasPressedThisFrame) {
+
+            if(PhotonNetwork.InRoom) {
+
+                PhotonNetwork.LeaveRoom();
+                PhotonNetwork.LoadLevel(0);
+            }
+        }
     }
 
     private void Zoom(float amount) {

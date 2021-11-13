@@ -41,7 +41,6 @@ public class IntroCutscene : MonoBehaviour {
         chromaticAberration.intensity.value = 1.0f;
         liftGammaGain.lift.value = new Vector4(1, 1, 1, -0.125f);
 
-        SceneFade.FadeOut(2.0f);
         AnimateFx(true);
         Application.targetFrameRate = 60;
     }

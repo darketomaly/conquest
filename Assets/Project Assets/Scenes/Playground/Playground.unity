@@ -151,7 +151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &88320128
 GameObject:
@@ -392,7 +392,7 @@ Transform:
   - {fileID: 1465743144}
   - {fileID: 775259201}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &179331404
 MonoBehaviour:
@@ -917,7 +917,7 @@ Transform:
   m_Children:
   - {fileID: 88320134}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318436175
 GameObject:
@@ -1354,7 +1354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 44.935, y: 148.528, z: -0.052}
 --- !u!114 &490396560
 MonoBehaviour:
@@ -1617,6 +1617,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775259200}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &833049917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1923305358493391110, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_Name
+      value: Persistent Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
 --- !u!1 &1196029262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,7 +2449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1943647761
 MonoBehaviour:
@@ -2450,7 +2507,7 @@ Transform:
   m_Children:
   - {fileID: 5811043320653293924}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5811043320280562013
 MonoBehaviour:
@@ -2514,7 +2571,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6711712, y: 1}
+    m_SensorSize: {x: 1.6619718, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
