@@ -1626,7 +1626,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1923305358493391110, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
       propertyPath: m_Name
-      value: Persistent Manager
+      value: Persistent Manager (playground)
       objectReference: {fileID: 0}
     - target: {fileID: 1923305358493391111, guid: de34fe0c8c4af0248b1f0f5ff782a7e9, type: 3}
       propertyPath: m_RootOrder

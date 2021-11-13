@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using TMPro;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using Conquest.PersistantManager;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
@@ -37,22 +38,6 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         button.interactable = false;
         
         PhotonNetwork.JoinOrCreateRoom("world1", roomOptions, TypedLobby.Default);
-    }
-
-    //private IEnumerator DisplayPlayerCount() {
-    //
-    //    while (true) {
-    //
-    //        playerCountText.text =
-    //            $"World 1 ({PhotonNetwork.CountOfPlayersInRooms}/25)";
-    //
-    //        yield return new WaitForSeconds(5.1f);
-    //    }
-    //}
-
-    public override void OnCreatedRoom() {
-
-        //Debug.Log($"Created room");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message) {

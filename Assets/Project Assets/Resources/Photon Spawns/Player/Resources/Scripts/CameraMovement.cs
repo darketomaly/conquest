@@ -75,7 +75,7 @@ public class CameraMovement : MonoBehaviour {
 
         } else if(Keyboard.current.xKey.wasPressedThisFrame) {
 
-            AudioManager.Play2D(SoundEffect.FootstepRock);
+            AudioManager.Play2D(Sfx.FootstepRock);
         }
     }
 

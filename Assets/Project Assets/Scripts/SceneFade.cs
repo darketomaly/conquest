@@ -18,7 +18,8 @@ public class SceneFade : MonoBehaviour {
             return;
 
         m = PersistentManager.m.sceneFade;
-        FadeOut();
+        FadeOut(3.0f);
+        PersistentManager.m.audioManager.FadeSceneVolume(true);
     } 
 
     private void OnEnable() => PersistentManager.onSceneLoaded += delegate { FadeOut(); };
@@ -35,9 +36,6 @@ public class SceneFade : MonoBehaviour {
 
     public static void FadeOut(float fadeDuration = 2.0f) {
 
-        if (m.fadeOutTween != null) //on additive scene load this gets called more than once
-            return;
-        
         if(m.fadeInTween != null) {
         
             m.fadeInTween.OnComplete(delegate {
@@ -46,12 +44,16 @@ public class SceneFade : MonoBehaviour {
                 m.fadeInTween = null;
                 m.fadeInTween.Kill();
         
-                m.fadeOutTween = m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null);
+                m.fadeOutTween = 
+                m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
+                OnKill(()=> m.fadeOutTween = null);
             });
         } else {
         
             m.bg.DOKill();
-            m.fadeOutTween = m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null);
+            m.fadeOutTween = 
+                m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
+                OnKill(() => m.fadeOutTween = null);
         }
     }
 }
