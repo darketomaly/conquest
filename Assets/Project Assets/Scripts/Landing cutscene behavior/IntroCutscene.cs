@@ -39,7 +39,19 @@ public class IntroCutscene : MonoBehaviour {
         volume.TryGet(out liftGammaGain);
 
         chromaticAberration.intensity.value = 1.0f;
-        liftGammaGain.lift.value = new Vector4(1, 1, 1, -0.125f);
+
+        //math is not neccessary
+        //still getting that small 'bug' where the lift value is off with the scene fade's alpha
+
+        float a = SceneFade.GetCurrentAlpha();
+
+        float a0 = 1;
+        float a1 = 0;
+        float b0 = -0.125f;
+        float b1 = 0;
+        float w = b0 + (b1 - b0) * ((a - a0) / (a1 - a0));
+
+        liftGammaGain.lift.value = new Vector4(1, 1, 1, w);
 
         AnimateFx(true);
         Application.targetFrameRate = 60;

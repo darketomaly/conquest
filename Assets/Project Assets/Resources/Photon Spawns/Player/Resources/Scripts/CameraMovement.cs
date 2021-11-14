@@ -64,19 +64,6 @@ public class CameraMovement : MonoBehaviour {
 
         if(requestedToZoom != 0) //zoom from key press
             Zoom(requestedToZoom * Time.deltaTime * 15.0f);
-
-        if(Keyboard.current.spaceKey.wasPressedThisFrame) {
-
-            if(PhotonNetwork.InRoom) {
-
-                PhotonNetwork.LeaveRoom();
-                PhotonNetwork.LoadLevel(0);
-            }
-
-        } else if(Keyboard.current.xKey.wasPressedThisFrame) {
-
-            AudioManager.Play2D(Sfx.FootstepRock);
-        }
     }
 
     private void Zoom(float amount) {

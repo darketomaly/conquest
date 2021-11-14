@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour {
 
     [SerializeField] private AudioSource source;
     [SerializeField] private AudioSource musicSource1;
+    [SerializeField] private AudioSource musicSource2;
 
     [SerializeField] private MusicGroup musicGroup;
     [SerializeField] private SfxGroup sfxGroup;
@@ -41,37 +42,43 @@ public class AudioManager : MonoBehaviour {
             dictionary.Add(item.sfxClip.ToString(), item.clip);
 
         Debug.Log($"Audio manager dictionary setup. Total clips: {dictionary.Count}");
-        Play2D(Music.IAmJustice);
     }
 
-    private void OnEnable() {
+    public void FadeInMasterVolume() {
 
-        PersistentManager.onSceneLoaded += delegate {
-
-            FadeSceneVolume(false);
-        };
-    }
-
-    private void OnDisable() {
-
-        PersistentManager.onSceneLoaded -= delegate {
-
-            FadeSceneVolume(false);
-        };
+        mixer.DOSetFloat("masterVolume", 0.0f, 1.5f);
     }
 
     public void FadeSceneVolume(bool In) {
 
-        //to do
-        //crossfade
-
-        if(In) {
-        
+        if(In)
             mixer.DOSetFloat("sceneVolume", 0.0f, 1.5f);
-        
+        else
+            mixer.DOSetFloat("sceneVolume",-80.0f, 1.5f);
+    }
+
+    public static void Play2D(Music music) {
+
+        if(m.musicSource1.isPlaying) {
+
+            if(m.musicSource2.isPlaying) { //both are playing something
+
+                //fade source 1 and play on 2
+                m.musicSource1.DOFade(0.0f, 1.75f).OnComplete(() => m.musicSource1.Stop());
+
+                m.musicSource2.clip = m.GetClip(music);
+                m.musicSource2.Play();
+                m.musicSource2.DOFade(1.0f, 1.75f);
+            }
+
         } else {
-        
-            mixer.DOSetFloat("sceneVolume", -80.0f, 1.5f);
+            
+            //fade source 2 and play on 1
+            m.musicSource2.DOFade(0.0f, 1.75f).OnComplete(() => m.musicSource2.Stop());
+
+            m.musicSource1.clip = m.GetClip(music);
+            m.musicSource1.Play();
+            m.musicSource1.DOFade(1.0f, 1.75f);
         }
     }
 
@@ -80,16 +87,7 @@ public class AudioManager : MonoBehaviour {
         m.source.PlayOneShot(m.GetClip(sfx));
     }
 
-    public static void Play2D(Music music) {
-
-        m.musicSource1.clip = m.GetClip(music);
-        m.musicSource1.Play();
-    }
-
     public AudioClip GetClip(Music music) =>     dictionary[music.ToString()];
     
     public AudioClip GetClip(Sfx sfx) => dictionary[sfx.ToString()];
 }
-
-
-

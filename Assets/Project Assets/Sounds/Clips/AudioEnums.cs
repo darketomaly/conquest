@@ -1,6 +1,7 @@
 public enum Music {
 
-    IAmJustice
+    IAmJustice,
+    ForestOfEmbracing
 }
 
 public enum Sfx {

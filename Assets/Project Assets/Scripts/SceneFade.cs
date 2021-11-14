@@ -2,6 +2,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using Conquest.PersistantManager;
+using UnityEngine.SceneManagement;
 
 public class SceneFade : MonoBehaviour {
 
@@ -19,8 +20,9 @@ public class SceneFade : MonoBehaviour {
 
         m = PersistentManager.m.sceneFade;
         FadeOut(3.0f);
-        PersistentManager.m.audioManager.FadeSceneVolume(true);
-    } 
+
+        PersistentManager.m.audioManager.FadeInMasterVolume();
+    }
 
     private void OnEnable() => PersistentManager.onSceneLoaded += delegate { FadeOut(); };
 
@@ -29,12 +31,22 @@ public class SceneFade : MonoBehaviour {
     public static void FadeIn() {
 
         if (m.fadeInTween != null) return;
-        
+
+        PersistentManager.m.audioManager.FadeSceneVolume(false);
+
         m.bg.DOKill();
         m.fadeInTween = m.bg.DOFade(1.0f, 0.35f).OnComplete(() => m.fadeInTween = null);
     }
 
     public static void FadeOut(float fadeDuration = 2.0f) {
+
+        if(m.fadeOutTween != null)
+            return;
+
+        PersistentManager.m.audioManager.FadeSceneVolume(true);
+
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+            AudioManager.Play2D(Music.IAmJustice);
 
         if(m.fadeInTween != null) {
         
@@ -42,7 +54,6 @@ public class SceneFade : MonoBehaviour {
         
                 m.bg.DOKill();
                 m.fadeInTween = null;
-                m.fadeInTween.Kill();
         
                 m.fadeOutTween = 
                 m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
@@ -55,6 +66,11 @@ public class SceneFade : MonoBehaviour {
                 m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
                 OnKill(() => m.fadeOutTween = null);
         }
+    }
+
+    public static float GetCurrentAlpha() {
+
+        return m.bg.color.a;
     }
 }
 
