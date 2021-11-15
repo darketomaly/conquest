@@ -61,15 +61,12 @@ public class AudioManager : MonoBehaviour {
 
         if(m.musicSource1.isPlaying) {
 
-            if(m.musicSource2.isPlaying) { //both are playing something
+            //fade source 1 and play on 2
+            m.musicSource1.DOFade(0.0f, 1.75f).OnComplete(() => m.musicSource1.Stop());
 
-                //fade source 1 and play on 2
-                m.musicSource1.DOFade(0.0f, 1.75f).OnComplete(() => m.musicSource1.Stop());
-
-                m.musicSource2.clip = m.GetClip(music);
-                m.musicSource2.Play();
-                m.musicSource2.DOFade(1.0f, 1.75f);
-            }
+            m.musicSource2.clip = m.GetClip(music);
+            m.musicSource2.Play();
+            m.musicSource2.DOFade(1.0f, 1.75f);
 
         } else {
             
