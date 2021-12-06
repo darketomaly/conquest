@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 0ee00ad368c38384493d99e7a028a548, type: 2}
-  source: {fileID: 3847311496006207474}
+  mainSource: {fileID: 3847311496006207474}
   musicSource1: {fileID: 1000377721369294951}
   musicSource2: {fileID: 5218491383896278746}
   musicGroup: {fileID: 11400000, guid: 4511763a5c0818c48b0ea78d5b42291c, type: 2}

@@ -1,10 +1,12 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Conquest.PersistantManager {
 
+    /// <summary>
+    /// Holds references accross different scenes to avoid having to create separate singletons.
+    /// </summary>
     public class PersistentManager : MonoBehaviour {
 
         internal static PersistentManager m;
@@ -20,11 +22,9 @@ namespace Conquest.PersistantManager {
 
         private void Awake() {
 
-            if(m != null) {
-
+            if(m != null)
                 Destroy(gameObject);
-
-            } else {
+             else {
 
                 onSceneLoaded = null;
                 m = this;

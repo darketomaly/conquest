@@ -13,12 +13,12 @@ public class AudioManager : MonoBehaviour {
 
     [SerializeField] private AudioMixer mixer;
 
-    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioSource mainSource;
     [SerializeField] private AudioSource musicSource1;
     [SerializeField] private AudioSource musicSource2;
 
-    [SerializeField] private MusicGroup musicGroup;
-    [SerializeField] private SfxGroup sfxGroup;
+    [SerializeField] private MusicClips musicGroup;
+    [SerializeField] private SfxClips sfxGroup;
     [SerializeField] private AmbienceGroup ambienceGroup;
 
     private Dictionary<string, AudioClip> dictionary;
@@ -57,6 +57,9 @@ public class AudioManager : MonoBehaviour {
             mixer.DOSetFloat("sceneVolume",-80.0f, 1.5f);
     }
 
+    /// <summary>
+    /// Crossfades a song if it's playing
+    /// </summary>
     public static void Play2D(Music music) {
 
         if(m.musicSource1.isPlaying) {
@@ -81,10 +84,10 @@ public class AudioManager : MonoBehaviour {
 
     public static void Play2D(Sfx sfx) {
 
-        m.source.PlayOneShot(m.GetClip(sfx));
+        m.mainSource.PlayOneShot(m.GetClip(sfx));
     }
 
-    public AudioClip GetClip(Music music) =>     dictionary[music.ToString()];
+    public AudioClip GetClip(Music music) => dictionary[music.ToString()];
     
     public AudioClip GetClip(Sfx sfx) => dictionary[sfx.ToString()];
 }

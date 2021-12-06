@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationParticle: {fileID: 1985746695647575241, guid: b2e4675c462863f44a5677db91ab5fe1, type: 3}
+  agent: {fileID: -6274543980524148021}
   movementDisabled: 0
   animator: {fileID: 4626918447264944058}
 --- !u!114 &7665223586508002124

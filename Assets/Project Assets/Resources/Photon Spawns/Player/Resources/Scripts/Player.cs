@@ -11,7 +11,7 @@ public class Player : MonoBehaviourPunCallbacks, IPunInstantiateMagicCallback {
 
     public void OnPhotonInstantiate(PhotonMessageInfo info) {
 
-        if(SceneManager.GetActiveScene().buildIndex != 0)
+        if(SceneManager.GetActiveScene().buildIndex != 0) //test
             AudioManager.Play2D(Music.ForestOfEmbracing);
     }
 

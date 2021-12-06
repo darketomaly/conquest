@@ -13,14 +13,8 @@ using Conquest.PersistantManager;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
-    public TextMeshProUGUI playerCountText;
     public Button button;
     public CanvasGroup cg;
-
-    //private void Awake() {
-    //
-    //    StartCoroutine(DisplayPlayerCount());
-    //}
 
     private void Start() {
 
@@ -54,7 +48,7 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     public override void OnJoinedRoom() {
 
-        Debug.Log($"Joined room {PhotonNetwork.CurrentRoom.Name}");
+        Debug.Log($"Joined room <color=olive>{PhotonNetwork.CurrentRoom.Name}</color>");
         PhotonNetwork.LoadLevel("Playground"); 
     }
 

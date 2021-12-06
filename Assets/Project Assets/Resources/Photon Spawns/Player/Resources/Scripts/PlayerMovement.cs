@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour {
     public Action whileMovementWasDisabled;
 
     [SerializeField] private ParticleSystem destinationParticle;
-    private NavMeshAgent agent;
+    [SerializeField] private NavMeshAgent agent;
 
     [HideInInspector] public bool movementDisabled;
     private Interactable focus;
@@ -19,11 +19,6 @@ public class PlayerMovement : MonoBehaviour {
     private Coroutine rotatingTowardsInteractable;
 
     [SerializeField] private Animator animator;
-
-    private void Awake() {
-
-        agent = GetComponent<NavMeshAgent>();
-    }
 
     private void Update() {
 

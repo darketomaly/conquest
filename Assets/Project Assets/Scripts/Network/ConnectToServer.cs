@@ -20,9 +20,9 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     private int step;
     private float lerpedStep;
 
-    private void Awake() {
+    private bool fullyConnected;
 
-        DOTween.Init();
+    private void Awake() {
 
         versionText.text = DevSettings.GameVersion;
     }
@@ -47,6 +47,9 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     }
 
     private void Update() {
+
+        if(fullyConnected)
+            return;
 
         switch (PhotonNetwork.NetworkClientState) {
 
@@ -103,13 +106,9 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     public override void OnJoinedLobby() {
 
         statusText.text = "Joined lobby";
-
+        fullyConnected = true;
         loginManager.gameObject.SetActive(true);
-
-        cg.DOFade(0.0f, 0.75f).OnComplete(delegate {
-
-            gameObject.SetActive(false);
-        });
+        cg.DOFade(0.0f, 0.75f);
     }
 
     private void OnDestroy() {
