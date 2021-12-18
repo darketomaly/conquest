@@ -1,15 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
-using System;
-using System.Threading.Tasks;
-using TMPro;
 using DG.Tweening;
-using UnityEngine.SceneManagement;
-using Conquest.PersistantManager;
 
 public class LoginManager : MonoBehaviourPunCallbacks {
 
@@ -18,7 +11,12 @@ public class LoginManager : MonoBehaviourPunCallbacks {
 
     private void Start() {
 
-        cg.DOFade(1.0f, 0.25f);
+    }
+
+    public void AllowEnter(bool value) {
+
+        button.interactable = value;
+        cg.DOFade(value ? 1.0f : 0.0f, 1.0f);
     }
 
     public void EnterRoom() {
@@ -26,12 +24,14 @@ public class LoginManager : MonoBehaviourPunCallbacks {
         Debug.Log($"Attempting to join or create room");
         SceneFade.FadeIn();
 
-        RoomOptions roomOptions = new RoomOptions();
-        //roomOptions.MaxPlayers = 4;
-        roomOptions.PublishUserId = true;
+        RoomOptions roomOptions = new RoomOptions() {
+
+            PublishUserId = true
+        };
+
         button.interactable = false;
         
-        PhotonNetwork.JoinOrCreateRoom("world1", roomOptions, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message) {

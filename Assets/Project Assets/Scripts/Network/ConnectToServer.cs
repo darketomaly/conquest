@@ -14,7 +14,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
     public TextMeshProUGUI statusText;
     public TextMeshProUGUI percentageText;
     public CanvasGroup cg;
-    public Transform loginManager;
+    public LoginManager loginManager;
     public TextMeshProUGUI versionText;
 
     private int step;
@@ -107,7 +107,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks {
 
         statusText.text = "Joined lobby";
         fullyConnected = true;
-        loginManager.gameObject.SetActive(true);
+        loginManager.AllowEnter(true);
         cg.DOFade(0.0f, 0.75f);
     }
 
