@@ -45,7 +45,7 @@ public class SceneFade : MonoBehaviour {
 
         PersistentManager.m.audioManager.FadeSceneVolume(true);
 
-        if(SceneManager.GetActiveScene().buildIndex == 1)
+        if(SceneManager.GetActiveScene().name == "Title Screen")
             AudioManager.Play2D(Music.IAmJustice);
 
         if(m.fadeInTween != null) {

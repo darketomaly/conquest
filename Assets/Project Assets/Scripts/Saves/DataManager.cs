@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,10 +12,11 @@ public class DataManager : MonoBehaviour {
 
     void Awake() {
 
+        instance = this;
+
         savePath = $"{ Application.persistentDataPath}/LocalData.json";
         ReadFile();
 
-        instance = this;
         DontDestroyOnLoad(gameObject); //no need for a singleton, in no moment it will return to the original scene
     }
 
@@ -32,10 +31,8 @@ public class DataManager : MonoBehaviour {
 
         } else {
 
-            Debug.LogError($"<color=olive>Load cinematric intro here (to do)</color>");
-
-            //Load cinematic intro scene here     
             WriteFile();
+            SceneManager.LoadScene($"Cinematic Intro Scene");
         }
     }
 
@@ -45,12 +42,14 @@ public class DataManager : MonoBehaviour {
     private static void WriteFile() =>
         File.WriteAllText(instance.savePath, JsonUtility.ToJson(localData));
 
+    /// <summary>Player preferences, unimportant data</summary>
     public struct LocalData {
 
         public int timesReEnteredTheGame;
     }
 
-    public struct OnlineData {
+    /// <summary>Data grabbed from the database</summary>
+    public struct OnlineData { //keep as optimized as possible
 
         public int timePlayed;
     }
