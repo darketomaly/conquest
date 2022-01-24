@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class CinematicIntroManager : MonoBehaviour {
 
     AsyncOperation op;
+
+    [SerializeField] PlayableDirector director;
 
     void Start() {
 
@@ -18,7 +21,7 @@ public class CinematicIntroManager : MonoBehaviour {
 
     IEnumerator Test() {
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds((float)director.duration);
         op.allowSceneActivation = true;
     }
 }

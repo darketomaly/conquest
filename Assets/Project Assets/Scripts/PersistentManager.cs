@@ -35,6 +35,10 @@ namespace Conquest.PersistantManager {
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode) {
 
+            //prevent executing on landing or the cinematic cutscene
+            if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 1)
+                return;
+
             if(m == this && SceneManager.GetActiveScene().buildIndex != m.lastInvokedOn) {
 
                 Debug.Log($"<color=olive>Persistent manager:</color> Last invoked on {m.lastInvokedOn}, current {SceneManager.GetActiveScene().buildIndex}");

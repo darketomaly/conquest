@@ -81,7 +81,10 @@ public class IntroCutscene : MonoBehaviour {
 
         vCam.DOKill();
 
-        chromaticAberration.intensity.value = 0.0f;
-        liftGammaGain.lift.value = new Vector4(1, 1, 1, 0.0f);
+        if(chromaticAberration)
+            chromaticAberration.intensity.value = 0.0f;
+
+        if(liftGammaGain)
+            liftGammaGain.lift.value = new Vector4(1, 1, 1, 0.0f);
     }
 }

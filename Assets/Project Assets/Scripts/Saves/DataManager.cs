@@ -36,6 +36,14 @@ public class DataManager : MonoBehaviour {
         }
     }
 
+    [ContextMenu("Delete local data json")]
+    private void DeleteFile() {
+
+        savePath = $"{ Application.persistentDataPath}/LocalData.json";
+        if (File.Exists(savePath))
+            File.Delete(savePath);
+    }
+
     private void OnDestroy() =>
         WriteFile();
 
