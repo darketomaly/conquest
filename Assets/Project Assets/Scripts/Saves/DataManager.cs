@@ -1,47 +1,61 @@
+using System.Collections;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
+using UnityEditor;
 
 public class DataManager : MonoBehaviour {
 
     public static LocalData localData;
 
+    [SerializeField] private Image splash;
+
     private static DataManager instance;
-
     private string savePath;
+    private AsyncOperation sceneLoadOp;
 
-    void Awake() {
+    void Start() {
 
         instance = this;
-
-        savePath = $"{ Application.persistentDataPath}/LocalData.json";
+        StartCoroutine(SplashScreen());
         ReadFile();
 
         DontDestroyOnLoad(gameObject); //no need for a singleton, in no moment it will return to the original scene
     }
 
+    private IEnumerator SplashScreen() {
+
+        yield return new WaitForSeconds(0.2f);
+
+        splash.DOFade(1.0f, 0.75f);
+
+        yield return new WaitForSeconds(1.25f);
+
+        splash.DOFade(0.0f, 0.75f).OnComplete(()=> sceneLoadOp.allowSceneActivation = true);
+    }
+
     private void ReadFile() {
+
+        savePath = $"{ Application.persistentDataPath}/LocalData.json";
 
         if (File.Exists(savePath)) {
 
             localData = JsonUtility.FromJson<LocalData>(File.ReadAllText(savePath));
             localData.timesReEnteredTheGame++;
 
-            SceneManager.LoadScene($"Title Screen");
+            Debug.Log($"<color=olive>Preloading title screen</color>");
+            sceneLoadOp = SceneManager.LoadSceneAsync("Title Screen");
 
         } else {
 
             WriteFile();
-            SceneManager.LoadScene($"Cinematic Intro Scene");
+            Debug.Log($"<color=olive>Preloading cinematic intro scene</color>");
+            sceneLoadOp = SceneManager.LoadSceneAsync("Cinematic Intro Scene");
         }
-    }
 
-    [ContextMenu("Delete local data json")]
-    private void DeleteFile() {
-
-        savePath = $"{ Application.persistentDataPath}/LocalData.json";
-        if (File.Exists(savePath))
-            File.Delete(savePath);
+        sceneLoadOp.allowSceneActivation = false;
     }
 
     private void OnDestroy() =>
@@ -61,6 +75,18 @@ public class DataManager : MonoBehaviour {
 
         public int timePlayed;
     }
+
+    #if UNITY_EDITOR
+    [MenuItem("Conquest/Delete Save File")]
+    private static void DeleteFile() {
+
+        string _savePath = $"{ Application.persistentDataPath}/LocalData.json";
+        if (File.Exists(_savePath))
+            File.Delete(_savePath);
+
+        Debug.Log($"<color=olive>LocalData deleted</color>");
+    }
+    #endif
 }
 
 
