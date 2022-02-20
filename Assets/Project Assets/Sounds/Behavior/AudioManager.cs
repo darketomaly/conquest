@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] private SfxClips sfxGroup;
     [SerializeField] private AmbienceGroup ambienceGroup;
 
-    private Dictionary<string, AudioClip> dictionary;
+    private Dictionary<string, AudioClip> dictionary; //
 
     private void Awake() {
 

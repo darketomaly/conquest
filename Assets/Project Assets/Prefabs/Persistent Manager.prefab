@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0740784e542e6c4d8f2727697f61f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dataManagerPrefab: {fileID: 2981344269482267678, guid: 3ca0837886215164ebffe5838f84221d, type: 3}
   sceneFade: {fileID: 1923305359697605738}
   devSettings: {fileID: 1100284790}
   audioManager: {fileID: 6115683091265653547}

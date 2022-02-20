@@ -11,6 +11,8 @@ namespace Conquest.PersistantManager {
 
         internal static PersistentManager m;
 
+        public GameObject dataManagerPrefab;
+
         [Header("Elements")]
         [SerializeField] internal SceneFade sceneFade;
         [SerializeField] internal DevSettings devSettings;
@@ -31,6 +33,9 @@ namespace Conquest.PersistantManager {
                 SceneManager.sceneLoaded += OnSceneLoaded;
                 DontDestroyOnLoad(gameObject);
             }
+
+            if (!DataManager.instance)
+                Instantiate(dataManagerPrefab).GetComponent<DataManager>().loadSceneOnFileRead = false;
         }
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode) {
@@ -40,6 +45,9 @@ namespace Conquest.PersistantManager {
                 return;
 
             if(m == this && SceneManager.GetActiveScene().buildIndex != m.lastInvokedOn) {
+
+                if (!DataManager.instance)
+                    Instantiate(dataManagerPrefab).GetComponent<DataManager>().loadSceneOnFileRead = false;
 
                 Debug.Log($"<color=olive>Persistent manager:</color> Last invoked on {m.lastInvokedOn}, current {SceneManager.GetActiveScene().buildIndex}");
                 m.lastInvokedOn = SceneManager.GetActiveScene().buildIndex;
