@@ -16,5 +16,4 @@ public class SubtitleBehavior : PlayableBehaviour {
         color.a = info.weight;
         text.color = color;
     }
-
 }
