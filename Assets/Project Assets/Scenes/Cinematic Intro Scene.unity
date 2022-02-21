@@ -689,6 +689,7 @@ GameObject:
   - component: {fileID: 795340765}
   - component: {fileID: 795340764}
   - component: {fileID: 795340766}
+  - component: {fileID: 795340767}
   m_Layer: 0
   m_Name: Cinematic Intro Manager
   m_TagString: Untagged
@@ -708,7 +709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9a29f26ed5c644480d7955f5743d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  director: {fileID: 795340766}
 --- !u!4 &795340765
 Transform:
   m_ObjectHideFlags: 0
@@ -746,8 +746,55 @@ PlayableDirector:
     value: {fileID: 467654006}
   - key: {fileID: -9127037116639492387, guid: 60a04691241be074290262483073bf89, type: 2}
     value: {fileID: 747894682}
+  - key: {fileID: 1191102219254633433, guid: 60a04691241be074290262483073bf89, type: 2}
+    value: {fileID: 795340767}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &795340767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795340763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 9fe950e459dc1e34681a8a36fde2e1cb, type: 2}
+    - {fileID: 11400000, guid: cb2757ad5dd91e84986528396f743cfe, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 795340764}
+          m_TargetAssemblyTypeName: CinematicIntroManager, Assembly-CSharp
+          m_MethodName: ActivateTitleScreen
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 795340764}
+          m_TargetAssemblyTypeName: CinematicIntroManager, Assembly-CSharp
+          m_MethodName: PrintMessage
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &1297109909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1312,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 53853413
+    rgba: 3521765
   m_fontColor: {r: 0.8962264, g: 0.73685724, b: 0.20714669, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
