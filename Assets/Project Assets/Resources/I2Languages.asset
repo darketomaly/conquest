@@ -41,6 +41,88 @@ MonoBehaviour:
       - "Dracs Melrose escuch\xF3 en una visi\xF3n de Guthix"
       Flags: 0000
       Languages_Touch: []
+    - Term: CI_S03
+      TermType: 0
+      Description: 
+      Languages:
+      - '"Reform the Void Knights...'
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S04
+      TermType: 0
+      Description: 
+      Languages:
+      - ...A threat to equilibrium approaches and the pacifism of the druids must
+        be balanced by a military order"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S05
+      TermType: 0
+      Description: 
+      Languages:
+      - Driven by the threat,
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S06
+      TermType: 0
+      Description: 
+      Languages:
+      - He sought to raise the ancient order of the void knights,
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S07
+      TermType: 0
+      Description: 
+      Languages:
+      - a military extension of the druids from the Third Age.
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S08
+      TermType: 0
+      Description: 
+      Languages:
+      - The order kept growing and gaining political strength,
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S09
+      TermType: 0
+      Description: 
+      Languages:
+      - becoming restricted to the region of Taverley by the king of Falador.
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S10
+      TermType: 0
+      Description: 
+      Languages:
+      - Years later, reports started to come from southern seas from strange,
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S11
+      TermType: 0
+      Description: 
+      Languages:
+      - alien beasts. The order quickly recognized as the threat first defined to
+        Dracs Melrose
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S12
+      TermType: 0
+      Description: 
+      Languages:
+      - in his dream and established an outpost known as the Void Knight Island
+      - 
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
@@ -56,7 +138,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyFnDr2AkJqEYTAeX91GLs62LdDHT1T_fvgIx10EPaAj7639YF4FoYA3FLH48AIcG9gjw/exec
     Google_SpreadsheetKey: 13IIT0yPnTzwlYCRLtu6VGpEGow-29NPZOJEDQFmSSvs
     Google_SpreadsheetName: I2Loc conquest-remastered Localization
-    Google_LastUpdatedVersion: 1645411755851
+    Google_LastUpdatedVersion: 1645432289187
     Google_Password: change_this
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

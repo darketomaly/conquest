@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &32857860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -157,9 +157,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -175, y: 281}
-  m_SizeDelta: {x: 600, y: 600}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -175, y: -319}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &32857861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bcdea6bd9bcaf9145a88d663788c3b0a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a91a4a08c9a43a04d85952bc2097c9fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: '"Reform the Void Knights...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e31fb1c0a207144faac46f51258c851, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 3858015598da6f047b666010d455c5c8, type: 2}
@@ -1312,8 +1312,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3521765
-  m_fontColor: {r: 0.8962264, g: 0.73685724, b: 0.20714669, a: 1}
+    rgba: 2486549733
+  m_fontColor: {r: 0.8962264, g: 0.73685724, b: 0.20714669, a: 0.5786692}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
