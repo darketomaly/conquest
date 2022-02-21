@@ -12,7 +12,6 @@ public class ShaderBehavior : PlayableBehaviour {
         CanvasRenderer cRenderer = playerData as CanvasRenderer;
         if (cRenderer){
 
-            
             cRenderer.GetMaterial()?.SetTextureOffset("_MainTex", info.weight * offset);
         }
     }

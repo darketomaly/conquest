@@ -25,6 +25,22 @@ MonoBehaviour:
       - Entrar
       Flags: 0000
       Languages_Touch: []
+    - Term: CI_S01
+      TermType: 0
+      Description: 
+      Languages:
+      - '"The extinct knights must rise again"'
+      - '"Los caballeros extintos deben renacer"'
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CI_S02
+      TermType: 0
+      Description: 
+      Languages:
+      - Dracs Melrose heard from a vision of guthix
+      - "Dracs Melrose escuch\xF3 en una visi\xF3n de Guthix"
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
@@ -40,7 +56,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyFnDr2AkJqEYTAeX91GLs62LdDHT1T_fvgIx10EPaAj7639YF4FoYA3FLH48AIcG9gjw/exec
     Google_SpreadsheetKey: 13IIT0yPnTzwlYCRLtu6VGpEGow-29NPZOJEDQFmSSvs
     Google_SpreadsheetName: I2Loc conquest-remastered Localization
-    Google_LastUpdatedVersion: 
+    Google_LastUpdatedVersion: 1645411755851
     Google_Password: change_this
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2
