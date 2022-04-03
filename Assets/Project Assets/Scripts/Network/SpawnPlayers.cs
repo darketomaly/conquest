@@ -4,38 +4,39 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class SpawnPlayers : MonoBehaviourPunCallbacks {
+namespace Conquest {
 
-    [SerializeField] private Transform startPosition;
+    public class SpawnPlayers : MonoBehaviourPunCallbacks {
 
-    private static readonly string playerPrefabPath = "Photon Spawns/Player/Player";
+        [SerializeField] private Transform startPosition;
 
-    private void Start() {
+        private static readonly string playerPrefabPath = "Photon Spawns/Player/Player";
 
-        Application.targetFrameRate = -1;
-        Debug.Log($"Spawning");
+        private void Start() {
 
-        if (!PhotonNetwork.IsConnected) { //Only used when developing
+            Application.targetFrameRate = -1;
+            Debug.Log($"Spawning");
 
-            Debug.Log("<color=red>Offline mode enabled.</color>");
-            PhotonNetwork.OfflineMode = true;
+            if (!PhotonNetwork.IsConnected) {
 
-            RoomOptions roomOptions = new RoomOptions();
-            roomOptions.MaxPlayers = 1;
+                Debug.Log("<color=red>Offline mode enabled.</color>");
+                PhotonNetwork.OfflineMode = true;
 
-            PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
+                RoomOptions roomOptions = new RoomOptions();
+                roomOptions.MaxPlayers = 1;
+
+                PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
+            }
+
+            GameObject spawnedPlayer =
+                    PhotonNetwork.Instantiate(playerPrefabPath, startPosition.position, Quaternion.identity);
+            OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
         }
 
-        //Debug.Log(PhotonNetwork.CountOfPlayers);
+        //Only gets called on the local client, used to store references
+        private void OnSpawnBehavior(Player spawnedPlayer) {
 
-        GameObject spawnedPlayer =
-                PhotonNetwork.Instantiate(playerPrefabPath, startPosition.position, Quaternion.identity);
-        OnSpawnBehavior(spawnedPlayer.GetComponent<Player>());
-    }
-
-    //Only gets called on the local client, used to store references
-    private void OnSpawnBehavior(Player spawnedPlayer) {
-        
-        GameManager.localPlayer = spawnedPlayer;
+            GameManager.localPlayer = spawnedPlayer;
+        }
     }
 }

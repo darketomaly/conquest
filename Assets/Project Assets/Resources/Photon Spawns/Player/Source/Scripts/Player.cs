@@ -1,3 +1,4 @@
+using Conquest.Audio;
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,32 +6,35 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviourPunCallbacks, IPunInstantiateMagicCallback {
+namespace Conquest {
 
-    public PlayerMovement movement;
+    public class Player : MonoBehaviourPunCallbacks, IPunInstantiateMagicCallback {
 
-    public void OnPhotonInstantiate(PhotonMessageInfo info) {
+        public PlayerMovement movement;
 
-        if(SceneManager.GetActiveScene().buildIndex != 0) //test
-            AudioManager.Play2D(Music.ForestOfEmbracing);
-    }
+        public void OnPhotonInstantiate(PhotonMessageInfo info) {
 
-    public void LeaveRoom() {
+            if (SceneManager.GetActiveScene().buildIndex != 0) //test
+                AudioManager.Play2D(Music.ForestOfEmbracing);
+        }
 
-        SceneFade.FadeIn();
-        PhotonNetwork.LeaveRoom();
-        PhotonNetwork.LoadLevel("Title Screen");
-    }
+        public void LeaveRoom() {
 
-    private void Update() {
+            SceneFade.FadeIn();
+            PhotonNetwork.LeaveRoom();
+            PhotonNetwork.LoadLevel("Title Screen");
+        }
 
-        //testing
-        if(Keyboard.current.spaceKey.wasPressedThisFrame) {
+        private void Update() {
 
-            if(PhotonNetwork.InRoom)
-                LeaveRoom();
+            //testing
+            if (Keyboard.current.spaceKey.wasPressedThisFrame) {
 
-        } else if(Keyboard.current.xKey.wasPressedThisFrame)
-            AudioManager.Play2D(Sfx.FootstepRock);
+                if (PhotonNetwork.InRoom)
+                    LeaveRoom();
+
+            } else if (Keyboard.current.xKey.wasPressedThisFrame)
+                AudioManager.Play2D(Sfx.FootstepRock);
+        }
     }
 }

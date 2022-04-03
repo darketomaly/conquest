@@ -1,7 +1,7 @@
-/// <summary>
-/// Holds references used through the game.
-/// </summary>
-public static class GameManager {
+namespace Conquest {
 
-    public static Player localPlayer;
+    public static class GameManager {
+
+        public static Player localPlayer;
+    }
 }

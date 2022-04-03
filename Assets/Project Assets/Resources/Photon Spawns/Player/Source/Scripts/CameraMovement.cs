@@ -5,81 +5,84 @@ using UnityEngine.InputSystem;
 using Cinemachine;
 using Photon.Pun;
 
-public class CameraMovement : MonoBehaviour {
+namespace Conquest {
 
-    public InputActionReference movementNoMouse;
-    public InputActionReference movementWithMouse;
+    public class CameraMovement : MonoBehaviour {
 
-    private CinemachineVirtualCamera virtualCamera;
-    private CinemachineFramingTransposer transposer;
-    private CinemachineInputProvider inputProvider;
+        public InputActionReference movementNoMouse;
+        public InputActionReference movementWithMouse;
 
-    private PlayerMovement playerMovement;
-    private Control control;
+        private CinemachineVirtualCamera virtualCamera;
+        private CinemachineFramingTransposer transposer;
+        private CinemachineInputProvider inputProvider;
 
-    private float requestedToZoom;
+        private PlayerMovement playerMovement;
+        private Control control;
 
-    private void Awake() {
+        private float requestedToZoom;
 
-        control = new Control();
-        control.actionMap.Zoom.performed += x => { Zoom(-x.ReadValue<float>()); };
-        control.actionMap.KeyPressZoom.started += x => { requestedToZoom = -x.ReadValue<float>(); };
-        control.actionMap.KeyPressZoom.canceled += delegate { requestedToZoom = 0; };
+        private void Awake() {
 
-        //mouse middle button, allow mouse camera movement
-        control.actionMap.MouseMiddleButton.started += delegate { 
-            
-            inputProvider.XYAxis = movementWithMouse;
-            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_VerticalAxis.m_MaxSpeed = 125;
-            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_MaxSpeed = 125;
-        };
+            control = new Control();
+            control.actionMap.Zoom.performed += x => { Zoom(-x.ReadValue<float>()); };
+            control.actionMap.KeyPressZoom.started += x => { requestedToZoom = -x.ReadValue<float>(); };
+            control.actionMap.KeyPressZoom.canceled += delegate { requestedToZoom = 0; };
 
-        control.actionMap.MouseMiddleButton.canceled += delegate {
-            inputProvider.XYAxis = movementNoMouse; 
-            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_VerticalAxis.m_MaxSpeed = 250;
-            virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_MaxSpeed = 250;
-        };
-    }
+            //mouse middle button, allow mouse camera movement
+            control.actionMap.MouseMiddleButton.started += delegate {
 
-    private void OnEnable() => control.Enable();
+                inputProvider.XYAxis = movementWithMouse;
+                virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_VerticalAxis.m_MaxSpeed = 125;
+                virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_MaxSpeed = 125;
+            };
 
-    private void OnDisable() => control.Disable();
+            control.actionMap.MouseMiddleButton.canceled += delegate {
+                inputProvider.XYAxis = movementNoMouse;
+                virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_VerticalAxis.m_MaxSpeed = 250;
+                virtualCamera.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_MaxSpeed = 250;
+            };
+        }
 
-    private IEnumerator Start() {
+        private void OnEnable() => control.Enable();
 
-        playerMovement = GameManager.localPlayer.movement;
+        private void OnDisable() => control.Disable();
 
-        CinemachineBrain brain = Camera.main.GetComponent<CinemachineBrain>();
+        private IEnumerator Start() {
 
-        while(brain.ActiveVirtualCamera == null) //tiny delay
-            yield return null;
+            playerMovement = GameManager.localPlayer.movement;
 
-        virtualCamera = brain.ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineVirtualCamera>();
-        transposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        virtualCamera.Follow = playerMovement.transform;
-        inputProvider = virtualCamera.GetComponent<CinemachineInputProvider>();
-    }
+            CinemachineBrain brain = Camera.main.GetComponent<CinemachineBrain>();
 
-    private void Update() {
+            while (brain.ActiveVirtualCamera == null) //tiny delay
+                yield return null;
 
-        if(requestedToZoom != 0) //zoom from key press
-            Zoom(requestedToZoom * Time.deltaTime * 15.0f);
-    }
+            virtualCamera = brain.ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineVirtualCamera>();
+            transposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
+            virtualCamera.Follow = playerMovement.transform;
+            inputProvider = virtualCamera.GetComponent<CinemachineInputProvider>();
+        }
 
-    private void Zoom(float amount) {
+        private void Update() {
 
-        //if (amount == 0) return;
-        amount = Mathf.Clamp(amount, -1, 1);
+            if (requestedToZoom != 0) //zoom from key press
+                Zoom(requestedToZoom * Time.deltaTime * 15.0f);
+        }
 
-        if (amount > 0) {
+        private void Zoom(float amount) {
 
-            if(transposer.m_CameraDistance < 10)
-                transposer.m_CameraDistance += amount;
+            //if (amount == 0) return;
+            amount = Mathf.Clamp(amount, -1, 1);
 
-        } else if (amount < 0) {
+            if (amount > 0) {
 
-            if(transposer.m_CameraDistance > 4)
-                transposer.m_CameraDistance += amount;
+                if (transposer.m_CameraDistance < 10)
+                    transposer.m_CameraDistance += amount;
+
+            } else if (amount < 0) {
+
+                if (transposer.m_CameraDistance > 4)
+                    transposer.m_CameraDistance += amount;
+            }
         }
     }
 }

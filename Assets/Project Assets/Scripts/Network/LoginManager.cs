@@ -4,56 +4,59 @@ using Photon.Realtime;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class LoginManager : MonoBehaviourPunCallbacks {
+namespace Conquest {
 
-    public Button button;
-    public CanvasGroup cg;
+    public class LoginManager : MonoBehaviourPunCallbacks {
 
-    private void Start() {
+        public Button button;
+        public CanvasGroup cg;
 
-    }
+        private void Start() {
 
-    public void AllowEnter(bool value) {
+        }
 
-        button.interactable = value;
-        cg.DOFade(value ? 1.0f : 0.0f, 1.0f);
-    }
+        public void AllowEnter(bool value) {
 
-    public void EnterRoom() {
+            button.interactable = value;
+            cg.DOFade(value ? 1.0f : 0.0f, 1.0f);
+        }
 
-        Debug.Log($"Attempting to join or create room");
-        SceneFade.FadeIn();
+        public void EnterRoom() {
 
-        RoomOptions roomOptions = new RoomOptions() {
+            Debug.Log($"Attempting to join or create room");
+            SceneFade.FadeIn();
 
-            PublishUserId = true
-        };
+            RoomOptions roomOptions = new RoomOptions() {
 
-        button.interactable = false;
-        
-        PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
-    }
+                PublishUserId = true
+            };
 
-    public override void OnCreateRoomFailed(short returnCode, string message) {
+            button.interactable = false;
 
-        Debug.Log($"Create room failed: {message}");
-        button.interactable = true;
-    }
-    
-    public override void OnJoinRoomFailed(short returnCode, string message) {
+            PhotonNetwork.JoinOrCreateRoom("world", roomOptions, TypedLobby.Default);
+        }
 
-        Debug.Log($"Join room failed: {message}");
-        button.interactable = true;
-    }
+        public override void OnCreateRoomFailed(short returnCode, string message) {
 
-    public override void OnJoinedRoom() {
+            Debug.Log($"Create room failed: {message}");
+            button.interactable = true;
+        }
 
-        Debug.Log($"Joined room <color=olive>{PhotonNetwork.CurrentRoom.Name}</color>");
-        PhotonNetwork.LoadLevel("Playground"); 
-    }
+        public override void OnJoinRoomFailed(short returnCode, string message) {
 
-    private void OnDestroy() {
+            Debug.Log($"Join room failed: {message}");
+            button.interactable = true;
+        }
 
-        cg.DOKill();
+        public override void OnJoinedRoom() {
+
+            Debug.Log($"Joined room <color=olive>{PhotonNetwork.CurrentRoom.Name}</color>");
+            PhotonNetwork.LoadLevel("Playground");
+        }
+
+        private void OnDestroy() {
+
+            cg.DOKill();
+        }
     }
 }

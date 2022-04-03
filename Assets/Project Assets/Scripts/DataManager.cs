@@ -8,8 +8,9 @@ public class DataManager : MonoBehaviour {
     public static LocalData localData;
     public static DataManager instance;
 
+    public string m_GameVersion;
+
     public AsyncOperation sceneLoadOp;
-    [HideInInspector] public bool loadSceneOnFileRead = true;
 
     private string savePath;
 
@@ -31,7 +32,7 @@ public class DataManager : MonoBehaviour {
             localData = JsonUtility.FromJson<LocalData>(File.ReadAllText(savePath));
             localData.timesReEnteredTheGame++;
 
-            if (loadSceneOnFileRead) { //
+            if (SceneManager.GetActiveScene().buildIndex == 0) { //if we are on landing
 
                 Debug.Log($"<color=olive>Preloading title screen</color>");
                 sceneLoadOp = SceneManager.LoadSceneAsync("Title Screen");
@@ -41,7 +42,7 @@ public class DataManager : MonoBehaviour {
 
             WriteFile();
 
-            if (loadSceneOnFileRead) {
+            if (SceneManager.GetActiveScene().buildIndex == 0) { //if we are on landing
 
                 Debug.Log($"<color=olive>Preloading cinematic intro scene</color>");
                 sceneLoadOp = SceneManager.LoadSceneAsync("Cinematic Intro Scene");
@@ -50,7 +51,7 @@ public class DataManager : MonoBehaviour {
 
         Debug.Log($"<color=olive>Local data file read</color>");
 
-        if (loadSceneOnFileRead)
+        if (SceneManager.GetActiveScene().buildIndex == 0) //if we are on landing
             sceneLoadOp.allowSceneActivation = false;
     }
 
@@ -72,7 +73,7 @@ public class DataManager : MonoBehaviour {
     #endregion
 
     /// <summary>Player preferences, unimportant data</summary>
-    public struct LocalData {
+    public struct LocalData { //
 
         public int timesReEnteredTheGame;
     }

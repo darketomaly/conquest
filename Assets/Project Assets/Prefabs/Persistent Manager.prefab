@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1923305358493391111}
   - component: {fileID: 1923305358493391112}
-  - component: {fileID: 1100284790}
   m_Layer: 0
   m_Name: Persistent Manager
   m_TagString: Untagged
@@ -48,21 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataManagerPrefab: {fileID: 2981344269482267678, guid: 3ca0837886215164ebffe5838f84221d, type: 3}
   sceneFade: {fileID: 1923305359697605738}
-  devSettings: {fileID: 1100284790}
   audioManager: {fileID: 6115683091265653547}
---- !u!114 &1100284790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923305358493391110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd81956b3169014b86ff6fc4b574df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameVersion: 0.0a.75
 --- !u!1 &1923305359697605734
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +446,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 0ee00ad368c38384493d99e7a028a548, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

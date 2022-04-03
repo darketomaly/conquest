@@ -1,76 +1,80 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
-using Conquest.PersistantManager;
 using UnityEngine.SceneManagement;
+using Conquest.Audio;
 
-public class SceneFade : MonoBehaviour {
+namespace Conquest {
 
-    private static SceneFade m;
+    public class SceneFade : MonoBehaviour {
 
-    public Image bg;
+        private static SceneFade m;
 
-    private Tween fadeOutTween = null;
-    private Tween fadeInTween = null;
+        public Image bg;
 
-    private void Awake() {
+        private Tween fadeOutTween = null;
+        private Tween fadeInTween = null;
 
-        if(PersistentManager.m.sceneFade != this)
-            return;
+        private void Awake() {
 
-        m = PersistentManager.m.sceneFade;
-        FadeOut(3.0f);
+            if (PersistentManager.m.sceneFade != this)
+                return;
 
-        PersistentManager.m.audioManager.FadeInMasterVolume();
-    }
+            m = PersistentManager.m.sceneFade;
+            FadeOut(3.0f);
 
-    private void OnEnable() => PersistentManager.onSceneLoaded += delegate { FadeOut(); };
-
-    private void OnDisable() => PersistentManager.onSceneLoaded -= delegate { FadeOut(); };
-    
-    public static void FadeIn() {
-
-        if (m.fadeInTween != null) return;
-
-        PersistentManager.m.audioManager.FadeSceneVolume(false);
-
-        m.bg.DOKill();
-        m.fadeInTween = m.bg.DOFade(1.0f, 0.35f).OnComplete(() => m.fadeInTween = null);
-    }
-
-    public static void FadeOut(float fadeDuration = 2.0f) {
-
-        if(m.fadeOutTween != null)
-            return;
-
-        PersistentManager.m.audioManager.FadeSceneVolume(true);
-
-        if(SceneManager.GetActiveScene().name == "Title Screen")
-            AudioManager.Play2D(Music.IAmJustice);
-
-        if(m.fadeInTween != null) {
-        
-            m.fadeInTween.OnComplete(delegate {
-        
-                m.bg.DOKill();
-                m.fadeInTween = null;
-        
-                m.fadeOutTween = 
-                m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
-                OnKill(()=> m.fadeOutTween = null);
-            });
-        } else {
-        
-            m.bg.DOKill();
-            m.fadeOutTween = 
-                m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
-                OnKill(() => m.fadeOutTween = null);
+            PersistentManager.m.audioManager.FadeInMasterVolume();
         }
-    }
 
-    public static float GetCurrentAlpha() {
+        private void OnEnable() => PersistentManager.onSceneLoaded += delegate { FadeOut(); };
 
-        return m.bg.color.a;
+        private void OnDisable() => PersistentManager.onSceneLoaded -= delegate { FadeOut(); };
+
+        public static void FadeIn() {
+
+            if (m.fadeInTween != null)
+                return;
+
+            PersistentManager.m.audioManager.FadeSceneVolume(false);
+
+            m.bg.DOKill();
+            m.fadeInTween = m.bg.DOFade(1.0f, 0.35f).OnComplete(() => m.fadeInTween = null);
+        }
+
+        public static void FadeOut(float fadeDuration = 2.0f) {
+
+            if (m.fadeOutTween != null)
+                return;
+
+            PersistentManager.m.audioManager.FadeSceneVolume(true);
+
+            if (SceneManager.GetActiveScene().name == "Title Screen")
+                AudioManager.Play2D(Music.IAmJustice);
+
+            if (m.fadeInTween != null) {
+
+                m.fadeInTween.OnComplete(delegate {
+
+                    m.bg.DOKill();
+                    m.fadeInTween = null;
+
+                    m.fadeOutTween =
+                    m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
+                    OnKill(() => m.fadeOutTween = null);
+                });
+            } else {
+
+                m.bg.DOKill();
+                m.fadeOutTween =
+                    m.bg.DOFade(0.0f, fadeDuration).OnComplete(() => m.fadeOutTween = null).
+                    OnKill(() => m.fadeOutTween = null);
+            }
+        }
+
+        public static float GetCurrentAlpha() {
+
+            return m.bg.color.a;
+        }
     }
 }
 

@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d00d0f3333ae14998fadd1a5b0f84f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadSceneOnFileRead: 1
+  m_GameVersion: 0.0.1
